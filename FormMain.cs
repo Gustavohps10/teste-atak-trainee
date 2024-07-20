@@ -6,5 +6,16 @@ namespace teste_atak
         {
             InitializeComponent();
         }
+
+        private void pnlMenuClass_MouseLeave(object sender, EventArgs e)
+        {
+            pnlMenuClass.BackColor = Color.FromArgb(24, 22, 27);
+
+        }
+
+        private void pnlMenuClass_MouseEnter(object sender, EventArgs e)
+        {
+            pnlMenuClass.BackColor = Color.FromArgb(46, 44, 50);
+        }
     }
 }
