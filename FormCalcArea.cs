@@ -23,6 +23,12 @@ namespace teste_atak
             string formattedWidth = txtWidth.Text.Replace(',', '.');
             string formattedHeight = txtHeight.Text.Replace(',', '.');
 
+            if (!float.TryParse(formattedWidth, out float _) || !float.TryParse(formattedHeight, out float _))
+            {
+                MessageBox.Show("Preencha a altura e largura corretamente", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             float width = float.Parse(formattedHeight, CultureInfo.InvariantCulture.NumberFormat);
             float height = float.Parse(formattedWidth, CultureInfo.InvariantCulture.NumberFormat);
 
