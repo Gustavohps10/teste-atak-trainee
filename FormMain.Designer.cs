@@ -202,6 +202,7 @@
             pnlMenuRetangle.Padding = new Padding(8, 4, 8, 4);
             pnlMenuRetangle.Size = new Size(160, 38);
             pnlMenuRetangle.TabIndex = 2;
+            pnlMenuRetangle.Click += pnlMenuRetangle_Click;
             // 
             // pcbMenuRetangle
             // 

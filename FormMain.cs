@@ -37,5 +37,15 @@ namespace teste_atak
             this.pnlMain.Controls.Add(myForm);
             myForm.Show();
         }
+
+        private void pnlMenuRetangle_Click(object sender, EventArgs e)
+        {
+            FormCalcArea myForm = new FormCalcArea();
+            myForm.TopLevel = false;
+            myForm.AutoScroll = true;
+            myForm.FormBorderStyle = FormBorderStyle.None;
+            this.pnlMain.Controls.Add(myForm);
+            myForm.Show();
+        }
     }
 }
