@@ -129,6 +129,7 @@
             pnlMenuClass.Padding = new Padding(8, 4, 8, 4);
             pnlMenuClass.Size = new Size(160, 38);
             pnlMenuClass.TabIndex = 4;
+            pnlMenuClass.Click += pnlMenuClass_Click;
             pnlMenuClass.MouseEnter += pnlMenuClass_MouseEnter;
             pnlMenuClass.MouseLeave += pnlMenuClass_MouseLeave;
             // 
