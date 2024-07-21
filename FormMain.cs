@@ -17,5 +17,15 @@ namespace teste_atak
         {
             pnlMenuClass.BackColor = Color.FromArgb(46, 44, 50);
         }
+
+        private void pnlMenuEvenOdd_Click(object sender, EventArgs e)
+        {
+            FormEvenOdd myForm = new FormEvenOdd();
+            myForm.TopLevel = false;
+            myForm.AutoScroll = true;
+            myForm.FormBorderStyle = FormBorderStyle.None;
+            this.pnlMain.Controls.Add(myForm);
+            myForm.Show();
+        }
     }
 }

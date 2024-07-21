@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
             pnlHeader = new Panel();
             pcbUserIcon = new PictureBox();
             pcbLogo = new PictureBox();
@@ -51,7 +50,6 @@
             pnlMain = new Panel();
             menuStrip1 = new MenuStrip();
             sobreToolStripMenuItem = new ToolStripMenuItem();
-            contextMenuStrip1 = new ContextMenuStrip(components);
             pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pcbUserIcon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pcbLogo).BeginInit();
@@ -114,20 +112,22 @@
             pnlSidebar.Location = new Point(0, 100);
             pnlSidebar.Name = "pnlSidebar";
             pnlSidebar.Padding = new Padding(16);
-            pnlSidebar.Size = new Size(190, 405);
+            pnlSidebar.Size = new Size(192, 405);
             pnlSidebar.TabIndex = 1;
             // 
             // pnlMenuClass
             // 
+            pnlMenuClass.AutoSize = true;
             pnlMenuClass.BackColor = Color.FromArgb(24, 22, 27);
             pnlMenuClass.Controls.Add(pcbMenuClass);
             pnlMenuClass.Controls.Add(lblMenuClass);
             pnlMenuClass.Cursor = Cursors.Hand;
-            pnlMenuClass.Location = new Point(16, 192);
-            pnlMenuClass.Margin = new Padding(0, 0, 0, 4);
+            pnlMenuClass.ForeColor = Color.White;
+            pnlMenuClass.Location = new Point(16, 206);
+            pnlMenuClass.Margin = new Padding(4);
             pnlMenuClass.Name = "pnlMenuClass";
             pnlMenuClass.Padding = new Padding(8, 4, 8, 4);
-            pnlMenuClass.Size = new Size(158, 36);
+            pnlMenuClass.Size = new Size(160, 38);
             pnlMenuClass.TabIndex = 4;
             pnlMenuClass.MouseEnter += pnlMenuClass_MouseEnter;
             pnlMenuClass.MouseLeave += pnlMenuClass_MouseLeave;
@@ -155,15 +155,17 @@
             // 
             // pnlMenuMultiplesOf3
             // 
+            pnlMenuMultiplesOf3.AutoSize = true;
             pnlMenuMultiplesOf3.BackColor = Color.FromArgb(46, 44, 50);
             pnlMenuMultiplesOf3.Controls.Add(pcbMenuMultipleOf3);
             pnlMenuMultiplesOf3.Controls.Add(lblMenuMultipleOf3);
             pnlMenuMultiplesOf3.Cursor = Cursors.Hand;
-            pnlMenuMultiplesOf3.Location = new Point(16, 148);
-            pnlMenuMultiplesOf3.Margin = new Padding(0, 0, 0, 4);
+            pnlMenuMultiplesOf3.ForeColor = Color.White;
+            pnlMenuMultiplesOf3.Location = new Point(16, 158);
+            pnlMenuMultiplesOf3.Margin = new Padding(4);
             pnlMenuMultiplesOf3.Name = "pnlMenuMultiplesOf3";
             pnlMenuMultiplesOf3.Padding = new Padding(8, 4, 8, 4);
-            pnlMenuMultiplesOf3.Size = new Size(158, 36);
+            pnlMenuMultiplesOf3.Size = new Size(160, 38);
             pnlMenuMultiplesOf3.TabIndex = 3;
             // 
             // pcbMenuMultipleOf3
@@ -188,15 +190,17 @@
             // 
             // pnlMenuRetangle
             // 
+            pnlMenuRetangle.AutoSize = true;
             pnlMenuRetangle.BackColor = Color.FromArgb(46, 44, 50);
             pnlMenuRetangle.Controls.Add(pcbMenuRetangle);
             pnlMenuRetangle.Controls.Add(lblMenuRetangle);
             pnlMenuRetangle.Cursor = Cursors.Hand;
-            pnlMenuRetangle.Location = new Point(16, 104);
-            pnlMenuRetangle.Margin = new Padding(0, 0, 0, 4);
+            pnlMenuRetangle.ForeColor = Color.White;
+            pnlMenuRetangle.Location = new Point(16, 110);
+            pnlMenuRetangle.Margin = new Padding(4);
             pnlMenuRetangle.Name = "pnlMenuRetangle";
             pnlMenuRetangle.Padding = new Padding(8, 4, 8, 4);
-            pnlMenuRetangle.Size = new Size(158, 36);
+            pnlMenuRetangle.Size = new Size(160, 38);
             pnlMenuRetangle.TabIndex = 2;
             // 
             // pcbMenuRetangle
@@ -221,15 +225,17 @@
             // 
             // pnlMenuList
             // 
+            pnlMenuList.AutoSize = true;
             pnlMenuList.BackColor = Color.FromArgb(46, 44, 50);
             pnlMenuList.Controls.Add(pcbMenuList);
             pnlMenuList.Controls.Add(lblMenuList);
             pnlMenuList.Cursor = Cursors.Hand;
-            pnlMenuList.Location = new Point(16, 60);
-            pnlMenuList.Margin = new Padding(0, 0, 0, 4);
+            pnlMenuList.ForeColor = Color.White;
+            pnlMenuList.Location = new Point(16, 62);
+            pnlMenuList.Margin = new Padding(4);
             pnlMenuList.Name = "pnlMenuList";
             pnlMenuList.Padding = new Padding(8, 4, 8, 4);
-            pnlMenuList.Size = new Size(158, 36);
+            pnlMenuList.Size = new Size(160, 38);
             pnlMenuList.TabIndex = 1;
             // 
             // pcbMenuList
@@ -262,8 +268,9 @@
             pnlMenuEvenOdd.Margin = new Padding(0);
             pnlMenuEvenOdd.Name = "pnlMenuEvenOdd";
             pnlMenuEvenOdd.Padding = new Padding(8, 4, 8, 4);
-            pnlMenuEvenOdd.Size = new Size(158, 36);
+            pnlMenuEvenOdd.Size = new Size(160, 36);
             pnlMenuEvenOdd.TabIndex = 0;
+            pnlMenuEvenOdd.Click += pnlMenuEvenOdd_Click;
             // 
             // pcbMenuEvenOdd
             // 
@@ -288,9 +295,9 @@
             // pnlMain
             // 
             pnlMain.Dock = DockStyle.Fill;
-            pnlMain.Location = new Point(190, 100);
+            pnlMain.Location = new Point(192, 100);
             pnlMain.Name = "pnlMain";
-            pnlMain.Size = new Size(735, 405);
+            pnlMain.Size = new Size(733, 405);
             pnlMain.TabIndex = 2;
             // 
             // menuStrip1
@@ -311,11 +318,6 @@
             sobreToolStripMenuItem.Size = new Size(68, 20);
             sobreToolStripMenuItem.Text = "Sobre";
             // 
-            // contextMenuStrip1
-            // 
-            contextMenuStrip1.Name = "contextMenuStrip1";
-            contextMenuStrip1.Size = new Size(61, 4);
-            // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -334,6 +336,7 @@
             ((System.ComponentModel.ISupportInitialize)pcbUserIcon).EndInit();
             ((System.ComponentModel.ISupportInitialize)pcbLogo).EndInit();
             pnlSidebar.ResumeLayout(false);
+            pnlSidebar.PerformLayout();
             pnlMenuClass.ResumeLayout(false);
             pnlMenuClass.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pcbMenuClass).EndInit();
@@ -364,7 +367,6 @@
         private PictureBox pcbUserIcon;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem sobreToolStripMenuItem;
-        private ContextMenuStrip contextMenuStrip1;
         private Panel pnlMenuEvenOdd;
         private PictureBox pcbMenuEvenOdd;
         private Label lblMenuEvenOdd;
