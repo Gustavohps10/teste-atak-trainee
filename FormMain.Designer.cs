@@ -44,12 +44,18 @@
             btnExit = new Bunifu.Framework.UI.BunifuFlatButton();
             pnlSidebar = new Panel();
             pnlMain = new Panel();
+            lblLogical = new Label();
+            lblWelcome = new Label();
+            pictureBox1 = new PictureBox();
+            lblTextGuide = new Label();
             pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pcbUserIcon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pcbLogo).BeginInit();
             pnlNav.SuspendLayout();
             menuStrip1.SuspendLayout();
             pnlSidebar.SuspendLayout();
+            pnlMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pnlHeader
@@ -368,11 +374,57 @@
             // 
             // pnlMain
             // 
+            pnlMain.Controls.Add(lblTextGuide);
+            pnlMain.Controls.Add(lblLogical);
+            pnlMain.Controls.Add(lblWelcome);
+            pnlMain.Controls.Add(pictureBox1);
             pnlMain.Dock = DockStyle.Fill;
             pnlMain.Location = new Point(200, 88);
             pnlMain.Name = "pnlMain";
             pnlMain.Size = new Size(860, 509);
             pnlMain.TabIndex = 14;
+            // 
+            // lblLogical
+            // 
+            lblLogical.AutoSize = true;
+            lblLogical.Font = new Font("Inter", 14F);
+            lblLogical.ForeColor = Color.FromArgb(113, 113, 113);
+            lblLogical.Location = new Point(82, 104);
+            lblLogical.Name = "lblLogical";
+            lblLogical.Size = new Size(252, 23);
+            lblLogical.TabIndex = 6;
+            lblLogical.Text = "Desafios de lógica com C#";
+            // 
+            // lblWelcome
+            // 
+            lblWelcome.AutoSize = true;
+            lblWelcome.Font = new Font("Inter", 24F, FontStyle.Bold);
+            lblWelcome.ForeColor = Color.FromArgb(26, 26, 30);
+            lblWelcome.Location = new Point(100, 65);
+            lblWelcome.Name = "lblWelcome";
+            lblWelcome.Size = new Size(206, 39);
+            lblWelcome.TabIndex = 5;
+            lblWelcome.Text = "BEM-VINDO";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.main_form;
+            pictureBox1.Location = new Point(391, 64);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(360, 345);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
+            // 
+            // lblTextGuide
+            // 
+            lblTextGuide.Font = new Font("Inter", 14F);
+            lblTextGuide.ForeColor = Color.FromArgb(33, 33, 33);
+            lblTextGuide.Location = new Point(77, 150);
+            lblTextGuide.Name = "lblTextGuide";
+            lblTextGuide.Size = new Size(257, 98);
+            lblTextGuide.TabIndex = 7;
+            lblTextGuide.Text = "Você pode navegar pelos desafios através do menu lateral.";
             // 
             // FormMain
             // 
@@ -397,6 +449,9 @@
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             pnlSidebar.ResumeLayout(false);
+            pnlMain.ResumeLayout(false);
+            pnlMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -420,5 +475,9 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnExit;
         private Panel pnlSidebar;
         private Panel pnlMain;
+        private PictureBox pictureBox1;
+        private Label lblLogical;
+        private Label lblWelcome;
+        private Label lblTextGuide;
     }
 }
