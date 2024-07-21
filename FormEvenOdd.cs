@@ -17,9 +17,9 @@ namespace teste_atak
             InitializeComponent();
         }
 
-        private void btnCheck_Click(object sender, EventArgs e)
+        private void btnMenuEvenOdd_Click(object sender, EventArgs e)
         {
-            if(!int.TryParse(txtNumber.Text, out _))
+            if (!int.TryParse(txtNumber.Text, out _))
             {
                 MessageBox.Show("Insira um número inteiro válido.", "Cuidado!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;

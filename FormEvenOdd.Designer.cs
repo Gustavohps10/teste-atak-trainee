@@ -30,10 +30,10 @@
         {
             label1 = new Label();
             lblNumber = new Label();
-            btnCheck = new Button();
             lblResult = new Label();
             txtNumber = new TextBox();
             panel1 = new Panel();
+            btnCheckEvenOdd = new Bunifu.Framework.UI.BunifuFlatButton();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -60,17 +60,6 @@
             lblNumber.TabIndex = 1;
             lblNumber.Text = "Digite um número";
             // 
-            // btnCheck
-            // 
-            btnCheck.Cursor = Cursors.Hand;
-            btnCheck.Location = new Point(62, 84);
-            btnCheck.Name = "btnCheck";
-            btnCheck.Size = new Size(75, 23);
-            btnCheck.TabIndex = 3;
-            btnCheck.Text = "Verificar";
-            btnCheck.UseVisualStyleBackColor = true;
-            btnCheck.Click += btnCheck_Click;
-            // 
             // lblResult
             // 
             lblResult.AutoSize = true;
@@ -78,9 +67,8 @@
             lblResult.ForeColor = Color.FromArgb(33, 33, 33);
             lblResult.Location = new Point(62, 133);
             lblResult.Name = "lblResult";
-            lblResult.Size = new Size(190, 23);
+            lblResult.Size = new Size(0, 23);
             lblResult.TabIndex = 4;
-            lblResult.Text = "O número 3 é impar";
             lblResult.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // txtNumber
@@ -93,14 +81,51 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(btnCheckEvenOdd);
             panel1.Controls.Add(lblResult);
-            panel1.Controls.Add(btnCheck);
             panel1.Controls.Add(txtNumber);
             panel1.Controls.Add(lblNumber);
             panel1.Location = new Point(191, 82);
             panel1.Name = "panel1";
             panel1.Size = new Size(426, 207);
             panel1.TabIndex = 5;
+            // 
+            // btnCheckEvenOdd
+            // 
+            btnCheckEvenOdd.Active = false;
+            btnCheckEvenOdd.Activecolor = Color.FromArgb(46, 44, 50);
+            btnCheckEvenOdd.BackColor = Color.FromArgb(24, 22, 27);
+            btnCheckEvenOdd.BackgroundImageLayout = ImageLayout.Stretch;
+            btnCheckEvenOdd.BorderRadius = 5;
+            btnCheckEvenOdd.ButtonText = "  Verificar";
+            btnCheckEvenOdd.DisabledColor = Color.Gray;
+            btnCheckEvenOdd.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCheckEvenOdd.Iconcolor = Color.Transparent;
+            btnCheckEvenOdd.Iconimage = null;
+            btnCheckEvenOdd.Iconimage_right = null;
+            btnCheckEvenOdd.Iconimage_right_Selected = null;
+            btnCheckEvenOdd.Iconimage_Selected = null;
+            btnCheckEvenOdd.IconMarginLeft = 0;
+            btnCheckEvenOdd.IconMarginRight = 16;
+            btnCheckEvenOdd.IconRightVisible = false;
+            btnCheckEvenOdd.IconRightZoom = 0D;
+            btnCheckEvenOdd.IconVisible = true;
+            btnCheckEvenOdd.IconZoom = 38D;
+            btnCheckEvenOdd.IsTab = false;
+            btnCheckEvenOdd.Location = new Point(62, 83);
+            btnCheckEvenOdd.Margin = new Padding(0, 0, 0, 8);
+            btnCheckEvenOdd.Name = "btnCheckEvenOdd";
+            btnCheckEvenOdd.Normalcolor = Color.FromArgb(24, 22, 27);
+            btnCheckEvenOdd.OnHovercolor = Color.FromArgb(46, 44, 50);
+            btnCheckEvenOdd.OnHoverTextColor = Color.White;
+            btnCheckEvenOdd.selected = false;
+            btnCheckEvenOdd.Size = new Size(105, 33);
+            btnCheckEvenOdd.TabIndex = 6;
+            btnCheckEvenOdd.Text = "  Verificar";
+            btnCheckEvenOdd.TextAlign = ContentAlignment.MiddleCenter;
+            btnCheckEvenOdd.Textcolor = Color.White;
+            btnCheckEvenOdd.TextFont = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCheckEvenOdd.Click += btnMenuEvenOdd_Click;
             // 
             // FormEvenOdd
             // 
@@ -123,9 +148,9 @@
 
         private Label label1;
         private Label lblNumber;
-        private Button btnCheck;
         private Label lblResult;
         private TextBox txtNumber;
         private Panel panel1;
+        private Bunifu.Framework.UI.BunifuFlatButton btnCheckEvenOdd;
     }
 }
