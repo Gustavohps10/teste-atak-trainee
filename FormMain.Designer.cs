@@ -31,39 +31,19 @@
             pnlHeader = new Panel();
             pcbUserIcon = new PictureBox();
             pcbLogo = new PictureBox();
-            pnlSidebar = new Panel();
-            pnlMenuClass = new Panel();
-            pcbMenuClass = new PictureBox();
-            lblMenuClass = new Label();
-            pnlMenuMultiplesOf3 = new Panel();
-            pcbMenuMultipleOf3 = new PictureBox();
-            lblMenuMultipleOf3 = new Label();
-            pnlMenuRetangle = new Panel();
-            pcbMenuRetangle = new PictureBox();
-            lblMenuRetangle = new Label();
-            pnlMenuList = new Panel();
-            pcbMenuList = new PictureBox();
-            lblMenuList = new Label();
-            pnlMenuEvenOdd = new Panel();
-            pcbMenuEvenOdd = new PictureBox();
-            lblMenuEvenOdd = new Label();
-            pnlMain = new Panel();
+            pnlSidebar = new FlowLayoutPanel();
+            btnMenuEvenOdd = new Bunifu.Framework.UI.BunifuFlatButton();
+            btnMenuSortList = new Bunifu.Framework.UI.BunifuFlatButton();
+            btnMenuCalcArea = new Bunifu.Framework.UI.BunifuFlatButton();
+            btnMenuMultOfTree = new Bunifu.Framework.UI.BunifuFlatButton();
+            btnMenuPersonClass = new Bunifu.Framework.UI.BunifuFlatButton();
             menuStrip1 = new MenuStrip();
             sobreToolStripMenuItem = new ToolStripMenuItem();
+            pnlMain = new Panel();
             pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pcbUserIcon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pcbLogo).BeginInit();
             pnlSidebar.SuspendLayout();
-            pnlMenuClass.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pcbMenuClass).BeginInit();
-            pnlMenuMultiplesOf3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pcbMenuMultipleOf3).BeginInit();
-            pnlMenuRetangle.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pcbMenuRetangle).BeginInit();
-            pnlMenuList.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pcbMenuList).BeginInit();
-            pnlMenuEvenOdd.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pcbMenuEvenOdd).BeginInit();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -76,14 +56,14 @@
             pnlHeader.Location = new Point(0, 24);
             pnlHeader.Name = "pnlHeader";
             pnlHeader.Padding = new Padding(8, 0, 8, 0);
-            pnlHeader.Size = new Size(925, 76);
+            pnlHeader.Size = new Size(1060, 64);
             pnlHeader.TabIndex = 0;
             // 
             // pcbUserIcon
             // 
             pcbUserIcon.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             pcbUserIcon.Image = Properties.Resources.circle_user_round;
-            pcbUserIcon.Location = new Point(878, 21);
+            pcbUserIcon.Location = new Point(1013, 16);
             pcbUserIcon.Name = "pcbUserIcon";
             pcbUserIcon.Size = new Size(36, 36);
             pcbUserIcon.SizeMode = PictureBoxSizeMode.Zoom;
@@ -93,7 +73,7 @@
             // pcbLogo
             // 
             pcbLogo.Image = Properties.Resources.atak_logo;
-            pcbLogo.Location = new Point(12, 20);
+            pcbLogo.Location = new Point(15, 16);
             pcbLogo.Name = "pcbLogo";
             pcbLogo.Size = new Size(139, 34);
             pcbLogo.SizeMode = PictureBoxSizeMode.Zoom;
@@ -103,206 +83,202 @@
             // pnlSidebar
             // 
             pnlSidebar.BackColor = Color.FromArgb(24, 22, 27);
-            pnlSidebar.Controls.Add(pnlMenuClass);
-            pnlSidebar.Controls.Add(pnlMenuMultiplesOf3);
-            pnlSidebar.Controls.Add(pnlMenuRetangle);
-            pnlSidebar.Controls.Add(pnlMenuList);
-            pnlSidebar.Controls.Add(pnlMenuEvenOdd);
+            pnlSidebar.Controls.Add(btnMenuEvenOdd);
+            pnlSidebar.Controls.Add(btnMenuSortList);
+            pnlSidebar.Controls.Add(btnMenuCalcArea);
+            pnlSidebar.Controls.Add(btnMenuMultOfTree);
+            pnlSidebar.Controls.Add(btnMenuPersonClass);
             pnlSidebar.Dock = DockStyle.Left;
-            pnlSidebar.Location = new Point(0, 100);
+            pnlSidebar.Location = new Point(0, 88);
             pnlSidebar.Name = "pnlSidebar";
             pnlSidebar.Padding = new Padding(16);
-            pnlSidebar.Size = new Size(192, 405);
-            pnlSidebar.TabIndex = 1;
+            pnlSidebar.Size = new Size(200, 509);
+            pnlSidebar.TabIndex = 11;
             // 
-            // pnlMenuClass
+            // btnMenuEvenOdd
             // 
-            pnlMenuClass.AutoSize = true;
-            pnlMenuClass.BackColor = Color.FromArgb(24, 22, 27);
-            pnlMenuClass.Controls.Add(pcbMenuClass);
-            pnlMenuClass.Controls.Add(lblMenuClass);
-            pnlMenuClass.Cursor = Cursors.Hand;
-            pnlMenuClass.ForeColor = Color.White;
-            pnlMenuClass.Location = new Point(16, 206);
-            pnlMenuClass.Margin = new Padding(4);
-            pnlMenuClass.Name = "pnlMenuClass";
-            pnlMenuClass.Padding = new Padding(8, 4, 8, 4);
-            pnlMenuClass.Size = new Size(160, 38);
-            pnlMenuClass.TabIndex = 4;
-            pnlMenuClass.Click += pnlMenuClass_Click;
-            pnlMenuClass.MouseEnter += pnlMenuClass_MouseEnter;
-            pnlMenuClass.MouseLeave += pnlMenuClass_MouseLeave;
+            btnMenuEvenOdd.Active = false;
+            btnMenuEvenOdd.Activecolor = Color.FromArgb(46, 44, 50);
+            btnMenuEvenOdd.BackColor = Color.FromArgb(24, 22, 27);
+            btnMenuEvenOdd.BackgroundImageLayout = ImageLayout.Stretch;
+            btnMenuEvenOdd.BorderRadius = 5;
+            btnMenuEvenOdd.ButtonText = "  Par ou Ímpar";
+            btnMenuEvenOdd.DisabledColor = Color.Gray;
+            btnMenuEvenOdd.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMenuEvenOdd.Iconcolor = Color.Transparent;
+            btnMenuEvenOdd.Iconimage = Properties.Resources.file_digit;
+            btnMenuEvenOdd.Iconimage_right = null;
+            btnMenuEvenOdd.Iconimage_right_Selected = null;
+            btnMenuEvenOdd.Iconimage_Selected = null;
+            btnMenuEvenOdd.IconMarginLeft = 0;
+            btnMenuEvenOdd.IconMarginRight = 16;
+            btnMenuEvenOdd.IconRightVisible = false;
+            btnMenuEvenOdd.IconRightZoom = 0D;
+            btnMenuEvenOdd.IconVisible = true;
+            btnMenuEvenOdd.IconZoom = 38D;
+            btnMenuEvenOdd.IsTab = false;
+            btnMenuEvenOdd.Location = new Point(16, 16);
+            btnMenuEvenOdd.Margin = new Padding(0, 0, 0, 8);
+            btnMenuEvenOdd.Name = "btnMenuEvenOdd";
+            btnMenuEvenOdd.Normalcolor = Color.FromArgb(24, 22, 27);
+            btnMenuEvenOdd.OnHovercolor = Color.FromArgb(46, 44, 50);
+            btnMenuEvenOdd.OnHoverTextColor = Color.White;
+            btnMenuEvenOdd.selected = false;
+            btnMenuEvenOdd.Size = new Size(171, 40);
+            btnMenuEvenOdd.TabIndex = 5;
+            btnMenuEvenOdd.Text = "  Par ou Ímpar";
+            btnMenuEvenOdd.TextAlign = ContentAlignment.MiddleLeft;
+            btnMenuEvenOdd.Textcolor = Color.White;
+            btnMenuEvenOdd.TextFont = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMenuEvenOdd.Click += btnMenuEvenOdd_Click;
             // 
-            // pcbMenuClass
+            // btnMenuSortList
             // 
-            pcbMenuClass.Enabled = false;
-            pcbMenuClass.Image = Properties.Resources.user;
-            pcbMenuClass.Location = new Point(7, 7);
-            pcbMenuClass.Name = "pcbMenuClass";
-            pcbMenuClass.Size = new Size(24, 24);
-            pcbMenuClass.TabIndex = 1;
-            pcbMenuClass.TabStop = false;
+            btnMenuSortList.Active = false;
+            btnMenuSortList.Activecolor = Color.FromArgb(46, 44, 50);
+            btnMenuSortList.BackColor = Color.FromArgb(24, 22, 27);
+            btnMenuSortList.BackgroundImageLayout = ImageLayout.Stretch;
+            btnMenuSortList.BorderRadius = 5;
+            btnMenuSortList.ButtonText = "  Lista ordenada";
+            btnMenuSortList.DisabledColor = Color.Gray;
+            btnMenuSortList.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMenuSortList.Iconcolor = Color.Transparent;
+            btnMenuSortList.Iconimage = Properties.Resources.list;
+            btnMenuSortList.Iconimage_right = null;
+            btnMenuSortList.Iconimage_right_Selected = null;
+            btnMenuSortList.Iconimage_Selected = null;
+            btnMenuSortList.IconMarginLeft = 0;
+            btnMenuSortList.IconMarginRight = 16;
+            btnMenuSortList.IconRightVisible = false;
+            btnMenuSortList.IconRightZoom = 0D;
+            btnMenuSortList.IconVisible = true;
+            btnMenuSortList.IconZoom = 38D;
+            btnMenuSortList.IsTab = false;
+            btnMenuSortList.Location = new Point(16, 64);
+            btnMenuSortList.Margin = new Padding(0, 0, 0, 8);
+            btnMenuSortList.Name = "btnMenuSortList";
+            btnMenuSortList.Normalcolor = Color.FromArgb(24, 22, 27);
+            btnMenuSortList.OnHovercolor = Color.FromArgb(46, 44, 50);
+            btnMenuSortList.OnHoverTextColor = Color.White;
+            btnMenuSortList.selected = false;
+            btnMenuSortList.Size = new Size(171, 40);
+            btnMenuSortList.TabIndex = 10;
+            btnMenuSortList.Text = "  Lista ordenada";
+            btnMenuSortList.TextAlign = ContentAlignment.MiddleLeft;
+            btnMenuSortList.Textcolor = Color.White;
+            btnMenuSortList.TextFont = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMenuSortList.Click += btnMenuSortList_Click;
             // 
-            // lblMenuClass
+            // btnMenuCalcArea
             // 
-            lblMenuClass.AutoSize = true;
-            lblMenuClass.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblMenuClass.ForeColor = Color.White;
-            lblMenuClass.Location = new Point(41, 11);
-            lblMenuClass.Name = "lblMenuClass";
-            lblMenuClass.Size = new Size(93, 15);
-            lblMenuClass.TabIndex = 0;
-            lblMenuClass.Text = "Classe Pessoa";
+            btnMenuCalcArea.Active = false;
+            btnMenuCalcArea.Activecolor = Color.FromArgb(46, 44, 50);
+            btnMenuCalcArea.BackColor = Color.FromArgb(24, 22, 27);
+            btnMenuCalcArea.BackgroundImageLayout = ImageLayout.Stretch;
+            btnMenuCalcArea.BorderRadius = 5;
+            btnMenuCalcArea.ButtonText = "  Calcular Área";
+            btnMenuCalcArea.DisabledColor = Color.Gray;
+            btnMenuCalcArea.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMenuCalcArea.Iconcolor = Color.Transparent;
+            btnMenuCalcArea.Iconimage = Properties.Resources.square_dashed_bottom;
+            btnMenuCalcArea.Iconimage_right = null;
+            btnMenuCalcArea.Iconimage_right_Selected = null;
+            btnMenuCalcArea.Iconimage_Selected = null;
+            btnMenuCalcArea.IconMarginLeft = 0;
+            btnMenuCalcArea.IconMarginRight = 16;
+            btnMenuCalcArea.IconRightVisible = false;
+            btnMenuCalcArea.IconRightZoom = 0D;
+            btnMenuCalcArea.IconVisible = true;
+            btnMenuCalcArea.IconZoom = 38D;
+            btnMenuCalcArea.IsTab = false;
+            btnMenuCalcArea.Location = new Point(16, 112);
+            btnMenuCalcArea.Margin = new Padding(0, 0, 0, 8);
+            btnMenuCalcArea.Name = "btnMenuCalcArea";
+            btnMenuCalcArea.Normalcolor = Color.FromArgb(24, 22, 27);
+            btnMenuCalcArea.OnHovercolor = Color.FromArgb(46, 44, 50);
+            btnMenuCalcArea.OnHoverTextColor = Color.White;
+            btnMenuCalcArea.selected = false;
+            btnMenuCalcArea.Size = new Size(171, 40);
+            btnMenuCalcArea.TabIndex = 7;
+            btnMenuCalcArea.Text = "  Calcular Área";
+            btnMenuCalcArea.TextAlign = ContentAlignment.MiddleLeft;
+            btnMenuCalcArea.Textcolor = Color.White;
+            btnMenuCalcArea.TextFont = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMenuCalcArea.Click += btnMenuCalcArea_Click;
             // 
-            // pnlMenuMultiplesOf3
+            // btnMenuMultOfTree
             // 
-            pnlMenuMultiplesOf3.AutoSize = true;
-            pnlMenuMultiplesOf3.BackColor = Color.FromArgb(46, 44, 50);
-            pnlMenuMultiplesOf3.Controls.Add(pcbMenuMultipleOf3);
-            pnlMenuMultiplesOf3.Controls.Add(lblMenuMultipleOf3);
-            pnlMenuMultiplesOf3.Cursor = Cursors.Hand;
-            pnlMenuMultiplesOf3.ForeColor = Color.White;
-            pnlMenuMultiplesOf3.Location = new Point(16, 158);
-            pnlMenuMultiplesOf3.Margin = new Padding(4);
-            pnlMenuMultiplesOf3.Name = "pnlMenuMultiplesOf3";
-            pnlMenuMultiplesOf3.Padding = new Padding(8, 4, 8, 4);
-            pnlMenuMultiplesOf3.Size = new Size(160, 38);
-            pnlMenuMultiplesOf3.TabIndex = 3;
-            pnlMenuMultiplesOf3.Click += pnlMenuMultiplesOf3_Click;
+            btnMenuMultOfTree.Active = false;
+            btnMenuMultOfTree.Activecolor = Color.FromArgb(46, 44, 50);
+            btnMenuMultOfTree.BackColor = Color.FromArgb(24, 22, 27);
+            btnMenuMultOfTree.BackgroundImageLayout = ImageLayout.Stretch;
+            btnMenuMultOfTree.BorderRadius = 5;
+            btnMenuMultOfTree.ButtonText = "  Múltiplos de 3";
+            btnMenuMultOfTree.DisabledColor = Color.Gray;
+            btnMenuMultOfTree.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMenuMultOfTree.Iconcolor = Color.Transparent;
+            btnMenuMultOfTree.Iconimage = Properties.Resources.repeat;
+            btnMenuMultOfTree.Iconimage_right = null;
+            btnMenuMultOfTree.Iconimage_right_Selected = null;
+            btnMenuMultOfTree.Iconimage_Selected = null;
+            btnMenuMultOfTree.IconMarginLeft = 0;
+            btnMenuMultOfTree.IconMarginRight = 16;
+            btnMenuMultOfTree.IconRightVisible = false;
+            btnMenuMultOfTree.IconRightZoom = 0D;
+            btnMenuMultOfTree.IconVisible = true;
+            btnMenuMultOfTree.IconZoom = 38D;
+            btnMenuMultOfTree.IsTab = false;
+            btnMenuMultOfTree.Location = new Point(16, 160);
+            btnMenuMultOfTree.Margin = new Padding(0, 0, 0, 8);
+            btnMenuMultOfTree.Name = "btnMenuMultOfTree";
+            btnMenuMultOfTree.Normalcolor = Color.FromArgb(24, 22, 27);
+            btnMenuMultOfTree.OnHovercolor = Color.FromArgb(46, 44, 50);
+            btnMenuMultOfTree.OnHoverTextColor = Color.White;
+            btnMenuMultOfTree.selected = false;
+            btnMenuMultOfTree.Size = new Size(171, 40);
+            btnMenuMultOfTree.TabIndex = 8;
+            btnMenuMultOfTree.Text = "  Múltiplos de 3";
+            btnMenuMultOfTree.TextAlign = ContentAlignment.MiddleLeft;
+            btnMenuMultOfTree.Textcolor = Color.White;
+            btnMenuMultOfTree.TextFont = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMenuMultOfTree.Click += btnMenuMultOfTree_Click;
             // 
-            // pcbMenuMultipleOf3
+            // btnMenuPersonClass
             // 
-            pcbMenuMultipleOf3.Image = Properties.Resources.repeat;
-            pcbMenuMultipleOf3.Location = new Point(7, 7);
-            pcbMenuMultipleOf3.Name = "pcbMenuMultipleOf3";
-            pcbMenuMultipleOf3.Size = new Size(24, 24);
-            pcbMenuMultipleOf3.TabIndex = 1;
-            pcbMenuMultipleOf3.TabStop = false;
-            // 
-            // lblMenuMultipleOf3
-            // 
-            lblMenuMultipleOf3.AutoSize = true;
-            lblMenuMultipleOf3.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblMenuMultipleOf3.ForeColor = Color.White;
-            lblMenuMultipleOf3.Location = new Point(41, 11);
-            lblMenuMultipleOf3.Name = "lblMenuMultipleOf3";
-            lblMenuMultipleOf3.Size = new Size(90, 15);
-            lblMenuMultipleOf3.TabIndex = 0;
-            lblMenuMultipleOf3.Text = "Múltiplos de 3";
-            // 
-            // pnlMenuRetangle
-            // 
-            pnlMenuRetangle.AutoSize = true;
-            pnlMenuRetangle.BackColor = Color.FromArgb(46, 44, 50);
-            pnlMenuRetangle.Controls.Add(pcbMenuRetangle);
-            pnlMenuRetangle.Controls.Add(lblMenuRetangle);
-            pnlMenuRetangle.Cursor = Cursors.Hand;
-            pnlMenuRetangle.ForeColor = Color.White;
-            pnlMenuRetangle.Location = new Point(16, 110);
-            pnlMenuRetangle.Margin = new Padding(4);
-            pnlMenuRetangle.Name = "pnlMenuRetangle";
-            pnlMenuRetangle.Padding = new Padding(8, 4, 8, 4);
-            pnlMenuRetangle.Size = new Size(160, 38);
-            pnlMenuRetangle.TabIndex = 2;
-            pnlMenuRetangle.Click += pnlMenuRetangle_Click;
-            // 
-            // pcbMenuRetangle
-            // 
-            pcbMenuRetangle.Image = Properties.Resources.square_dashed_bottom;
-            pcbMenuRetangle.Location = new Point(7, 7);
-            pcbMenuRetangle.Name = "pcbMenuRetangle";
-            pcbMenuRetangle.Size = new Size(24, 24);
-            pcbMenuRetangle.TabIndex = 1;
-            pcbMenuRetangle.TabStop = false;
-            // 
-            // lblMenuRetangle
-            // 
-            lblMenuRetangle.AutoSize = true;
-            lblMenuRetangle.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblMenuRetangle.ForeColor = Color.White;
-            lblMenuRetangle.Location = new Point(41, 11);
-            lblMenuRetangle.Name = "lblMenuRetangle";
-            lblMenuRetangle.Size = new Size(86, 15);
-            lblMenuRetangle.TabIndex = 0;
-            lblMenuRetangle.Text = "Calcular Área";
-            // 
-            // pnlMenuList
-            // 
-            pnlMenuList.AutoSize = true;
-            pnlMenuList.BackColor = Color.FromArgb(46, 44, 50);
-            pnlMenuList.Controls.Add(pcbMenuList);
-            pnlMenuList.Controls.Add(lblMenuList);
-            pnlMenuList.Cursor = Cursors.Hand;
-            pnlMenuList.ForeColor = Color.White;
-            pnlMenuList.Location = new Point(16, 62);
-            pnlMenuList.Margin = new Padding(4);
-            pnlMenuList.Name = "pnlMenuList";
-            pnlMenuList.Padding = new Padding(8, 4, 8, 4);
-            pnlMenuList.Size = new Size(160, 38);
-            pnlMenuList.TabIndex = 1;
-            pnlMenuList.Click += pnlMenuList_Click;
-            // 
-            // pcbMenuList
-            // 
-            pcbMenuList.Image = Properties.Resources.list;
-            pcbMenuList.Location = new Point(7, 7);
-            pcbMenuList.Name = "pcbMenuList";
-            pcbMenuList.Size = new Size(24, 24);
-            pcbMenuList.TabIndex = 1;
-            pcbMenuList.TabStop = false;
-            // 
-            // lblMenuList
-            // 
-            lblMenuList.AutoSize = true;
-            lblMenuList.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblMenuList.ForeColor = Color.White;
-            lblMenuList.Location = new Point(41, 11);
-            lblMenuList.Name = "lblMenuList";
-            lblMenuList.Size = new Size(97, 15);
-            lblMenuList.TabIndex = 0;
-            lblMenuList.Text = "Lista Ordenada";
-            // 
-            // pnlMenuEvenOdd
-            // 
-            pnlMenuEvenOdd.BackColor = Color.FromArgb(46, 44, 50);
-            pnlMenuEvenOdd.Controls.Add(pcbMenuEvenOdd);
-            pnlMenuEvenOdd.Controls.Add(lblMenuEvenOdd);
-            pnlMenuEvenOdd.Cursor = Cursors.Hand;
-            pnlMenuEvenOdd.Location = new Point(16, 16);
-            pnlMenuEvenOdd.Margin = new Padding(0);
-            pnlMenuEvenOdd.Name = "pnlMenuEvenOdd";
-            pnlMenuEvenOdd.Padding = new Padding(8, 4, 8, 4);
-            pnlMenuEvenOdd.Size = new Size(160, 36);
-            pnlMenuEvenOdd.TabIndex = 0;
-            pnlMenuEvenOdd.Click += pnlMenuEvenOdd_Click;
-            // 
-            // pcbMenuEvenOdd
-            // 
-            pcbMenuEvenOdd.Image = Properties.Resources.file_digit;
-            pcbMenuEvenOdd.Location = new Point(7, 7);
-            pcbMenuEvenOdd.Name = "pcbMenuEvenOdd";
-            pcbMenuEvenOdd.Size = new Size(24, 24);
-            pcbMenuEvenOdd.TabIndex = 1;
-            pcbMenuEvenOdd.TabStop = false;
-            // 
-            // lblMenuEvenOdd
-            // 
-            lblMenuEvenOdd.AutoSize = true;
-            lblMenuEvenOdd.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblMenuEvenOdd.ForeColor = Color.White;
-            lblMenuEvenOdd.Location = new Point(41, 11);
-            lblMenuEvenOdd.Name = "lblMenuEvenOdd";
-            lblMenuEvenOdd.Size = new Size(81, 15);
-            lblMenuEvenOdd.TabIndex = 0;
-            lblMenuEvenOdd.Text = "Par ou Ímpar";
-            // 
-            // pnlMain
-            // 
-            pnlMain.Dock = DockStyle.Fill;
-            pnlMain.Location = new Point(192, 100);
-            pnlMain.Name = "pnlMain";
-            pnlMain.Size = new Size(733, 405);
-            pnlMain.TabIndex = 2;
+            btnMenuPersonClass.Active = false;
+            btnMenuPersonClass.Activecolor = Color.FromArgb(46, 44, 50);
+            btnMenuPersonClass.BackColor = Color.FromArgb(24, 22, 27);
+            btnMenuPersonClass.BackgroundImageLayout = ImageLayout.Stretch;
+            btnMenuPersonClass.BorderRadius = 5;
+            btnMenuPersonClass.ButtonText = "  Classe Pessoa";
+            btnMenuPersonClass.DisabledColor = Color.Gray;
+            btnMenuPersonClass.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMenuPersonClass.Iconcolor = Color.Transparent;
+            btnMenuPersonClass.Iconimage = Properties.Resources.user;
+            btnMenuPersonClass.Iconimage_right = null;
+            btnMenuPersonClass.Iconimage_right_Selected = null;
+            btnMenuPersonClass.Iconimage_Selected = null;
+            btnMenuPersonClass.IconMarginLeft = 0;
+            btnMenuPersonClass.IconMarginRight = 16;
+            btnMenuPersonClass.IconRightVisible = false;
+            btnMenuPersonClass.IconRightZoom = 0D;
+            btnMenuPersonClass.IconVisible = true;
+            btnMenuPersonClass.IconZoom = 38D;
+            btnMenuPersonClass.IsTab = false;
+            btnMenuPersonClass.Location = new Point(16, 208);
+            btnMenuPersonClass.Margin = new Padding(0, 0, 0, 8);
+            btnMenuPersonClass.Name = "btnMenuPersonClass";
+            btnMenuPersonClass.Normalcolor = Color.FromArgb(24, 22, 27);
+            btnMenuPersonClass.OnHovercolor = Color.FromArgb(46, 44, 50);
+            btnMenuPersonClass.OnHoverTextColor = Color.White;
+            btnMenuPersonClass.selected = false;
+            btnMenuPersonClass.Size = new Size(171, 40);
+            btnMenuPersonClass.TabIndex = 9;
+            btnMenuPersonClass.Text = "  Classe Pessoa";
+            btnMenuPersonClass.TextAlign = ContentAlignment.MiddleLeft;
+            btnMenuPersonClass.Textcolor = Color.White;
+            btnMenuPersonClass.TextFont = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMenuPersonClass.Click += btnMenuPersonClass_Click;
             // 
             // menuStrip1
             // 
@@ -311,7 +287,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { sobreToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(925, 24);
+            menuStrip1.Size = new Size(1060, 24);
             menuStrip1.TabIndex = 3;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -322,12 +298,20 @@
             sobreToolStripMenuItem.Size = new Size(68, 20);
             sobreToolStripMenuItem.Text = "Sobre";
             // 
+            // pnlMain
+            // 
+            pnlMain.Dock = DockStyle.Fill;
+            pnlMain.Location = new Point(200, 88);
+            pnlMain.Name = "pnlMain";
+            pnlMain.Size = new Size(860, 509);
+            pnlMain.TabIndex = 12;
+            // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(251, 251, 251);
-            ClientSize = new Size(925, 505);
+            ClientSize = new Size(1060, 597);
             Controls.Add(pnlMain);
             Controls.Add(pnlSidebar);
             Controls.Add(pnlHeader);
@@ -340,22 +324,6 @@
             ((System.ComponentModel.ISupportInitialize)pcbUserIcon).EndInit();
             ((System.ComponentModel.ISupportInitialize)pcbLogo).EndInit();
             pnlSidebar.ResumeLayout(false);
-            pnlSidebar.PerformLayout();
-            pnlMenuClass.ResumeLayout(false);
-            pnlMenuClass.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pcbMenuClass).EndInit();
-            pnlMenuMultiplesOf3.ResumeLayout(false);
-            pnlMenuMultiplesOf3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pcbMenuMultipleOf3).EndInit();
-            pnlMenuRetangle.ResumeLayout(false);
-            pnlMenuRetangle.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pcbMenuRetangle).EndInit();
-            pnlMenuList.ResumeLayout(false);
-            pnlMenuList.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pcbMenuList).EndInit();
-            pnlMenuEvenOdd.ResumeLayout(false);
-            pnlMenuEvenOdd.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pcbMenuEvenOdd).EndInit();
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
@@ -365,26 +333,18 @@
         #endregion
 
         private Panel pnlHeader;
-        private Panel pnlSidebar;
-        private Panel pnlMain;
+        private FlowLayoutPanel pnlSidebar;
         private PictureBox pcbLogo;
         private PictureBox pcbUserIcon;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem sobreToolStripMenuItem;
         private Panel pnlMenuEvenOdd;
-        private PictureBox pcbMenuEvenOdd;
-        private Label lblMenuEvenOdd;
-        private Panel pnlMenuList;
-        private PictureBox pcbMenuList;
-        private Label lblMenuList;
-        private Panel pnlMenuRetangle;
-        private PictureBox pcbMenuRetangle;
-        private Label lblMenuRetangle;
-        private Panel pnlMenuClass;
-        private PictureBox pcbMenuClass;
-        private Label lblMenuClass;
-        private Panel pnlMenuMultiplesOf3;
-        private PictureBox pcbMenuMultipleOf3;
-        private Label lblMenuMultipleOf3;
+        private Bunifu.Framework.UI.BunifuFlatButton btnMenuEvenOdd;
+        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
+        private Bunifu.Framework.UI.BunifuFlatButton btnMenuCalcArea;
+        private Bunifu.Framework.UI.BunifuFlatButton btnMenuMultOfTree;
+        private Bunifu.Framework.UI.BunifuFlatButton btnMenuPersonClass;
+        private Bunifu.Framework.UI.BunifuFlatButton btnMenuSortList;
+        private Panel pnlMain;
     }
 }

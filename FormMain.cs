@@ -7,19 +7,9 @@ namespace teste_atak
             InitializeComponent();
         }
 
-        private void pnlMenuClass_MouseLeave(object sender, EventArgs e)
+        private void btnMenuEvenOdd_Click(object sender, EventArgs e)
         {
-            pnlMenuClass.BackColor = Color.FromArgb(24, 22, 27);
-
-        }
-
-        private void pnlMenuClass_MouseEnter(object sender, EventArgs e)
-        {
-            pnlMenuClass.BackColor = Color.FromArgb(46, 44, 50);
-        }
-
-        private void pnlMenuEvenOdd_Click(object sender, EventArgs e)
-        {
+            this.pnlMain.Controls.Clear();
             FormEvenOdd myForm = new FormEvenOdd();
             myForm.TopLevel = false;
             myForm.AutoScroll = true;
@@ -28,8 +18,9 @@ namespace teste_atak
             myForm.Show();
         }
 
-        private void pnlMenuList_Click(object sender, EventArgs e)
+        private void btnMenuSortList_Click(object sender, EventArgs e)
         {
+            this.pnlMain.Controls.Clear();
             FormOrderedList myForm = new FormOrderedList();
             myForm.TopLevel = false;
             myForm.AutoScroll = true;
@@ -38,8 +29,9 @@ namespace teste_atak
             myForm.Show();
         }
 
-        private void pnlMenuRetangle_Click(object sender, EventArgs e)
+        private void btnMenuCalcArea_Click(object sender, EventArgs e)
         {
+            this.pnlMain.Controls.Clear();
             FormCalcArea myForm = new FormCalcArea();
             myForm.TopLevel = false;
             myForm.AutoScroll = true;
@@ -48,7 +40,7 @@ namespace teste_atak
             myForm.Show();
         }
 
-        private void pnlMenuMultiplesOf3_Click(object sender, EventArgs e)
+        private void btnMenuMultOfTree_Click(object sender, EventArgs e)
         {
             this.pnlMain.Controls.Clear();
             FormMultOfTree myForm = new FormMultOfTree();
@@ -58,7 +50,8 @@ namespace teste_atak
             this.pnlMain.Controls.Add(myForm);
             myForm.Show();
         }
-        private void pnlMenuClass_Click(object sender, EventArgs e)
+
+        private void btnMenuPersonClass_Click(object sender, EventArgs e)
         {
             this.pnlMain.Controls.Clear();
             FormPerson myForm = new FormPerson();
