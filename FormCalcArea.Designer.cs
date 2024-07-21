@@ -48,7 +48,7 @@
             label1.Padding = new Padding(8);
             label1.Size = new Size(874, 58);
             label1.TabIndex = 1;
-            label1.Text = "Calcular Áreea";
+            label1.Text = "Calcular Área";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblWidth

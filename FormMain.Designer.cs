@@ -384,6 +384,7 @@
             Controls.Add(pnlHeader);
             Controls.Add(menuStrip1);
             Font = new Font("Inter", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            MaximizeBox = false;
             Name = "FormMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Teste - Atak Sistemas";
