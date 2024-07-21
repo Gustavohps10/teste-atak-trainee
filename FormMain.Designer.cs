@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             pnlHeader = new Panel();
+            lblUserName = new Label();
             pcbUserIcon = new PictureBox();
             pcbLogo = new PictureBox();
-            pnlSidebar = new FlowLayoutPanel();
+            pnlNav = new FlowLayoutPanel();
             btnMenuEvenOdd = new Bunifu.Framework.UI.BunifuFlatButton();
             btnMenuSortList = new Bunifu.Framework.UI.BunifuFlatButton();
             btnMenuCalcArea = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -39,13 +41,15 @@
             btnMenuPersonClass = new Bunifu.Framework.UI.BunifuFlatButton();
             menuStrip1 = new MenuStrip();
             sobreToolStripMenuItem = new ToolStripMenuItem();
+            btnExit = new Bunifu.Framework.UI.BunifuFlatButton();
+            pnlSidebar = new Panel();
             pnlMain = new Panel();
-            lblUserName = new Label();
             pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pcbUserIcon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pcbLogo).BeginInit();
-            pnlSidebar.SuspendLayout();
+            pnlNav.SuspendLayout();
             menuStrip1.SuspendLayout();
+            pnlSidebar.SuspendLayout();
             SuspendLayout();
             // 
             // pnlHeader
@@ -60,6 +64,17 @@
             pnlHeader.Padding = new Padding(8, 0, 8, 0);
             pnlHeader.Size = new Size(1060, 64);
             pnlHeader.TabIndex = 0;
+            // 
+            // lblUserName
+            // 
+            lblUserName.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            lblUserName.AutoSize = true;
+            lblUserName.Font = new Font("Inter", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblUserName.Location = new Point(830, 23);
+            lblUserName.Name = "lblUserName";
+            lblUserName.Size = new Size(177, 23);
+            lblUserName.TabIndex = 2;
+            lblUserName.Text = "Gustavo Henrique";
             // 
             // pcbUserIcon
             // 
@@ -82,20 +97,21 @@
             pcbLogo.TabIndex = 0;
             pcbLogo.TabStop = false;
             // 
-            // pnlSidebar
+            // pnlNav
             // 
-            pnlSidebar.BackColor = Color.FromArgb(24, 22, 27);
-            pnlSidebar.Controls.Add(btnMenuEvenOdd);
-            pnlSidebar.Controls.Add(btnMenuSortList);
-            pnlSidebar.Controls.Add(btnMenuCalcArea);
-            pnlSidebar.Controls.Add(btnMenuMultOfTree);
-            pnlSidebar.Controls.Add(btnMenuPersonClass);
-            pnlSidebar.Dock = DockStyle.Left;
-            pnlSidebar.Location = new Point(0, 88);
-            pnlSidebar.Name = "pnlSidebar";
-            pnlSidebar.Padding = new Padding(16);
-            pnlSidebar.Size = new Size(200, 509);
-            pnlSidebar.TabIndex = 11;
+            pnlNav.BackColor = Color.Transparent;
+            pnlNav.Controls.Add(btnMenuEvenOdd);
+            pnlNav.Controls.Add(btnMenuSortList);
+            pnlNav.Controls.Add(btnMenuCalcArea);
+            pnlNav.Controls.Add(btnMenuMultOfTree);
+            pnlNav.Controls.Add(btnMenuPersonClass);
+            pnlNav.Dock = DockStyle.Top;
+            pnlNav.FlowDirection = FlowDirection.TopDown;
+            pnlNav.Location = new Point(0, 0);
+            pnlNav.Name = "pnlNav";
+            pnlNav.Padding = new Padding(16);
+            pnlNav.Size = new Size(200, 280);
+            pnlNav.TabIndex = 11;
             // 
             // btnMenuEvenOdd
             // 
@@ -300,24 +316,62 @@
             sobreToolStripMenuItem.Size = new Size(68, 20);
             sobreToolStripMenuItem.Text = "Sobre";
             // 
+            // btnExit
+            // 
+            btnExit.Active = false;
+            btnExit.Activecolor = Color.FromArgb(46, 44, 50);
+            btnExit.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            btnExit.BackColor = Color.FromArgb(24, 22, 27);
+            btnExit.BackgroundImageLayout = ImageLayout.Stretch;
+            btnExit.BorderRadius = 5;
+            btnExit.ButtonText = "  Sair";
+            btnExit.DisabledColor = Color.Gray;
+            btnExit.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnExit.Iconcolor = Color.Transparent;
+            btnExit.Iconimage = (Image)resources.GetObject("btnExit.Iconimage");
+            btnExit.Iconimage_right = null;
+            btnExit.Iconimage_right_Selected = null;
+            btnExit.Iconimage_Selected = null;
+            btnExit.IconMarginLeft = 0;
+            btnExit.IconMarginRight = 16;
+            btnExit.IconRightVisible = false;
+            btnExit.IconRightZoom = 0D;
+            btnExit.IconVisible = true;
+            btnExit.IconZoom = 38D;
+            btnExit.IsTab = false;
+            btnExit.Location = new Point(16, 452);
+            btnExit.Margin = new Padding(0, 0, 0, 8);
+            btnExit.Name = "btnExit";
+            btnExit.Normalcolor = Color.FromArgb(24, 22, 27);
+            btnExit.OnHovercolor = Color.FromArgb(46, 44, 50);
+            btnExit.OnHoverTextColor = Color.White;
+            btnExit.selected = false;
+            btnExit.Size = new Size(171, 40);
+            btnExit.TabIndex = 11;
+            btnExit.Text = "  Sair";
+            btnExit.TextAlign = ContentAlignment.MiddleLeft;
+            btnExit.Textcolor = Color.White;
+            btnExit.TextFont = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnExit.Click += btnExit_Click;
+            // 
+            // pnlSidebar
+            // 
+            pnlSidebar.BackColor = Color.FromArgb(24, 22, 27);
+            pnlSidebar.Controls.Add(btnExit);
+            pnlSidebar.Controls.Add(pnlNav);
+            pnlSidebar.Dock = DockStyle.Left;
+            pnlSidebar.Location = new Point(0, 88);
+            pnlSidebar.Name = "pnlSidebar";
+            pnlSidebar.Size = new Size(200, 509);
+            pnlSidebar.TabIndex = 13;
+            // 
             // pnlMain
             // 
             pnlMain.Dock = DockStyle.Fill;
             pnlMain.Location = new Point(200, 88);
             pnlMain.Name = "pnlMain";
             pnlMain.Size = new Size(860, 509);
-            pnlMain.TabIndex = 12;
-            // 
-            // lblUserName
-            // 
-            lblUserName.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            lblUserName.AutoSize = true;
-            lblUserName.Font = new Font("Inter", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblUserName.Location = new Point(830, 23);
-            lblUserName.Name = "lblUserName";
-            lblUserName.Size = new Size(177, 23);
-            lblUserName.TabIndex = 2;
-            lblUserName.Text = "Gustavo Henrique";
+            pnlMain.TabIndex = 14;
             // 
             // FormMain
             // 
@@ -337,9 +391,10 @@
             pnlHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pcbUserIcon).EndInit();
             ((System.ComponentModel.ISupportInitialize)pcbLogo).EndInit();
-            pnlSidebar.ResumeLayout(false);
+            pnlNav.ResumeLayout(false);
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
+            pnlSidebar.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -347,7 +402,7 @@
         #endregion
 
         private Panel pnlHeader;
-        private FlowLayoutPanel pnlSidebar;
+        private FlowLayoutPanel pnlNav;
         private PictureBox pcbLogo;
         private PictureBox pcbUserIcon;
         private MenuStrip menuStrip1;
@@ -359,7 +414,9 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnMenuMultOfTree;
         private Bunifu.Framework.UI.BunifuFlatButton btnMenuPersonClass;
         private Bunifu.Framework.UI.BunifuFlatButton btnMenuSortList;
-        private Panel pnlMain;
         private Label lblUserName;
+        private Bunifu.Framework.UI.BunifuFlatButton btnExit;
+        private Panel pnlSidebar;
+        private Panel pnlMain;
     }
 }

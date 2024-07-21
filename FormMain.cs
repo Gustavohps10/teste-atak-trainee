@@ -61,5 +61,10 @@ namespace teste_atak
             this.pnlMain.Controls.Add(myForm);
             myForm.Show();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
