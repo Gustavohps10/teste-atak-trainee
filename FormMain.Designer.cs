@@ -167,6 +167,7 @@
             pnlMenuMultiplesOf3.Padding = new Padding(8, 4, 8, 4);
             pnlMenuMultiplesOf3.Size = new Size(160, 38);
             pnlMenuMultiplesOf3.TabIndex = 3;
+            pnlMenuMultiplesOf3.Click += pnlMenuMultiplesOf3_Click;
             // 
             // pcbMenuMultipleOf3
             // 
