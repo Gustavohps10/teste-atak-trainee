@@ -17,7 +17,7 @@ namespace teste_atak
             InitializeComponent();
         }
 
-        private void btnList_Click(object sender, EventArgs e)
+        private void btnListNumbers_Click(object sender, EventArgs e)
         {
             for (int i = 1; i <= 100; i++)
             {

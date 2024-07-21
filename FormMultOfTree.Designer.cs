@@ -35,7 +35,7 @@
             lbxWhile = new ListBox();
             lblDoWhile = new Label();
             lbxDoWhile = new ListBox();
-            btnList = new Button();
+            btnListNumbers = new Bunifu.Framework.UI.BunifuFlatButton();
             SuspendLayout();
             // 
             // label1
@@ -55,7 +55,7 @@
             // 
             lbxFor.FormattingEnabled = true;
             lbxFor.ItemHeight = 15;
-            lbxFor.Location = new Point(126, 131);
+            lbxFor.Location = new Point(135, 131);
             lbxFor.Name = "lbxFor";
             lbxFor.Size = new Size(156, 259);
             lbxFor.TabIndex = 2;
@@ -63,7 +63,7 @@
             // lblFor
             // 
             lblFor.AutoSize = true;
-            lblFor.Location = new Point(126, 113);
+            lblFor.Location = new Point(135, 113);
             lblFor.Name = "lblFor";
             lblFor.Size = new Size(25, 15);
             lblFor.TabIndex = 3;
@@ -72,7 +72,7 @@
             // lblWhile
             // 
             lblWhile.AutoSize = true;
-            lblWhile.Location = new Point(328, 113);
+            lblWhile.Location = new Point(319, 113);
             lblWhile.Name = "lblWhile";
             lblWhile.Size = new Size(38, 15);
             lblWhile.TabIndex = 5;
@@ -82,7 +82,7 @@
             // 
             lbxWhile.FormattingEnabled = true;
             lbxWhile.ItemHeight = 15;
-            lbxWhile.Location = new Point(328, 131);
+            lbxWhile.Location = new Point(319, 131);
             lbxWhile.Name = "lbxWhile";
             lbxWhile.Size = new Size(156, 259);
             lbxWhile.TabIndex = 4;
@@ -90,7 +90,7 @@
             // lblDoWhile
             // 
             lblDoWhile.AutoSize = true;
-            lblDoWhile.Location = new Point(530, 113);
+            lblDoWhile.Location = new Point(500, 113);
             lblDoWhile.Name = "lblDoWhile";
             lblDoWhile.Size = new Size(57, 15);
             lblDoWhile.TabIndex = 7;
@@ -100,20 +100,47 @@
             // 
             lbxDoWhile.FormattingEnabled = true;
             lbxDoWhile.ItemHeight = 15;
-            lbxDoWhile.Location = new Point(530, 131);
+            lbxDoWhile.Location = new Point(500, 131);
             lbxDoWhile.Name = "lbxDoWhile";
             lbxDoWhile.Size = new Size(156, 259);
             lbxDoWhile.TabIndex = 6;
             // 
-            // btnList
+            // btnListNumbers
             // 
-            btnList.Location = new Point(368, 75);
-            btnList.Name = "btnList";
-            btnList.Size = new Size(75, 23);
-            btnList.TabIndex = 8;
-            btnList.Text = "Listar";
-            btnList.UseVisualStyleBackColor = true;
-            btnList.Click += btnList_Click;
+            btnListNumbers.Active = false;
+            btnListNumbers.Activecolor = Color.FromArgb(46, 44, 50);
+            btnListNumbers.BackColor = Color.FromArgb(24, 22, 27);
+            btnListNumbers.BackgroundImageLayout = ImageLayout.Stretch;
+            btnListNumbers.BorderRadius = 5;
+            btnListNumbers.ButtonText = "Listar";
+            btnListNumbers.DisabledColor = Color.Gray;
+            btnListNumbers.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnListNumbers.Iconcolor = Color.Transparent;
+            btnListNumbers.Iconimage = null;
+            btnListNumbers.Iconimage_right = null;
+            btnListNumbers.Iconimage_right_Selected = null;
+            btnListNumbers.Iconimage_Selected = null;
+            btnListNumbers.IconMarginLeft = 0;
+            btnListNumbers.IconMarginRight = 16;
+            btnListNumbers.IconRightVisible = false;
+            btnListNumbers.IconRightZoom = 0D;
+            btnListNumbers.IconVisible = true;
+            btnListNumbers.IconZoom = 38D;
+            btnListNumbers.IsTab = false;
+            btnListNumbers.Location = new Point(346, 72);
+            btnListNumbers.Margin = new Padding(0, 0, 0, 8);
+            btnListNumbers.Name = "btnListNumbers";
+            btnListNumbers.Normalcolor = Color.FromArgb(24, 22, 27);
+            btnListNumbers.OnHovercolor = Color.FromArgb(46, 44, 50);
+            btnListNumbers.OnHoverTextColor = Color.White;
+            btnListNumbers.selected = false;
+            btnListNumbers.Size = new Size(105, 33);
+            btnListNumbers.TabIndex = 10;
+            btnListNumbers.Text = "Listar";
+            btnListNumbers.TextAlign = ContentAlignment.MiddleCenter;
+            btnListNumbers.Textcolor = Color.White;
+            btnListNumbers.TextFont = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnListNumbers.Click += btnListNumbers_Click;
             // 
             // FormMultOfTree
             // 
@@ -121,7 +148,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(251, 251, 251);
             ClientSize = new Size(800, 450);
-            Controls.Add(btnList);
+            Controls.Add(btnListNumbers);
             Controls.Add(lblDoWhile);
             Controls.Add(lbxDoWhile);
             Controls.Add(lblWhile);
@@ -145,6 +172,6 @@
         private ListBox lbxWhile;
         private Label lblDoWhile;
         private ListBox lbxDoWhile;
-        private Button btnList;
+        private Bunifu.Framework.UI.BunifuFlatButton btnListNumbers;
     }
 }
