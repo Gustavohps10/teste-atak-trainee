@@ -30,6 +30,13 @@ namespace teste_atak
                 if (j % 3 == 0) lbxWhile.Items.Add(j.ToString());
                 j++;
             }
+
+            int k = 1;
+            do
+            {
+                if (k % 3 == 0) lbxDoWhile.Items.Add(k.ToString());
+                k++;
+            } while (k < 100);
         }
     }
 }
