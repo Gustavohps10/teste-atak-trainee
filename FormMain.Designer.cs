@@ -237,6 +237,7 @@
             pnlMenuList.Padding = new Padding(8, 4, 8, 4);
             pnlMenuList.Size = new Size(160, 38);
             pnlMenuList.TabIndex = 1;
+            pnlMenuList.Click += pnlMenuList_Click;
             // 
             // pcbMenuList
             // 
