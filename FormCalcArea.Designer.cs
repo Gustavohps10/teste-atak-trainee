@@ -35,7 +35,7 @@
             lblHeight = new Label();
             txtArea = new TextBox();
             lblArea = new Label();
-            btnCalcArea = new Button();
+            btnCalculate = new Bunifu.Framework.UI.BunifuFlatButton();
             SuspendLayout();
             // 
             // label1
@@ -90,7 +90,7 @@
             // txtArea
             // 
             txtArea.Font = new Font("Inter", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtArea.Location = new Point(440, 273);
+            txtArea.Location = new Point(440, 252);
             txtArea.Name = "txtArea";
             txtArea.ReadOnly = true;
             txtArea.Size = new Size(161, 30);
@@ -101,24 +101,50 @@
             // lblArea
             // 
             lblArea.AutoSize = true;
-            lblArea.Font = new Font("Inter", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblArea.Location = new Point(494, 247);
+            lblArea.Font = new Font("Inter", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblArea.Location = new Point(494, 226);
             lblArea.Name = "lblArea";
-            lblArea.Size = new Size(107, 23);
+            lblArea.Size = new Size(110, 23);
             lblArea.TabIndex = 6;
             lblArea.Text = "Área (cm²)";
+            lblArea.TextAlign = ContentAlignment.TopRight;
             // 
-            // btnCalcArea
+            // btnCalculate
             // 
-            btnCalcArea.Cursor = Cursors.Hand;
-            btnCalcArea.Font = new Font("Inter", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnCalcArea.Location = new Point(263, 179);
-            btnCalcArea.Name = "btnCalcArea";
-            btnCalcArea.Size = new Size(106, 30);
-            btnCalcArea.TabIndex = 8;
-            btnCalcArea.Text = "Calcular";
-            btnCalcArea.UseVisualStyleBackColor = true;
-            btnCalcArea.Click += btnCalcArea_Click;
+            btnCalculate.Active = false;
+            btnCalculate.Activecolor = Color.FromArgb(46, 44, 50);
+            btnCalculate.BackColor = Color.FromArgb(24, 22, 27);
+            btnCalculate.BackgroundImageLayout = ImageLayout.Stretch;
+            btnCalculate.BorderRadius = 5;
+            btnCalculate.ButtonText = "Calcular";
+            btnCalculate.DisabledColor = Color.Gray;
+            btnCalculate.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCalculate.Iconcolor = Color.Transparent;
+            btnCalculate.Iconimage = null;
+            btnCalculate.Iconimage_right = null;
+            btnCalculate.Iconimage_right_Selected = null;
+            btnCalculate.Iconimage_Selected = null;
+            btnCalculate.IconMarginLeft = 0;
+            btnCalculate.IconMarginRight = 16;
+            btnCalculate.IconRightVisible = false;
+            btnCalculate.IconRightZoom = 0D;
+            btnCalculate.IconVisible = true;
+            btnCalculate.IconZoom = 38D;
+            btnCalculate.IsTab = false;
+            btnCalculate.Location = new Point(263, 177);
+            btnCalculate.Margin = new Padding(0, 0, 0, 8);
+            btnCalculate.Name = "btnCalculate";
+            btnCalculate.Normalcolor = Color.FromArgb(24, 22, 27);
+            btnCalculate.OnHovercolor = Color.FromArgb(46, 44, 50);
+            btnCalculate.OnHoverTextColor = Color.White;
+            btnCalculate.selected = false;
+            btnCalculate.Size = new Size(105, 33);
+            btnCalculate.TabIndex = 9;
+            btnCalculate.Text = "Calcular";
+            btnCalculate.TextAlign = ContentAlignment.MiddleCenter;
+            btnCalculate.Textcolor = Color.White;
+            btnCalculate.TextFont = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCalculate.Click += btnCalculate_Click;
             // 
             // FormCalcArea
             // 
@@ -126,7 +152,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(251, 251, 251);
             ClientSize = new Size(874, 484);
-            Controls.Add(btnCalcArea);
+            Controls.Add(btnCalculate);
             Controls.Add(txtArea);
             Controls.Add(lblArea);
             Controls.Add(txtHeight);
@@ -150,6 +176,6 @@
         private Label lblHeight;
         private TextBox txtArea;
         private Label lblArea;
-        private Button btnCalcArea;
+        private Bunifu.Framework.UI.BunifuFlatButton btnCalculate;
     }
 }

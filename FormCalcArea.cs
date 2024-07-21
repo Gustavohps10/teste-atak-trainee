@@ -20,6 +20,11 @@ namespace teste_atak
 
         private void btnCalcArea_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void btnCalculate_Click(object sender, EventArgs e)
+        {
             string formattedWidth = txtWidth.Text.Replace(',', '.');
             string formattedHeight = txtHeight.Text.Replace(',', '.');
 
@@ -35,7 +40,7 @@ namespace teste_atak
             txtArea.Text = calcRetangleArea(width, height).ToString();
         }
 
-        static public float calcRetangleArea(float width, float height) 
+        static public float calcRetangleArea(float width, float height)
         {
             return width * height;
         }
