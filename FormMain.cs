@@ -47,5 +47,16 @@ namespace teste_atak
             this.pnlMain.Controls.Add(myForm);
             myForm.Show();
         }
+
+        private void pnlMenuClass_Click(object sender, EventArgs e)
+        {
+            this.pnlMain.Controls.Clear();
+            FormPerson myForm = new FormPerson();
+            myForm.TopLevel = false;
+            myForm.AutoScroll = true;
+            myForm.FormBorderStyle = FormBorderStyle.None;
+            this.pnlMain.Controls.Add(myForm);
+            myForm.Show();
+        }
     }
 }
