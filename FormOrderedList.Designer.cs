@@ -32,8 +32,8 @@
             lbxSortedWords = new ListBox();
             txtWords = new TextBox();
             lblWords = new Label();
-            btnSort = new Button();
             lblResult = new Label();
+            btnSortList = new Bunifu.Framework.UI.BunifuFlatButton();
             SuspendLayout();
             // 
             // label1
@@ -58,7 +58,6 @@
             lbxSortedWords.Name = "lbxSortedWords";
             lbxSortedWords.Size = new Size(350, 169);
             lbxSortedWords.TabIndex = 2;
-            lbxSortedWords.SelectedIndexChanged += lbxSortedWords_SelectedIndexChanged;
             // 
             // txtWords
             // 
@@ -67,7 +66,7 @@
             txtWords.Name = "txtWords";
             txtWords.Size = new Size(350, 22);
             txtWords.TabIndex = 3;
-            txtWords.Text = "Melância, Zebra, Abacaxi, Batata";
+            txtWords.Text = "Exemplo, Melância, Zebra, Abacaxi, Batata";
             // 
             // lblWords
             // 
@@ -75,20 +74,9 @@
             lblWords.Font = new Font("Inter", 9F);
             lblWords.Location = new Point(237, 75);
             lblWords.Name = "lblWords";
-            lblWords.Size = new Size(250, 15);
+            lblWords.Size = new Size(284, 15);
             lblWords.TabIndex = 4;
-            lblWords.Text = "Digite as palavras separadas por vírgula ( , )";
-            // 
-            // btnSort
-            // 
-            btnSort.Font = new Font("Inter", 9F);
-            btnSort.Location = new Point(237, 121);
-            btnSort.Name = "btnSort";
-            btnSort.Size = new Size(75, 23);
-            btnSort.TabIndex = 5;
-            btnSort.Text = "Organizar";
-            btnSort.UseVisualStyleBackColor = true;
-            btnSort.Click += btnSort_Click;
+            lblWords.Text = "Digite algumas palavras separadas por vírgula ( , )";
             // 
             // lblResult
             // 
@@ -100,14 +88,51 @@
             lblResult.TabIndex = 6;
             lblResult.Text = "Resultado:";
             // 
+            // btnSortList
+            // 
+            btnSortList.Active = false;
+            btnSortList.Activecolor = Color.FromArgb(46, 44, 50);
+            btnSortList.BackColor = Color.FromArgb(24, 22, 27);
+            btnSortList.BackgroundImageLayout = ImageLayout.Stretch;
+            btnSortList.BorderRadius = 5;
+            btnSortList.ButtonText = "  Organizar";
+            btnSortList.DisabledColor = Color.Gray;
+            btnSortList.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSortList.Iconcolor = Color.Transparent;
+            btnSortList.Iconimage = null;
+            btnSortList.Iconimage_right = null;
+            btnSortList.Iconimage_right_Selected = null;
+            btnSortList.Iconimage_Selected = null;
+            btnSortList.IconMarginLeft = 0;
+            btnSortList.IconMarginRight = 16;
+            btnSortList.IconRightVisible = false;
+            btnSortList.IconRightZoom = 0D;
+            btnSortList.IconVisible = true;
+            btnSortList.IconZoom = 38D;
+            btnSortList.IsTab = false;
+            btnSortList.Location = new Point(237, 121);
+            btnSortList.Margin = new Padding(0, 0, 0, 8);
+            btnSortList.Name = "btnSortList";
+            btnSortList.Normalcolor = Color.FromArgb(24, 22, 27);
+            btnSortList.OnHovercolor = Color.FromArgb(46, 44, 50);
+            btnSortList.OnHoverTextColor = Color.White;
+            btnSortList.selected = false;
+            btnSortList.Size = new Size(105, 33);
+            btnSortList.TabIndex = 7;
+            btnSortList.Text = "  Organizar";
+            btnSortList.TextAlign = ContentAlignment.MiddleCenter;
+            btnSortList.Textcolor = Color.White;
+            btnSortList.TextFont = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSortList.Click += btnSortList_Click;
+            // 
             // FormOrderedList
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(251, 251, 251);
             ClientSize = new Size(800, 450);
+            Controls.Add(btnSortList);
             Controls.Add(lblResult);
-            Controls.Add(btnSort);
             Controls.Add(lblWords);
             Controls.Add(txtWords);
             Controls.Add(lbxSortedWords);
@@ -124,7 +149,7 @@
         private ListBox lbxSortedWords;
         private TextBox txtWords;
         private Label lblWords;
-        private Button btnSort;
         private Label lblResult;
+        private Bunifu.Framework.UI.BunifuFlatButton btnSortList;
     }
 }

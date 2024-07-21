@@ -17,18 +17,13 @@ namespace teste_atak
             InitializeComponent();
         }
 
-        private void btnSort_Click(object sender, EventArgs e)
+        private void btnSortList_Click(object sender, EventArgs e)
         {
-            string[] splitedWords = txtWords.Text.Split(',', StringSplitOptions.TrimEntries);
-            Array.Sort(splitedWords);
+            string[] words = txtWords.Text.Split(',', StringSplitOptions.TrimEntries);
+            Array.Sort(words);
 
             lbxSortedWords.Items.Clear();
-            lbxSortedWords.Items.AddRange(splitedWords);
-        }
-
-        private void lbxSortedWords_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            lbxSortedWords.Items.AddRange(words);
         }
     }
 }
