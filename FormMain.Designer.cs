@@ -40,6 +40,7 @@
             menuStrip1 = new MenuStrip();
             sobreToolStripMenuItem = new ToolStripMenuItem();
             pnlMain = new Panel();
+            lblUserName = new Label();
             pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pcbUserIcon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pcbLogo).BeginInit();
@@ -50,6 +51,7 @@
             // pnlHeader
             // 
             pnlHeader.BackColor = Color.White;
+            pnlHeader.Controls.Add(lblUserName);
             pnlHeader.Controls.Add(pcbUserIcon);
             pnlHeader.Controls.Add(pcbLogo);
             pnlHeader.Dock = DockStyle.Top;
@@ -306,6 +308,17 @@
             pnlMain.Size = new Size(860, 509);
             pnlMain.TabIndex = 12;
             // 
+            // lblUserName
+            // 
+            lblUserName.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            lblUserName.AutoSize = true;
+            lblUserName.Font = new Font("Inter", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblUserName.Location = new Point(830, 23);
+            lblUserName.Name = "lblUserName";
+            lblUserName.Size = new Size(177, 23);
+            lblUserName.TabIndex = 2;
+            lblUserName.Text = "Gustavo Henrique";
+            // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -321,6 +334,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Teste - Atak Sistemas";
             pnlHeader.ResumeLayout(false);
+            pnlHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pcbUserIcon).EndInit();
             ((System.ComponentModel.ISupportInitialize)pcbLogo).EndInit();
             pnlSidebar.ResumeLayout(false);
@@ -346,5 +360,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnMenuPersonClass;
         private Bunifu.Framework.UI.BunifuFlatButton btnMenuSortList;
         private Panel pnlMain;
+        private Label lblUserName;
     }
 }
