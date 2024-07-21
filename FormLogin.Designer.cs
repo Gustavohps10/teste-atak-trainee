@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             imgClose = new PictureBox();
             imgLogo = new PictureBox();
             pictureBox1 = new PictureBox();
@@ -45,7 +44,7 @@
             // imgClose
             // 
             imgClose.Cursor = Cursors.Hand;
-            imgClose.Image = (Image)resources.GetObject("imgClose.Image");
+            imgClose.Image = Properties.Resources.x;
             imgClose.Location = new Point(677, 21);
             imgClose.Name = "imgClose";
             imgClose.Size = new Size(24, 24);

@@ -44,10 +44,10 @@
             btnExit = new Bunifu.Framework.UI.BunifuFlatButton();
             pnlSidebar = new Panel();
             pnlMain = new Panel();
+            lblTextGuide = new Label();
             lblLogical = new Label();
             lblWelcome = new Label();
             pictureBox1 = new PictureBox();
-            lblTextGuide = new Label();
             pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pcbUserIcon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pcbLogo).BeginInit();
@@ -384,6 +384,16 @@
             pnlMain.Size = new Size(860, 509);
             pnlMain.TabIndex = 14;
             // 
+            // lblTextGuide
+            // 
+            lblTextGuide.Font = new Font("Inter", 14F);
+            lblTextGuide.ForeColor = Color.FromArgb(33, 33, 33);
+            lblTextGuide.Location = new Point(77, 150);
+            lblTextGuide.Name = "lblTextGuide";
+            lblTextGuide.Size = new Size(257, 98);
+            lblTextGuide.TabIndex = 7;
+            lblTextGuide.Text = "Você pode navegar pelos desafios através do menu lateral.";
+            // 
             // lblLogical
             // 
             lblLogical.AutoSize = true;
@@ -415,16 +425,6 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
-            // 
-            // lblTextGuide
-            // 
-            lblTextGuide.Font = new Font("Inter", 14F);
-            lblTextGuide.ForeColor = Color.FromArgb(33, 33, 33);
-            lblTextGuide.Location = new Point(77, 150);
-            lblTextGuide.Name = "lblTextGuide";
-            lblTextGuide.Size = new Size(257, 98);
-            lblTextGuide.TabIndex = 7;
-            lblTextGuide.Text = "Você pode navegar pelos desafios através do menu lateral.";
             // 
             // FormMain
             // 
