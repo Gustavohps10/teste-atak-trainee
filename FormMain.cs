@@ -47,5 +47,16 @@ namespace teste_atak
             this.pnlMain.Controls.Add(myForm);
             myForm.Show();
         }
+
+        private void pnlMenuMultiplesOf3_Click(object sender, EventArgs e)
+        {
+            this.pnlMain.Controls.Clear();
+            FormMultOfTree myForm = new FormMultOfTree();
+            myForm.TopLevel = false;
+            myForm.AutoScroll = true;
+            myForm.FormBorderStyle = FormBorderStyle.None;
+            this.pnlMain.Controls.Add(myForm);
+            myForm.Show();
+        }
     }
 }
