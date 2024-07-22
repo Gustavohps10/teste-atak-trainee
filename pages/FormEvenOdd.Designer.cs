@@ -28,14 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEvenOdd));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEvenOdd));
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             label1 = new Label();
             lblNumber = new Label();
             lblResult = new Label();
-            txtNumber = new TextBox();
             panel1 = new Panel();
             btnCheck = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
+            txtNumber = new Bunifu.UI.WinForms.BunifuTextBox();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -56,7 +60,7 @@
             // 
             lblNumber.AutoSize = true;
             lblNumber.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblNumber.Location = new Point(62, 30);
+            lblNumber.Location = new Point(81, 30);
             lblNumber.Name = "lblNumber";
             lblNumber.Size = new Size(104, 15);
             lblNumber.TabIndex = 1;
@@ -67,27 +71,18 @@
             lblResult.AutoSize = true;
             lblResult.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             lblResult.ForeColor = Color.FromArgb(33, 33, 33);
-            lblResult.Location = new Point(62, 142);
+            lblResult.Location = new Point(113, 155);
             lblResult.Name = "lblResult";
             lblResult.Size = new Size(190, 25);
             lblResult.TabIndex = 4;
             lblResult.Text = "O número 1 é ímpar";
             lblResult.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // txtNumber
-            // 
-            txtNumber.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtNumber.Location = new Point(62, 48);
-            txtNumber.Name = "txtNumber";
-            txtNumber.Size = new Size(226, 33);
-            txtNumber.TabIndex = 2;
-            txtNumber.Text = "1";
-            // 
             // panel1
             // 
+            panel1.Controls.Add(txtNumber);
             panel1.Controls.Add(btnCheck);
             panel1.Controls.Add(lblResult);
-            panel1.Controls.Add(txtNumber);
             panel1.Controls.Add(lblNumber);
             panel1.Location = new Point(191, 82);
             panel1.Name = "panel1";
@@ -141,7 +136,7 @@
             btnCheck.IdleIconLeftImage = null;
             btnCheck.IdleIconRightImage = null;
             btnCheck.IndicateFocus = false;
-            btnCheck.Location = new Point(62, 94);
+            btnCheck.Location = new Point(81, 93);
             btnCheck.Name = "btnCheck";
             btnCheck.OnDisabledState.BorderColor = Color.Transparent;
             btnCheck.OnDisabledState.BorderRadius = 8;
@@ -184,6 +179,84 @@
             btnCheck.UseDefaultRadiusAndThickness = true;
             btnCheck.Click += btnMenuEvenOdd_Click;
             // 
+            // txtNumber
+            // 
+            txtNumber.AcceptsReturn = false;
+            txtNumber.AcceptsTab = false;
+            txtNumber.AnimationSpeed = 200;
+            txtNumber.AutoCompleteMode = AutoCompleteMode.None;
+            txtNumber.AutoCompleteSource = AutoCompleteSource.None;
+            txtNumber.AutoSizeHeight = true;
+            txtNumber.BackColor = Color.Transparent;
+            txtNumber.BackgroundImage = (Image)resources.GetObject("txtNumber.BackgroundImage");
+            txtNumber.BorderColorActive = Color.DodgerBlue;
+            txtNumber.BorderColorDisabled = Color.FromArgb(204, 204, 204);
+            txtNumber.BorderColorHover = Color.FromArgb(105, 181, 255);
+            txtNumber.BorderColorIdle = Color.Silver;
+            txtNumber.BorderRadius = 1;
+            txtNumber.BorderThickness = 1;
+            txtNumber.CharacterCase = Bunifu.UI.WinForms.BunifuTextBox.CharacterCases.Normal;
+            txtNumber.CharacterCasing = CharacterCasing.Normal;
+            txtNumber.DefaultFont = new Font("Segoe UI", 9.25F);
+            txtNumber.DefaultText = "1";
+            txtNumber.FillColor = Color.White;
+            txtNumber.HideSelection = true;
+            txtNumber.IconLeft = null;
+            txtNumber.IconLeftCursor = Cursors.IBeam;
+            txtNumber.IconPadding = 10;
+            txtNumber.IconRight = null;
+            txtNumber.IconRightCursor = Cursors.IBeam;
+            txtNumber.Lines = new string[]
+    {
+    "1"
+    };
+            txtNumber.Location = new Point(81, 48);
+            txtNumber.MaxLength = 32767;
+            txtNumber.MinimumSize = new Size(1, 1);
+            txtNumber.Modified = false;
+            txtNumber.Multiline = false;
+            txtNumber.Name = "txtNumber";
+            stateProperties1.BorderColor = Color.DodgerBlue;
+            stateProperties1.FillColor = Color.Empty;
+            stateProperties1.ForeColor = Color.Empty;
+            stateProperties1.PlaceholderForeColor = Color.Empty;
+            txtNumber.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = Color.FromArgb(204, 204, 204);
+            stateProperties2.FillColor = Color.FromArgb(240, 240, 240);
+            stateProperties2.ForeColor = Color.FromArgb(109, 109, 109);
+            stateProperties2.PlaceholderForeColor = Color.DarkGray;
+            txtNumber.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = Color.FromArgb(105, 181, 255);
+            stateProperties3.FillColor = Color.Empty;
+            stateProperties3.ForeColor = Color.Empty;
+            stateProperties3.PlaceholderForeColor = Color.Empty;
+            txtNumber.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = Color.Silver;
+            stateProperties4.FillColor = Color.White;
+            stateProperties4.ForeColor = Color.Empty;
+            stateProperties4.PlaceholderForeColor = Color.Empty;
+            txtNumber.OnIdleState = stateProperties4;
+            txtNumber.Padding = new Padding(3);
+            txtNumber.PasswordChar = '\0';
+            txtNumber.PlaceholderForeColor = Color.Silver;
+            txtNumber.PlaceholderText = "Enter text";
+            txtNumber.ReadOnly = false;
+            txtNumber.ScrollBars = ScrollBars.None;
+            txtNumber.SelectedText = "";
+            txtNumber.SelectionLength = 0;
+            txtNumber.SelectionStart = 1;
+            txtNumber.ShortcutsEnabled = true;
+            txtNumber.Size = new Size(260, 39);
+            txtNumber.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            txtNumber.TabIndex = 18;
+            txtNumber.TextAlign = HorizontalAlignment.Left;
+            txtNumber.TextMarginBottom = 0;
+            txtNumber.TextMarginLeft = 3;
+            txtNumber.TextMarginTop = 1;
+            txtNumber.TextPlaceholder = "Enter text";
+            txtNumber.UseSystemPasswordChar = false;
+            txtNumber.WordWrap = true;
+            // 
             // FormEvenOdd
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -206,8 +279,8 @@
         private Label label1;
         private Label lblNumber;
         private Label lblResult;
-        private TextBox txtNumber;
         private Panel panel1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnCheck;
+        private Bunifu.UI.WinForms.BunifuTextBox txtNumber;
     }
 }
