@@ -711,7 +711,7 @@
             // 
             lblTextGuide.Font = new Font("Segoe UI", 11F);
             lblTextGuide.ForeColor = Color.FromArgb(33, 33, 33);
-            lblTextGuide.Location = new Point(77, 160);
+            lblTextGuide.Location = new Point(78, 246);
             lblTextGuide.Name = "lblTextGuide";
             lblTextGuide.Size = new Size(257, 75);
             lblTextGuide.TabIndex = 7;
@@ -723,7 +723,7 @@
             lblLogical.AutoSize = true;
             lblLogical.Font = new Font("Segoe UI", 14F);
             lblLogical.ForeColor = Color.FromArgb(113, 113, 113);
-            lblLogical.Location = new Point(77, 112);
+            lblLogical.Location = new Point(87, 198);
             lblLogical.Name = "lblLogical";
             lblLogical.Size = new Size(234, 25);
             lblLogical.TabIndex = 6;
@@ -734,7 +734,7 @@
             lblWelcome.AutoSize = true;
             lblWelcome.Font = new Font("Segoe UI", 24F, FontStyle.Bold);
             lblWelcome.ForeColor = Color.FromArgb(26, 26, 30);
-            lblWelcome.Location = new Point(100, 65);
+            lblWelcome.Location = new Point(101, 151);
             lblWelcome.Name = "lblWelcome";
             lblWelcome.Size = new Size(206, 45);
             lblWelcome.TabIndex = 5;
