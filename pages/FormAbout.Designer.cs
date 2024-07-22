@@ -136,7 +136,7 @@
             txtVersion.Name = "txtVersion";
             txtVersion.Size = new Size(38, 26);
             txtVersion.TabIndex = 6;
-            txtVersion.Text = "1.1";
+            txtVersion.Text = "1.2";
             // 
             // lblAuthor
             // 
