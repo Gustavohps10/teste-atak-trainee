@@ -40,7 +40,7 @@
             // 
             label1.BackColor = Color.FromArgb(251, 251, 251);
             label1.Dock = DockStyle.Top;
-            label1.Font = new Font("Inter", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(0, 0);
             label1.Name = "label1";
             label1.Padding = new Padding(8);
@@ -51,7 +51,7 @@
             // 
             // lbxSortedWords
             // 
-            lbxSortedWords.Font = new Font("Inter", 9F);
+            lbxSortedWords.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lbxSortedWords.FormattingEnabled = true;
             lbxSortedWords.ItemHeight = 15;
             lbxSortedWords.Location = new Point(237, 212);
@@ -61,30 +61,30 @@
             // 
             // txtWords
             // 
-            txtWords.Font = new Font("Inter", 9F);
+            txtWords.Font = new Font("Segoe UI", 9F);
             txtWords.Location = new Point(237, 93);
             txtWords.Name = "txtWords";
-            txtWords.Size = new Size(350, 22);
+            txtWords.Size = new Size(350, 23);
             txtWords.TabIndex = 3;
             txtWords.Text = "Exemplo, Melância, Zebra, Abacaxi, Batata";
             // 
             // lblWords
             // 
             lblWords.AutoSize = true;
-            lblWords.Font = new Font("Inter", 9F);
+            lblWords.Font = new Font("Segoe UI", 9F);
             lblWords.Location = new Point(237, 75);
             lblWords.Name = "lblWords";
-            lblWords.Size = new Size(284, 15);
+            lblWords.Size = new Size(267, 15);
             lblWords.TabIndex = 4;
             lblWords.Text = "Digite algumas palavras separadas por vírgula ( , )";
             // 
             // lblResult
             // 
             lblResult.AutoSize = true;
-            lblResult.Font = new Font("Inter", 9F, FontStyle.Bold);
+            lblResult.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblResult.Location = new Point(237, 194);
             lblResult.Name = "lblResult";
-            lblResult.Size = new Size(70, 15);
+            lblResult.Size = new Size(65, 15);
             lblResult.TabIndex = 6;
             lblResult.Text = "Resultado:";
             // 
@@ -97,7 +97,7 @@
             btnSortList.BorderRadius = 5;
             btnSortList.ButtonText = "  Organizar";
             btnSortList.DisabledColor = Color.Gray;
-            btnSortList.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSortList.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnSortList.Iconcolor = Color.Transparent;
             btnSortList.Iconimage = null;
             btnSortList.Iconimage_right = null;
@@ -122,7 +122,7 @@
             btnSortList.Text = "  Organizar";
             btnSortList.TextAlign = ContentAlignment.MiddleCenter;
             btnSortList.Textcolor = Color.White;
-            btnSortList.TextFont = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSortList.TextFont = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnSortList.Click += btnSortList_Click;
             // 
             // FormOrderedList

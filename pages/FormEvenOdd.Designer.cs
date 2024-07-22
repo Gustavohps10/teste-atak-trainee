@@ -41,7 +41,7 @@
             // 
             label1.BackColor = Color.FromArgb(251, 251, 251);
             label1.Dock = DockStyle.Top;
-            label1.Font = new Font("Inter", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(0, 0);
             label1.Name = "label1";
             label1.Padding = new Padding(8);
@@ -53,30 +53,30 @@
             // lblNumber
             // 
             lblNumber.AutoSize = true;
-            lblNumber.Font = new Font("Inter", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblNumber.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblNumber.Location = new Point(62, 30);
             lblNumber.Name = "lblNumber";
-            lblNumber.Size = new Size(105, 15);
+            lblNumber.Size = new Size(104, 15);
             lblNumber.TabIndex = 1;
             lblNumber.Text = "Digite um número";
             // 
             // lblResult
             // 
             lblResult.AutoSize = true;
-            lblResult.Font = new Font("Inter", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblResult.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblResult.ForeColor = Color.FromArgb(33, 33, 33);
             lblResult.Location = new Point(62, 133);
             lblResult.Name = "lblResult";
-            lblResult.Size = new Size(0, 23);
+            lblResult.Size = new Size(0, 24);
             lblResult.TabIndex = 4;
             lblResult.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // txtNumber
             // 
-            txtNumber.Font = new Font("Inter", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtNumber.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtNumber.Location = new Point(62, 48);
             txtNumber.Name = "txtNumber";
-            txtNumber.Size = new Size(226, 30);
+            txtNumber.Size = new Size(226, 33);
             txtNumber.TabIndex = 2;
             // 
             // panel1
@@ -99,7 +99,7 @@
             btnCheckEvenOdd.BorderRadius = 5;
             btnCheckEvenOdd.ButtonText = "  Verificar";
             btnCheckEvenOdd.DisabledColor = Color.Gray;
-            btnCheckEvenOdd.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCheckEvenOdd.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnCheckEvenOdd.Iconcolor = Color.Transparent;
             btnCheckEvenOdd.Iconimage = null;
             btnCheckEvenOdd.Iconimage_right = null;
@@ -112,7 +112,7 @@
             btnCheckEvenOdd.IconVisible = true;
             btnCheckEvenOdd.IconZoom = 38D;
             btnCheckEvenOdd.IsTab = false;
-            btnCheckEvenOdd.Location = new Point(62, 83);
+            btnCheckEvenOdd.Location = new Point(62, 84);
             btnCheckEvenOdd.Margin = new Padding(0, 0, 0, 8);
             btnCheckEvenOdd.Name = "btnCheckEvenOdd";
             btnCheckEvenOdd.Normalcolor = Color.FromArgb(24, 22, 27);
@@ -124,7 +124,7 @@
             btnCheckEvenOdd.Text = "  Verificar";
             btnCheckEvenOdd.TextAlign = ContentAlignment.MiddleCenter;
             btnCheckEvenOdd.Textcolor = Color.White;
-            btnCheckEvenOdd.TextFont = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCheckEvenOdd.TextFont = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnCheckEvenOdd.Click += btnMenuEvenOdd_Click;
             // 
             // FormEvenOdd
@@ -135,7 +135,7 @@
             ClientSize = new Size(800, 450);
             Controls.Add(panel1);
             Controls.Add(label1);
-            Font = new Font("Inter", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormEvenOdd";
             Text = "Par ou Ímpar";

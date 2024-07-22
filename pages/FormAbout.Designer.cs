@@ -57,7 +57,7 @@
             // 
             lblHeader.BackColor = Color.Transparent;
             lblHeader.Dock = DockStyle.Fill;
-            lblHeader.Font = new Font("Inter", 14F, FontStyle.Bold);
+            lblHeader.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblHeader.ForeColor = Color.White;
             lblHeader.Location = new Point(0, 0);
             lblHeader.Name = "lblHeader";
@@ -70,6 +70,7 @@
             // 
             txtAbout.BackColor = Color.FromArgb(251, 251, 251);
             txtAbout.BorderStyle = BorderStyle.None;
+            txtAbout.Font = new Font("Segoe UI", 9F);
             txtAbout.Location = new Point(12, 95);
             txtAbout.Name = "txtAbout";
             txtAbout.Size = new Size(349, 44);
@@ -89,20 +90,20 @@
             // lblAbout
             // 
             lblAbout.AutoSize = true;
-            lblAbout.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblAbout.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblAbout.Location = new Point(12, 77);
             lblAbout.Name = "lblAbout";
-            lblAbout.Size = new Size(86, 15);
+            lblAbout.Size = new Size(82, 15);
             lblAbout.TabIndex = 3;
             lblAbout.Text = "Sobre o teste";
             // 
             // lblLicense
             // 
             lblLicense.AutoSize = true;
-            lblLicense.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblLicense.Location = new Point(13, 190);
+            lblLicense.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblLicense.Location = new Point(10, 178);
             lblLicense.Name = "lblLicense";
-            lblLicense.Size = new Size(132, 15);
+            lblLicense.Size = new Size(125, 15);
             lblLicense.TabIndex = 5;
             lblLicense.Text = "Licença e Repositório";
             // 
@@ -110,7 +111,8 @@
             // 
             txtLicense.BackColor = Color.FromArgb(251, 251, 251);
             txtLicense.BorderStyle = BorderStyle.None;
-            txtLicense.Location = new Point(12, 208);
+            txtLicense.Font = new Font("Segoe UI", 9F);
+            txtLicense.Location = new Point(11, 196);
             txtLicense.Name = "txtLicense";
             txtLicense.Size = new Size(349, 38);
             txtLicense.TabIndex = 4;
@@ -119,10 +121,10 @@
             // lblVersion
             // 
             lblVersion.AutoSize = true;
-            lblVersion.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblVersion.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblVersion.Location = new Point(12, 325);
             lblVersion.Name = "lblVersion";
-            lblVersion.Size = new Size(48, 15);
+            lblVersion.Size = new Size(51, 15);
             lblVersion.TabIndex = 7;
             lblVersion.Text = "Versão";
             // 
@@ -134,15 +136,15 @@
             txtVersion.Name = "txtVersion";
             txtVersion.Size = new Size(38, 26);
             txtVersion.TabIndex = 6;
-            txtVersion.Text = "1.0";
+            txtVersion.Text = "1.1";
             // 
             // lblAuthor
             // 
             lblAuthor.AutoSize = true;
-            lblAuthor.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblAuthor.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblAuthor.Location = new Point(11, 277);
             lblAuthor.Name = "lblAuthor";
-            lblAuthor.Size = new Size(40, 15);
+            lblAuthor.Size = new Size(39, 15);
             lblAuthor.TabIndex = 9;
             lblAuthor.Text = "Autor";
             // 
@@ -150,6 +152,7 @@
             // 
             txtAuthor.BackColor = Color.FromArgb(251, 251, 251);
             txtAuthor.BorderStyle = BorderStyle.None;
+            txtAuthor.Font = new Font("Segoe UI", 9F);
             txtAuthor.Location = new Point(12, 295);
             txtAuthor.Name = "txtAuthor";
             txtAuthor.Size = new Size(123, 19);
@@ -161,10 +164,11 @@
             lnkGithub.ActiveLinkColor = Color.FromArgb(24, 22, 27);
             lnkGithub.AutoSize = true;
             lnkGithub.Cursor = Cursors.Hand;
+            lnkGithub.Font = new Font("Segoe UI", 9F);
             lnkGithub.LinkColor = Color.FromArgb(33, 33, 33);
-            lnkGithub.Location = new Point(11, 249);
+            lnkGithub.Location = new Point(10, 237);
             lnkGithub.Name = "lnkGithub";
-            lnkGithub.Size = new Size(256, 15);
+            lnkGithub.Size = new Size(245, 15);
             lnkGithub.TabIndex = 10;
             lnkGithub.TabStop = true;
             lnkGithub.Text = "https://github.com/Gustavohps10/teste-atak";
@@ -187,7 +191,7 @@
             Controls.Add(txtCopyright);
             Controls.Add(txtAbout);
             Controls.Add(pnlHeader);
-            Font = new Font("Inter", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;
             MdiChildrenMinimizedAnchorBottom = false;

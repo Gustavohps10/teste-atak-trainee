@@ -75,10 +75,10 @@
             // 
             lblUserName.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblUserName.AutoSize = true;
-            lblUserName.Font = new Font("Inter", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblUserName.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblUserName.Location = new Point(830, 23);
             lblUserName.Name = "lblUserName";
-            lblUserName.Size = new Size(177, 23);
+            lblUserName.Size = new Size(174, 25);
             lblUserName.TabIndex = 2;
             lblUserName.Text = "Gustavo Henrique";
             // 
@@ -128,7 +128,7 @@
             btnMenuEvenOdd.BorderRadius = 5;
             btnMenuEvenOdd.ButtonText = "  Par ou Ímpar";
             btnMenuEvenOdd.DisabledColor = Color.Gray;
-            btnMenuEvenOdd.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMenuEvenOdd.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnMenuEvenOdd.Iconcolor = Color.Transparent;
             btnMenuEvenOdd.Iconimage = Properties.Resources.file_digit;
             btnMenuEvenOdd.Iconimage_right = null;
@@ -153,7 +153,7 @@
             btnMenuEvenOdd.Text = "  Par ou Ímpar";
             btnMenuEvenOdd.TextAlign = ContentAlignment.MiddleLeft;
             btnMenuEvenOdd.Textcolor = Color.White;
-            btnMenuEvenOdd.TextFont = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMenuEvenOdd.TextFont = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnMenuEvenOdd.Click += btnMenuEvenOdd_Click;
             // 
             // btnMenuSortList
@@ -165,7 +165,7 @@
             btnMenuSortList.BorderRadius = 5;
             btnMenuSortList.ButtonText = "  Lista ordenada";
             btnMenuSortList.DisabledColor = Color.Gray;
-            btnMenuSortList.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMenuSortList.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnMenuSortList.Iconcolor = Color.Transparent;
             btnMenuSortList.Iconimage = Properties.Resources.list;
             btnMenuSortList.Iconimage_right = null;
@@ -190,7 +190,7 @@
             btnMenuSortList.Text = "  Lista ordenada";
             btnMenuSortList.TextAlign = ContentAlignment.MiddleLeft;
             btnMenuSortList.Textcolor = Color.White;
-            btnMenuSortList.TextFont = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMenuSortList.TextFont = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnMenuSortList.Click += btnMenuSortList_Click;
             // 
             // btnMenuCalcArea
@@ -202,7 +202,7 @@
             btnMenuCalcArea.BorderRadius = 5;
             btnMenuCalcArea.ButtonText = "  Calcular Área";
             btnMenuCalcArea.DisabledColor = Color.Gray;
-            btnMenuCalcArea.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMenuCalcArea.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnMenuCalcArea.Iconcolor = Color.Transparent;
             btnMenuCalcArea.Iconimage = Properties.Resources.square_dashed_bottom;
             btnMenuCalcArea.Iconimage_right = null;
@@ -227,7 +227,7 @@
             btnMenuCalcArea.Text = "  Calcular Área";
             btnMenuCalcArea.TextAlign = ContentAlignment.MiddleLeft;
             btnMenuCalcArea.Textcolor = Color.White;
-            btnMenuCalcArea.TextFont = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMenuCalcArea.TextFont = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnMenuCalcArea.Click += btnMenuCalcArea_Click;
             // 
             // btnMenuMultOfTree
@@ -239,7 +239,7 @@
             btnMenuMultOfTree.BorderRadius = 5;
             btnMenuMultOfTree.ButtonText = "  Múltiplos de 3";
             btnMenuMultOfTree.DisabledColor = Color.Gray;
-            btnMenuMultOfTree.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMenuMultOfTree.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnMenuMultOfTree.Iconcolor = Color.Transparent;
             btnMenuMultOfTree.Iconimage = Properties.Resources.repeat;
             btnMenuMultOfTree.Iconimage_right = null;
@@ -264,7 +264,7 @@
             btnMenuMultOfTree.Text = "  Múltiplos de 3";
             btnMenuMultOfTree.TextAlign = ContentAlignment.MiddleLeft;
             btnMenuMultOfTree.Textcolor = Color.White;
-            btnMenuMultOfTree.TextFont = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMenuMultOfTree.TextFont = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnMenuMultOfTree.Click += btnMenuMultOfTree_Click;
             // 
             // btnMenuPersonClass
@@ -276,7 +276,7 @@
             btnMenuPersonClass.BorderRadius = 5;
             btnMenuPersonClass.ButtonText = "  Classe Pessoa";
             btnMenuPersonClass.DisabledColor = Color.Gray;
-            btnMenuPersonClass.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMenuPersonClass.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnMenuPersonClass.Iconcolor = Color.Transparent;
             btnMenuPersonClass.Iconimage = Properties.Resources.user;
             btnMenuPersonClass.Iconimage_right = null;
@@ -301,13 +301,13 @@
             btnMenuPersonClass.Text = "  Classe Pessoa";
             btnMenuPersonClass.TextAlign = ContentAlignment.MiddleLeft;
             btnMenuPersonClass.Textcolor = Color.White;
-            btnMenuPersonClass.TextFont = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMenuPersonClass.TextFont = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnMenuPersonClass.Click += btnMenuPersonClass_Click;
             // 
             // menuStrip1
             // 
             menuStrip1.BackColor = SystemColors.Window;
-            menuStrip1.Font = new Font("Inter", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            menuStrip1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             menuStrip1.Items.AddRange(new ToolStripItem[] { sobreToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
@@ -333,7 +333,7 @@
             btnExit.BorderRadius = 5;
             btnExit.ButtonText = "  Sair";
             btnExit.DisabledColor = Color.Gray;
-            btnExit.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnExit.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnExit.Iconcolor = Color.Transparent;
             btnExit.Iconimage = (Image)resources.GetObject("btnExit.Iconimage");
             btnExit.Iconimage_right = null;
@@ -358,7 +358,7 @@
             btnExit.Text = "  Sair";
             btnExit.TextAlign = ContentAlignment.MiddleLeft;
             btnExit.Textcolor = Color.White;
-            btnExit.TextFont = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnExit.TextFont = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnExit.Click += btnExit_Click;
             // 
             // pnlSidebar
@@ -386,7 +386,7 @@
             // 
             // lblTextGuide
             // 
-            lblTextGuide.Font = new Font("Inter", 11F);
+            lblTextGuide.Font = new Font("Segoe UI", 11F);
             lblTextGuide.ForeColor = Color.FromArgb(33, 33, 33);
             lblTextGuide.Location = new Point(77, 160);
             lblTextGuide.Name = "lblTextGuide";
@@ -398,22 +398,22 @@
             // lblLogical
             // 
             lblLogical.AutoSize = true;
-            lblLogical.Font = new Font("Inter", 14F);
+            lblLogical.Font = new Font("Segoe UI", 14F);
             lblLogical.ForeColor = Color.FromArgb(113, 113, 113);
-            lblLogical.Location = new Point(82, 104);
+            lblLogical.Location = new Point(77, 112);
             lblLogical.Name = "lblLogical";
-            lblLogical.Size = new Size(252, 23);
+            lblLogical.Size = new Size(234, 25);
             lblLogical.TabIndex = 6;
             lblLogical.Text = "Desafios de lógica com C#";
             // 
             // lblWelcome
             // 
             lblWelcome.AutoSize = true;
-            lblWelcome.Font = new Font("Inter", 24F, FontStyle.Bold);
+            lblWelcome.Font = new Font("Segoe UI", 24F, FontStyle.Bold);
             lblWelcome.ForeColor = Color.FromArgb(26, 26, 30);
             lblWelcome.Location = new Point(100, 65);
             lblWelcome.Name = "lblWelcome";
-            lblWelcome.Size = new Size(206, 39);
+            lblWelcome.Size = new Size(206, 45);
             lblWelcome.TabIndex = 5;
             lblWelcome.Text = "BEM-VINDO";
             // 
@@ -437,7 +437,7 @@
             Controls.Add(pnlSidebar);
             Controls.Add(pnlHeader);
             Controls.Add(menuStrip1);
-            Font = new Font("Inter", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             MaximizeBox = false;
             Name = "FormMain";
             StartPosition = FormStartPosition.CenterScreen;

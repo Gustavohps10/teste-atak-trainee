@@ -42,7 +42,7 @@
             // 
             label1.BackColor = Color.FromArgb(251, 251, 251);
             label1.Dock = DockStyle.Top;
-            label1.Font = new Font("Inter", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(0, 0);
             label1.Name = "label1";
             label1.Padding = new Padding(8);
@@ -54,46 +54,46 @@
             // lblWidth
             // 
             lblWidth.AutoSize = true;
-            lblWidth.Font = new Font("Inter", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblWidth.Font = new Font("Segoe UI", 14.25F);
             lblWidth.Location = new Point(263, 108);
             lblWidth.Name = "lblWidth";
-            lblWidth.Size = new Size(127, 23);
+            lblWidth.Size = new Size(119, 25);
             lblWidth.TabIndex = 2;
             lblWidth.Text = "Largura (cm)";
             // 
             // txtWidth
             // 
-            txtWidth.Font = new Font("Inter", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtWidth.Font = new Font("Segoe UI", 14.25F);
             txtWidth.Location = new Point(263, 134);
             txtWidth.Name = "txtWidth";
-            txtWidth.Size = new Size(161, 30);
+            txtWidth.Size = new Size(161, 33);
             txtWidth.TabIndex = 3;
             // 
             // txtHeight
             // 
-            txtHeight.Font = new Font("Inter", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtHeight.Font = new Font("Segoe UI", 14.25F);
             txtHeight.Location = new Point(440, 134);
             txtHeight.Name = "txtHeight";
-            txtHeight.Size = new Size(161, 30);
+            txtHeight.Size = new Size(161, 33);
             txtHeight.TabIndex = 5;
             // 
             // lblHeight
             // 
             lblHeight.AutoSize = true;
-            lblHeight.Font = new Font("Inter", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblHeight.Font = new Font("Segoe UI", 14.25F);
             lblHeight.Location = new Point(440, 108);
             lblHeight.Name = "lblHeight";
-            lblHeight.Size = new Size(111, 23);
+            lblHeight.Size = new Size(105, 25);
             lblHeight.TabIndex = 4;
             lblHeight.Text = "Altura (cm)";
             // 
             // txtArea
             // 
-            txtArea.Font = new Font("Inter", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtArea.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtArea.Location = new Point(440, 252);
             txtArea.Name = "txtArea";
             txtArea.ReadOnly = true;
-            txtArea.Size = new Size(161, 30);
+            txtArea.Size = new Size(161, 33);
             txtArea.TabIndex = 7;
             txtArea.Text = "0";
             txtArea.TextAlign = HorizontalAlignment.Right;
@@ -101,10 +101,10 @@
             // lblArea
             // 
             lblArea.AutoSize = true;
-            lblArea.Font = new Font("Inter", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblArea.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblArea.Location = new Point(494, 226);
             lblArea.Name = "lblArea";
-            lblArea.Size = new Size(110, 23);
+            lblArea.Size = new Size(106, 25);
             lblArea.TabIndex = 6;
             lblArea.Text = "Área (cm²)";
             lblArea.TextAlign = ContentAlignment.TopRight;
@@ -118,7 +118,7 @@
             btnCalculate.BorderRadius = 5;
             btnCalculate.ButtonText = "Calcular";
             btnCalculate.DisabledColor = Color.Gray;
-            btnCalculate.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCalculate.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnCalculate.Iconcolor = Color.Transparent;
             btnCalculate.Iconimage = null;
             btnCalculate.Iconimage_right = null;
@@ -143,7 +143,7 @@
             btnCalculate.Text = "Calcular";
             btnCalculate.TextAlign = ContentAlignment.MiddleCenter;
             btnCalculate.Textcolor = Color.White;
-            btnCalculate.TextFont = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCalculate.TextFont = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnCalculate.Click += btnCalculate_Click;
             // 
             // FormCalcArea
@@ -160,7 +160,7 @@
             Controls.Add(txtWidth);
             Controls.Add(lblWidth);
             Controls.Add(label1);
-            Font = new Font("Inter", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Name = "FormCalcArea";
             Text = "Calcular Área";
             ResumeLayout(false);

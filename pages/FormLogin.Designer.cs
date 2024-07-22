@@ -76,22 +76,22 @@
             // lblTesteAtak
             // 
             lblTesteAtak.AutoSize = true;
-            lblTesteAtak.Font = new Font("Inter", 24F, FontStyle.Bold);
+            lblTesteAtak.Font = new Font("Segoe UI", 24F, FontStyle.Bold);
             lblTesteAtak.ForeColor = Color.FromArgb(26, 26, 30);
-            lblTesteAtak.Location = new Point(73, 121);
+            lblTesteAtak.Location = new Point(74, 121);
             lblTesteAtak.Name = "lblTesteAtak";
-            lblTesteAtak.Size = new Size(212, 39);
+            lblTesteAtak.Size = new Size(201, 45);
             lblTesteAtak.TabIndex = 3;
             lblTesteAtak.Text = "TESTE ATAK";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Inter", 14F);
+            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(113, 113, 113);
-            label1.Location = new Point(73, 160);
+            label1.Location = new Point(74, 166);
             label1.Name = "label1";
-            label1.Size = new Size(218, 23);
+            label1.Size = new Size(203, 25);
             label1.TabIndex = 4;
             label1.Text = "Desenvolvedor Trainee";
             // 
@@ -104,7 +104,7 @@
             btnMenuEvenOdd.BorderRadius = 5;
             btnMenuEvenOdd.ButtonText = "  Acessar";
             btnMenuEvenOdd.DisabledColor = Color.Gray;
-            btnMenuEvenOdd.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMenuEvenOdd.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnMenuEvenOdd.Iconcolor = Color.Transparent;
             btnMenuEvenOdd.Iconimage = Properties.Resources.log_in;
             btnMenuEvenOdd.Iconimage_right = null;
@@ -117,7 +117,7 @@
             btnMenuEvenOdd.IconVisible = true;
             btnMenuEvenOdd.IconZoom = 38D;
             btnMenuEvenOdd.IsTab = false;
-            btnMenuEvenOdd.Location = new Point(73, 209);
+            btnMenuEvenOdd.Location = new Point(74, 212);
             btnMenuEvenOdd.Margin = new Padding(0, 0, 0, 8);
             btnMenuEvenOdd.Name = "btnMenuEvenOdd";
             btnMenuEvenOdd.Normalcolor = Color.FromArgb(24, 22, 27);
@@ -129,12 +129,13 @@
             btnMenuEvenOdd.Text = "  Acessar";
             btnMenuEvenOdd.TextAlign = ContentAlignment.MiddleLeft;
             btnMenuEvenOdd.Textcolor = Color.White;
-            btnMenuEvenOdd.TextFont = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMenuEvenOdd.TextFont = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnMenuEvenOdd.Click += btnMenuEvenOdd_Click;
             // 
             // linkLabel1
             // 
             linkLabel1.ActiveLinkColor = Color.FromArgb(113, 113, 113);
+            linkLabel1.Font = new Font("Segoe UI", 9F);
             linkLabel1.Image = Properties.Resources.rounded_github_24;
             linkLabel1.ImageAlign = ContentAlignment.MiddleLeft;
             linkLabel1.LinkColor = Color.FromArgb(24, 22, 27);
@@ -150,10 +151,11 @@
             // lblMadeBy
             // 
             lblMadeBy.AutoSize = true;
+            lblMadeBy.Font = new Font("Segoe UI", 9F);
             lblMadeBy.ForeColor = Color.FromArgb(33, 33, 33);
             lblMadeBy.Location = new Point(73, 308);
             lblMadeBy.Name = "lblMadeBy";
-            lblMadeBy.Size = new Size(205, 15);
+            lblMadeBy.Size = new Size(197, 15);
             lblMadeBy.TabIndex = 8;
             lblMadeBy.Text = "Feito com ☕ por Gustavo Henrique.";
             // 
@@ -171,7 +173,7 @@
             Controls.Add(pictureBox1);
             Controls.Add(imgLogo);
             Controls.Add(imgClose);
-            Font = new Font("Inter", 9F);
+            Font = new Font("Microsoft Sans Serif", 9F);
             FormBorderStyle = FormBorderStyle.None;
             MaximizeBox = false;
             MdiChildrenMinimizedAnchorBottom = false;

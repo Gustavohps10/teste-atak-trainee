@@ -42,7 +42,7 @@
             // 
             label1.BackColor = Color.FromArgb(251, 251, 251);
             label1.Dock = DockStyle.Top;
-            label1.Font = new Font("Inter", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(0, 0);
             label1.Name = "label1";
             label1.Padding = new Padding(8);
@@ -53,9 +53,10 @@
             // 
             // lbxFor
             // 
+            lbxFor.Font = new Font("Segoe UI", 9F);
             lbxFor.FormattingEnabled = true;
             lbxFor.ItemHeight = 15;
-            lbxFor.Location = new Point(135, 131);
+            lbxFor.Location = new Point(135, 163);
             lbxFor.Name = "lbxFor";
             lbxFor.Size = new Size(156, 259);
             lbxFor.TabIndex = 2;
@@ -63,26 +64,29 @@
             // lblFor
             // 
             lblFor.AutoSize = true;
-            lblFor.Location = new Point(135, 113);
+            lblFor.Font = new Font("Segoe UI", 9F);
+            lblFor.Location = new Point(135, 145);
             lblFor.Name = "lblFor";
-            lblFor.Size = new Size(25, 15);
+            lblFor.Size = new Size(24, 15);
             lblFor.TabIndex = 3;
             lblFor.Text = "For";
             // 
             // lblWhile
             // 
             lblWhile.AutoSize = true;
-            lblWhile.Location = new Point(319, 113);
+            lblWhile.Font = new Font("Segoe UI", 9F);
+            lblWhile.Location = new Point(319, 145);
             lblWhile.Name = "lblWhile";
-            lblWhile.Size = new Size(38, 15);
+            lblWhile.Size = new Size(37, 15);
             lblWhile.TabIndex = 5;
             lblWhile.Text = "While";
             // 
             // lbxWhile
             // 
+            lbxWhile.Font = new Font("Segoe UI", 9F);
             lbxWhile.FormattingEnabled = true;
             lbxWhile.ItemHeight = 15;
-            lbxWhile.Location = new Point(319, 131);
+            lbxWhile.Location = new Point(319, 163);
             lbxWhile.Name = "lbxWhile";
             lbxWhile.Size = new Size(156, 259);
             lbxWhile.TabIndex = 4;
@@ -90,17 +94,19 @@
             // lblDoWhile
             // 
             lblDoWhile.AutoSize = true;
-            lblDoWhile.Location = new Point(500, 113);
+            lblDoWhile.Font = new Font("Segoe UI", 9F);
+            lblDoWhile.Location = new Point(500, 145);
             lblDoWhile.Name = "lblDoWhile";
-            lblDoWhile.Size = new Size(57, 15);
+            lblDoWhile.Size = new Size(55, 15);
             lblDoWhile.TabIndex = 7;
             lblDoWhile.Text = "Do While";
             // 
             // lbxDoWhile
             // 
+            lbxDoWhile.Font = new Font("Segoe UI", 9F);
             lbxDoWhile.FormattingEnabled = true;
             lbxDoWhile.ItemHeight = 15;
-            lbxDoWhile.Location = new Point(500, 131);
+            lbxDoWhile.Location = new Point(500, 163);
             lbxDoWhile.Name = "lbxDoWhile";
             lbxDoWhile.Size = new Size(156, 259);
             lbxDoWhile.TabIndex = 6;
@@ -114,7 +120,7 @@
             btnListNumbers.BorderRadius = 5;
             btnListNumbers.ButtonText = "Listar";
             btnListNumbers.DisabledColor = Color.Gray;
-            btnListNumbers.Font = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnListNumbers.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnListNumbers.Iconcolor = Color.Transparent;
             btnListNumbers.Iconimage = null;
             btnListNumbers.Iconimage_right = null;
@@ -139,7 +145,7 @@
             btnListNumbers.Text = "Listar";
             btnListNumbers.TextAlign = ContentAlignment.MiddleCenter;
             btnListNumbers.Textcolor = Color.White;
-            btnListNumbers.TextFont = new Font("Inter", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnListNumbers.TextFont = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnListNumbers.Click += btnListNumbers_Click;
             // 
             // FormMultOfTree
@@ -156,7 +162,7 @@
             Controls.Add(lblFor);
             Controls.Add(lbxFor);
             Controls.Add(label1);
-            Font = new Font("Inter", 9F);
+            Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Name = "FormMultOfTree";
             Text = "FormMultOfTree";
             ResumeLayout(false);
