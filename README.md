@@ -21,7 +21,7 @@ Este repositório tem como finalidade gerenciar minha resolução do teste de l�
 - [x] Lidar com classes
 
 ## :tada: Baixar executável
-> [Teste Atak 1.0](https://github.com/Gustavohps10/teste-atak/releases/tag/1.0)
+> [Teste Atak 1.1](https://github.com/Gustavohps10/teste-atak/releases/tag/1.1)
 
 ## :pushpin: Requisitos
 - Windows 10
