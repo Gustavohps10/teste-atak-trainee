@@ -28,14 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             imgClose = new PictureBox();
             imgLogo = new PictureBox();
             pictureBox1 = new PictureBox();
             lblTesteAtak = new Label();
             label1 = new Label();
-            btnMenuEvenOdd = new Bunifu.Framework.UI.BunifuFlatButton();
             linkLabel1 = new LinkLabel();
             lblMadeBy = new Label();
+            btnLogin = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             ((System.ComponentModel.ISupportInitialize)imgClose).BeginInit();
             ((System.ComponentModel.ISupportInitialize)imgLogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -95,43 +97,6 @@
             label1.TabIndex = 4;
             label1.Text = "Desenvolvedor Trainee";
             // 
-            // btnMenuEvenOdd
-            // 
-            btnMenuEvenOdd.Active = false;
-            btnMenuEvenOdd.Activecolor = Color.FromArgb(46, 44, 50);
-            btnMenuEvenOdd.BackColor = Color.FromArgb(24, 22, 27);
-            btnMenuEvenOdd.BackgroundImageLayout = ImageLayout.Stretch;
-            btnMenuEvenOdd.BorderRadius = 5;
-            btnMenuEvenOdd.ButtonText = "  Acessar";
-            btnMenuEvenOdd.DisabledColor = Color.Gray;
-            btnMenuEvenOdd.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnMenuEvenOdd.Iconcolor = Color.Transparent;
-            btnMenuEvenOdd.Iconimage = Properties.Resources.log_in;
-            btnMenuEvenOdd.Iconimage_right = null;
-            btnMenuEvenOdd.Iconimage_right_Selected = null;
-            btnMenuEvenOdd.Iconimage_Selected = null;
-            btnMenuEvenOdd.IconMarginLeft = 0;
-            btnMenuEvenOdd.IconMarginRight = 16;
-            btnMenuEvenOdd.IconRightVisible = false;
-            btnMenuEvenOdd.IconRightZoom = 0D;
-            btnMenuEvenOdd.IconVisible = true;
-            btnMenuEvenOdd.IconZoom = 38D;
-            btnMenuEvenOdd.IsTab = false;
-            btnMenuEvenOdd.Location = new Point(74, 212);
-            btnMenuEvenOdd.Margin = new Padding(0, 0, 0, 8);
-            btnMenuEvenOdd.Name = "btnMenuEvenOdd";
-            btnMenuEvenOdd.Normalcolor = Color.FromArgb(24, 22, 27);
-            btnMenuEvenOdd.OnHovercolor = Color.FromArgb(46, 44, 50);
-            btnMenuEvenOdd.OnHoverTextColor = Color.White;
-            btnMenuEvenOdd.selected = false;
-            btnMenuEvenOdd.Size = new Size(114, 40);
-            btnMenuEvenOdd.TabIndex = 6;
-            btnMenuEvenOdd.Text = "  Acessar";
-            btnMenuEvenOdd.TextAlign = ContentAlignment.MiddleLeft;
-            btnMenuEvenOdd.Textcolor = Color.White;
-            btnMenuEvenOdd.TextFont = new Font("Segoe UI", 9F, FontStyle.Bold);
-            btnMenuEvenOdd.Click += btnMenuEvenOdd_Click;
-            // 
             // linkLabel1
             // 
             linkLabel1.ActiveLinkColor = Color.FromArgb(113, 113, 113);
@@ -159,15 +124,105 @@
             lblMadeBy.TabIndex = 8;
             lblMadeBy.Text = "Feito com ☕ por Gustavo Henrique.";
             // 
+            // btnLogin
+            // 
+            btnLogin.AllowAnimations = true;
+            btnLogin.AllowMouseEffects = true;
+            btnLogin.AllowToggling = false;
+            btnLogin.AnimationSpeed = 25;
+            btnLogin.AutoGenerateColors = false;
+            btnLogin.AutoRoundBorders = false;
+            btnLogin.AutoSizeLeftIcon = true;
+            btnLogin.AutoSizeRightIcon = true;
+            btnLogin.BackColor = Color.Transparent;
+            btnLogin.BackColor1 = Color.FromArgb(24, 22, 27);
+            btnLogin.BackgroundImage = (Image)resources.GetObject("btnLogin.BackgroundImage");
+            btnLogin.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            btnLogin.ButtonText = "  Acessar";
+            btnLogin.ButtonTextMarginLeft = 0;
+            btnLogin.ColorContrastOnClick = 45;
+            btnLogin.ColorContrastOnHover = 45;
+            btnLogin.Cursor = Cursors.Hand;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            btnLogin.CustomizableEdges = borderEdges1;
+            btnLogin.DialogResult = DialogResult.None;
+            btnLogin.DisabledBorderColor = Color.Transparent;
+            btnLogin.DisabledFillColor = Color.FromArgb(204, 204, 204);
+            btnLogin.DisabledForecolor = Color.FromArgb(168, 160, 168);
+            btnLogin.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
+            btnLogin.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnLogin.ForeColor = Color.White;
+            btnLogin.IconLeftAlign = ContentAlignment.MiddleLeft;
+            btnLogin.IconLeftCursor = Cursors.Default;
+            btnLogin.IconLeftPadding = new Padding(11, 3, 3, 3);
+            btnLogin.IconMarginLeft = 11;
+            btnLogin.IconPadding = 10;
+            btnLogin.IconRightAlign = ContentAlignment.MiddleRight;
+            btnLogin.IconRightCursor = Cursors.Default;
+            btnLogin.IconRightPadding = new Padding(3, 3, 7, 3);
+            btnLogin.IconSize = 25;
+            btnLogin.IdleBorderColor = Color.Transparent;
+            btnLogin.IdleBorderRadius = 8;
+            btnLogin.IdleBorderThickness = 1;
+            btnLogin.IdleFillColor = Color.FromArgb(24, 22, 27);
+            btnLogin.IdleIconLeftImage = Properties.Resources.log_in;
+            btnLogin.IdleIconRightImage = null;
+            btnLogin.IndicateFocus = false;
+            btnLogin.Location = new Point(74, 209);
+            btnLogin.Name = "btnLogin";
+            btnLogin.OnDisabledState.BorderColor = Color.Transparent;
+            btnLogin.OnDisabledState.BorderRadius = 8;
+            btnLogin.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            btnLogin.OnDisabledState.BorderThickness = 1;
+            btnLogin.OnDisabledState.FillColor = Color.FromArgb(204, 204, 204);
+            btnLogin.OnDisabledState.ForeColor = Color.FromArgb(168, 160, 168);
+            btnLogin.OnDisabledState.IconLeftImage = null;
+            btnLogin.OnDisabledState.IconRightImage = null;
+            btnLogin.onHoverState.BorderColor = Color.Transparent;
+            btnLogin.onHoverState.BorderRadius = 8;
+            btnLogin.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            btnLogin.onHoverState.BorderThickness = 1;
+            btnLogin.onHoverState.FillColor = Color.FromArgb(46, 43, 52);
+            btnLogin.onHoverState.ForeColor = Color.White;
+            btnLogin.onHoverState.IconLeftImage = null;
+            btnLogin.onHoverState.IconRightImage = null;
+            btnLogin.OnIdleState.BorderColor = Color.Transparent;
+            btnLogin.OnIdleState.BorderRadius = 8;
+            btnLogin.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            btnLogin.OnIdleState.BorderThickness = 1;
+            btnLogin.OnIdleState.FillColor = Color.FromArgb(24, 22, 27);
+            btnLogin.OnIdleState.ForeColor = Color.White;
+            btnLogin.OnIdleState.IconLeftImage = Properties.Resources.log_in;
+            btnLogin.OnIdleState.IconRightImage = null;
+            btnLogin.OnPressedState.BorderColor = Color.Transparent;
+            btnLogin.OnPressedState.BorderRadius = 8;
+            btnLogin.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            btnLogin.OnPressedState.BorderThickness = 1;
+            btnLogin.OnPressedState.FillColor = Color.FromArgb(24, 22, 27);
+            btnLogin.OnPressedState.ForeColor = Color.White;
+            btnLogin.OnPressedState.IconLeftImage = null;
+            btnLogin.OnPressedState.IconRightImage = null;
+            btnLogin.Size = new Size(115, 36);
+            btnLogin.TabIndex = 9;
+            btnLogin.TextAlign = ContentAlignment.MiddleCenter;
+            btnLogin.TextAlignment = HorizontalAlignment.Center;
+            btnLogin.TextMarginLeft = 0;
+            btnLogin.TextPadding = new Padding(0);
+            btnLogin.UseDefaultRadiusAndThickness = true;
+            btnLogin.Click += btnMenuEvenOdd_Click;
+            // 
             // FormLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(251, 251, 251);
             ClientSize = new Size(717, 450);
+            Controls.Add(btnLogin);
             Controls.Add(lblMadeBy);
             Controls.Add(linkLabel1);
-            Controls.Add(btnMenuEvenOdd);
             Controls.Add(label1);
             Controls.Add(lblTesteAtak);
             Controls.Add(pictureBox1);
@@ -195,8 +250,9 @@
         private PictureBox pictureBox1;
         private Label lblTesteAtak;
         private Label label1;
-        private Bunifu.Framework.UI.BunifuFlatButton btnMenuEvenOdd;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnMenuEvenOdd;
         private LinkLabel linkLabel1;
         private Label lblMadeBy;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnLogin;
     }
 }

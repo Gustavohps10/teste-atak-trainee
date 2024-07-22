@@ -18,11 +18,6 @@ namespace teste_atak
             InitializeComponent();
         }
 
-        private void btnCalcArea_Click(object sender, EventArgs e)
-        {
-           
-        }
-
         private void btnCalculate_Click(object sender, EventArgs e)
         {
             string formattedWidth = txtWidth.Text.Replace(',', '.');

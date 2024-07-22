@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormOrderedList));
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             label1 = new Label();
             lbxSortedWords = new ListBox();
             txtWords = new TextBox();
             lblWords = new Label();
             lblResult = new Label();
-            btnSortList = new Bunifu.Framework.UI.BunifuFlatButton();
+            btnSort = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             SuspendLayout();
             // 
             // label1
@@ -88,42 +90,95 @@
             lblResult.TabIndex = 6;
             lblResult.Text = "Resultado:";
             // 
-            // btnSortList
+            // btnSort
             // 
-            btnSortList.Active = false;
-            btnSortList.Activecolor = Color.FromArgb(46, 44, 50);
-            btnSortList.BackColor = Color.FromArgb(24, 22, 27);
-            btnSortList.BackgroundImageLayout = ImageLayout.Stretch;
-            btnSortList.BorderRadius = 5;
-            btnSortList.ButtonText = "  Organizar";
-            btnSortList.DisabledColor = Color.Gray;
-            btnSortList.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnSortList.Iconcolor = Color.Transparent;
-            btnSortList.Iconimage = null;
-            btnSortList.Iconimage_right = null;
-            btnSortList.Iconimage_right_Selected = null;
-            btnSortList.Iconimage_Selected = null;
-            btnSortList.IconMarginLeft = 0;
-            btnSortList.IconMarginRight = 16;
-            btnSortList.IconRightVisible = false;
-            btnSortList.IconRightZoom = 0D;
-            btnSortList.IconVisible = true;
-            btnSortList.IconZoom = 38D;
-            btnSortList.IsTab = false;
-            btnSortList.Location = new Point(237, 121);
-            btnSortList.Margin = new Padding(0, 0, 0, 8);
-            btnSortList.Name = "btnSortList";
-            btnSortList.Normalcolor = Color.FromArgb(24, 22, 27);
-            btnSortList.OnHovercolor = Color.FromArgb(46, 44, 50);
-            btnSortList.OnHoverTextColor = Color.White;
-            btnSortList.selected = false;
-            btnSortList.Size = new Size(105, 33);
-            btnSortList.TabIndex = 7;
-            btnSortList.Text = "  Organizar";
-            btnSortList.TextAlign = ContentAlignment.MiddleCenter;
-            btnSortList.Textcolor = Color.White;
-            btnSortList.TextFont = new Font("Segoe UI", 9F, FontStyle.Bold);
-            btnSortList.Click += btnSortList_Click;
+            btnSort.AllowAnimations = true;
+            btnSort.AllowMouseEffects = true;
+            btnSort.AllowToggling = false;
+            btnSort.AnimationSpeed = 25;
+            btnSort.AutoGenerateColors = false;
+            btnSort.AutoRoundBorders = false;
+            btnSort.AutoSizeLeftIcon = true;
+            btnSort.AutoSizeRightIcon = true;
+            btnSort.BackColor = Color.Transparent;
+            btnSort.BackColor1 = Color.FromArgb(24, 22, 27);
+            btnSort.BackgroundImage = (Image)resources.GetObject("btnSort.BackgroundImage");
+            btnSort.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            btnSort.ButtonText = "Organizar";
+            btnSort.ButtonTextMarginLeft = 0;
+            btnSort.ColorContrastOnClick = 45;
+            btnSort.ColorContrastOnHover = 45;
+            btnSort.Cursor = Cursors.Hand;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            btnSort.CustomizableEdges = borderEdges1;
+            btnSort.DialogResult = DialogResult.None;
+            btnSort.DisabledBorderColor = Color.Transparent;
+            btnSort.DisabledFillColor = Color.FromArgb(204, 204, 204);
+            btnSort.DisabledForecolor = Color.FromArgb(168, 160, 168);
+            btnSort.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
+            btnSort.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnSort.ForeColor = Color.White;
+            btnSort.IconLeftAlign = ContentAlignment.MiddleLeft;
+            btnSort.IconLeftCursor = Cursors.Default;
+            btnSort.IconLeftPadding = new Padding(11, 3, 3, 3);
+            btnSort.IconMarginLeft = 11;
+            btnSort.IconPadding = 10;
+            btnSort.IconRightAlign = ContentAlignment.MiddleRight;
+            btnSort.IconRightCursor = Cursors.Default;
+            btnSort.IconRightPadding = new Padding(3, 3, 7, 3);
+            btnSort.IconSize = 25;
+            btnSort.IdleBorderColor = Color.Transparent;
+            btnSort.IdleBorderRadius = 8;
+            btnSort.IdleBorderThickness = 1;
+            btnSort.IdleFillColor = Color.FromArgb(24, 22, 27);
+            btnSort.IdleIconLeftImage = null;
+            btnSort.IdleIconRightImage = null;
+            btnSort.IndicateFocus = false;
+            btnSort.Location = new Point(237, 131);
+            btnSort.Name = "btnSort";
+            btnSort.OnDisabledState.BorderColor = Color.Transparent;
+            btnSort.OnDisabledState.BorderRadius = 8;
+            btnSort.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            btnSort.OnDisabledState.BorderThickness = 1;
+            btnSort.OnDisabledState.FillColor = Color.FromArgb(204, 204, 204);
+            btnSort.OnDisabledState.ForeColor = Color.FromArgb(168, 160, 168);
+            btnSort.OnDisabledState.IconLeftImage = null;
+            btnSort.OnDisabledState.IconRightImage = null;
+            btnSort.onHoverState.BorderColor = Color.Transparent;
+            btnSort.onHoverState.BorderRadius = 8;
+            btnSort.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            btnSort.onHoverState.BorderThickness = 1;
+            btnSort.onHoverState.FillColor = Color.FromArgb(46, 43, 52);
+            btnSort.onHoverState.ForeColor = Color.White;
+            btnSort.onHoverState.IconLeftImage = null;
+            btnSort.onHoverState.IconRightImage = null;
+            btnSort.OnIdleState.BorderColor = Color.Transparent;
+            btnSort.OnIdleState.BorderRadius = 8;
+            btnSort.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            btnSort.OnIdleState.BorderThickness = 1;
+            btnSort.OnIdleState.FillColor = Color.FromArgb(24, 22, 27);
+            btnSort.OnIdleState.ForeColor = Color.White;
+            btnSort.OnIdleState.IconLeftImage = null;
+            btnSort.OnIdleState.IconRightImage = null;
+            btnSort.OnPressedState.BorderColor = Color.Transparent;
+            btnSort.OnPressedState.BorderRadius = 8;
+            btnSort.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            btnSort.OnPressedState.BorderThickness = 1;
+            btnSort.OnPressedState.FillColor = Color.FromArgb(46, 43, 52);
+            btnSort.OnPressedState.ForeColor = Color.White;
+            btnSort.OnPressedState.IconLeftImage = null;
+            btnSort.OnPressedState.IconRightImage = null;
+            btnSort.Size = new Size(114, 36);
+            btnSort.TabIndex = 18;
+            btnSort.TextAlign = ContentAlignment.MiddleCenter;
+            btnSort.TextAlignment = HorizontalAlignment.Center;
+            btnSort.TextMarginLeft = 0;
+            btnSort.TextPadding = new Padding(0);
+            btnSort.UseDefaultRadiusAndThickness = true;
+            btnSort.Click += btnSortList_Click;
             // 
             // FormOrderedList
             // 
@@ -131,7 +186,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(251, 251, 251);
             ClientSize = new Size(800, 450);
-            Controls.Add(btnSortList);
+            Controls.Add(btnSort);
             Controls.Add(lblResult);
             Controls.Add(lblWords);
             Controls.Add(txtWords);
@@ -150,6 +205,6 @@
         private TextBox txtWords;
         private Label lblWords;
         private Label lblResult;
-        private Bunifu.Framework.UI.BunifuFlatButton btnSortList;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnSort;
     }
 }

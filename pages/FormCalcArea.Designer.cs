@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCalcArea));
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             label1 = new Label();
             lblWidth = new Label();
             txtWidth = new TextBox();
@@ -35,7 +37,7 @@
             lblHeight = new Label();
             txtArea = new TextBox();
             lblArea = new Label();
-            btnCalculate = new Bunifu.Framework.UI.BunifuFlatButton();
+            btnCalculate = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             SuspendLayout();
             // 
             // label1
@@ -111,39 +113,92 @@
             // 
             // btnCalculate
             // 
-            btnCalculate.Active = false;
-            btnCalculate.Activecolor = Color.FromArgb(46, 44, 50);
-            btnCalculate.BackColor = Color.FromArgb(24, 22, 27);
-            btnCalculate.BackgroundImageLayout = ImageLayout.Stretch;
-            btnCalculate.BorderRadius = 5;
+            btnCalculate.AllowAnimations = true;
+            btnCalculate.AllowMouseEffects = true;
+            btnCalculate.AllowToggling = false;
+            btnCalculate.AnimationSpeed = 25;
+            btnCalculate.AutoGenerateColors = false;
+            btnCalculate.AutoRoundBorders = false;
+            btnCalculate.AutoSizeLeftIcon = true;
+            btnCalculate.AutoSizeRightIcon = true;
+            btnCalculate.BackColor = Color.Transparent;
+            btnCalculate.BackColor1 = Color.FromArgb(24, 22, 27);
+            btnCalculate.BackgroundImage = (Image)resources.GetObject("btnCalculate.BackgroundImage");
+            btnCalculate.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             btnCalculate.ButtonText = "Calcular";
-            btnCalculate.DisabledColor = Color.Gray;
-            btnCalculate.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnCalculate.Iconcolor = Color.Transparent;
-            btnCalculate.Iconimage = null;
-            btnCalculate.Iconimage_right = null;
-            btnCalculate.Iconimage_right_Selected = null;
-            btnCalculate.Iconimage_Selected = null;
-            btnCalculate.IconMarginLeft = 0;
-            btnCalculate.IconMarginRight = 16;
-            btnCalculate.IconRightVisible = false;
-            btnCalculate.IconRightZoom = 0D;
-            btnCalculate.IconVisible = true;
-            btnCalculate.IconZoom = 38D;
-            btnCalculate.IsTab = false;
-            btnCalculate.Location = new Point(263, 177);
-            btnCalculate.Margin = new Padding(0, 0, 0, 8);
+            btnCalculate.ButtonTextMarginLeft = 0;
+            btnCalculate.ColorContrastOnClick = 45;
+            btnCalculate.ColorContrastOnHover = 45;
+            btnCalculate.Cursor = Cursors.Hand;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            btnCalculate.CustomizableEdges = borderEdges1;
+            btnCalculate.DialogResult = DialogResult.None;
+            btnCalculate.DisabledBorderColor = Color.Transparent;
+            btnCalculate.DisabledFillColor = Color.FromArgb(204, 204, 204);
+            btnCalculate.DisabledForecolor = Color.FromArgb(168, 160, 168);
+            btnCalculate.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
+            btnCalculate.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnCalculate.ForeColor = Color.White;
+            btnCalculate.IconLeftAlign = ContentAlignment.MiddleLeft;
+            btnCalculate.IconLeftCursor = Cursors.Default;
+            btnCalculate.IconLeftPadding = new Padding(11, 3, 3, 3);
+            btnCalculate.IconMarginLeft = 11;
+            btnCalculate.IconPadding = 10;
+            btnCalculate.IconRightAlign = ContentAlignment.MiddleRight;
+            btnCalculate.IconRightCursor = Cursors.Default;
+            btnCalculate.IconRightPadding = new Padding(3, 3, 7, 3);
+            btnCalculate.IconSize = 25;
+            btnCalculate.IdleBorderColor = Color.Transparent;
+            btnCalculate.IdleBorderRadius = 8;
+            btnCalculate.IdleBorderThickness = 1;
+            btnCalculate.IdleFillColor = Color.FromArgb(24, 22, 27);
+            btnCalculate.IdleIconLeftImage = null;
+            btnCalculate.IdleIconRightImage = null;
+            btnCalculate.IndicateFocus = false;
+            btnCalculate.Location = new Point(263, 182);
             btnCalculate.Name = "btnCalculate";
-            btnCalculate.Normalcolor = Color.FromArgb(24, 22, 27);
-            btnCalculate.OnHovercolor = Color.FromArgb(46, 44, 50);
-            btnCalculate.OnHoverTextColor = Color.White;
-            btnCalculate.selected = false;
-            btnCalculate.Size = new Size(105, 33);
-            btnCalculate.TabIndex = 9;
-            btnCalculate.Text = "Calcular";
+            btnCalculate.OnDisabledState.BorderColor = Color.Transparent;
+            btnCalculate.OnDisabledState.BorderRadius = 8;
+            btnCalculate.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            btnCalculate.OnDisabledState.BorderThickness = 1;
+            btnCalculate.OnDisabledState.FillColor = Color.FromArgb(204, 204, 204);
+            btnCalculate.OnDisabledState.ForeColor = Color.FromArgb(168, 160, 168);
+            btnCalculate.OnDisabledState.IconLeftImage = null;
+            btnCalculate.OnDisabledState.IconRightImage = null;
+            btnCalculate.onHoverState.BorderColor = Color.Transparent;
+            btnCalculate.onHoverState.BorderRadius = 8;
+            btnCalculate.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            btnCalculate.onHoverState.BorderThickness = 1;
+            btnCalculate.onHoverState.FillColor = Color.FromArgb(46, 43, 52);
+            btnCalculate.onHoverState.ForeColor = Color.White;
+            btnCalculate.onHoverState.IconLeftImage = null;
+            btnCalculate.onHoverState.IconRightImage = null;
+            btnCalculate.OnIdleState.BorderColor = Color.Transparent;
+            btnCalculate.OnIdleState.BorderRadius = 8;
+            btnCalculate.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            btnCalculate.OnIdleState.BorderThickness = 1;
+            btnCalculate.OnIdleState.FillColor = Color.FromArgb(24, 22, 27);
+            btnCalculate.OnIdleState.ForeColor = Color.White;
+            btnCalculate.OnIdleState.IconLeftImage = null;
+            btnCalculate.OnIdleState.IconRightImage = null;
+            btnCalculate.OnPressedState.BorderColor = Color.Transparent;
+            btnCalculate.OnPressedState.BorderRadius = 8;
+            btnCalculate.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            btnCalculate.OnPressedState.BorderThickness = 1;
+            btnCalculate.OnPressedState.FillColor = Color.FromArgb(46, 43, 52);
+            btnCalculate.OnPressedState.ForeColor = Color.White;
+            btnCalculate.OnPressedState.IconLeftImage = null;
+            btnCalculate.OnPressedState.IconRightImage = null;
+            btnCalculate.Size = new Size(114, 36);
+            btnCalculate.TabIndex = 18;
             btnCalculate.TextAlign = ContentAlignment.MiddleCenter;
-            btnCalculate.Textcolor = Color.White;
-            btnCalculate.TextFont = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnCalculate.TextAlignment = HorizontalAlignment.Center;
+            btnCalculate.TextMarginLeft = 0;
+            btnCalculate.TextPadding = new Padding(0);
+            btnCalculate.UseDefaultRadiusAndThickness = true;
             btnCalculate.Click += btnCalculate_Click;
             // 
             // FormCalcArea
@@ -176,6 +231,6 @@
         private Label lblHeight;
         private TextBox txtArea;
         private Label lblArea;
-        private Bunifu.Framework.UI.BunifuFlatButton btnCalculate;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnCalculate;
     }
 }
