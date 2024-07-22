@@ -122,7 +122,7 @@
             btnSortList.Text = "  Organizar";
             btnSortList.TextAlign = ContentAlignment.MiddleCenter;
             btnSortList.Textcolor = Color.White;
-            btnSortList.TextFont = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSortList.TextFont = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnSortList.Click += btnSortList_Click;
             // 
             // FormOrderedList

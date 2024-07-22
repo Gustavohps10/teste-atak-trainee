@@ -129,7 +129,7 @@
             btnMenuEvenOdd.Text = "  Acessar";
             btnMenuEvenOdd.TextAlign = ContentAlignment.MiddleLeft;
             btnMenuEvenOdd.Textcolor = Color.White;
-            btnMenuEvenOdd.TextFont = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMenuEvenOdd.TextFont = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnMenuEvenOdd.Click += btnMenuEvenOdd_Click;
             // 
             // linkLabel1

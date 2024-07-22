@@ -124,7 +124,7 @@
             btnCheckEvenOdd.Text = "  Verificar";
             btnCheckEvenOdd.TextAlign = ContentAlignment.MiddleCenter;
             btnCheckEvenOdd.Textcolor = Color.White;
-            btnCheckEvenOdd.TextFont = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCheckEvenOdd.TextFont = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnCheckEvenOdd.Click += btnMenuEvenOdd_Click;
             // 
             // FormEvenOdd

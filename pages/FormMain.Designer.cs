@@ -153,7 +153,7 @@
             btnMenuEvenOdd.Text = "  Par ou Ímpar";
             btnMenuEvenOdd.TextAlign = ContentAlignment.MiddleLeft;
             btnMenuEvenOdd.Textcolor = Color.White;
-            btnMenuEvenOdd.TextFont = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMenuEvenOdd.TextFont = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnMenuEvenOdd.Click += btnMenuEvenOdd_Click;
             // 
             // btnMenuSortList
@@ -190,7 +190,7 @@
             btnMenuSortList.Text = "  Lista ordenada";
             btnMenuSortList.TextAlign = ContentAlignment.MiddleLeft;
             btnMenuSortList.Textcolor = Color.White;
-            btnMenuSortList.TextFont = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMenuSortList.TextFont = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnMenuSortList.Click += btnMenuSortList_Click;
             // 
             // btnMenuCalcArea
@@ -227,7 +227,7 @@
             btnMenuCalcArea.Text = "  Calcular Área";
             btnMenuCalcArea.TextAlign = ContentAlignment.MiddleLeft;
             btnMenuCalcArea.Textcolor = Color.White;
-            btnMenuCalcArea.TextFont = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMenuCalcArea.TextFont = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnMenuCalcArea.Click += btnMenuCalcArea_Click;
             // 
             // btnMenuMultOfTree
@@ -264,7 +264,7 @@
             btnMenuMultOfTree.Text = "  Múltiplos de 3";
             btnMenuMultOfTree.TextAlign = ContentAlignment.MiddleLeft;
             btnMenuMultOfTree.Textcolor = Color.White;
-            btnMenuMultOfTree.TextFont = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMenuMultOfTree.TextFont = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnMenuMultOfTree.Click += btnMenuMultOfTree_Click;
             // 
             // btnMenuPersonClass
@@ -301,7 +301,7 @@
             btnMenuPersonClass.Text = "  Classe Pessoa";
             btnMenuPersonClass.TextAlign = ContentAlignment.MiddleLeft;
             btnMenuPersonClass.Textcolor = Color.White;
-            btnMenuPersonClass.TextFont = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMenuPersonClass.TextFont = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnMenuPersonClass.Click += btnMenuPersonClass_Click;
             // 
             // menuStrip1
@@ -358,7 +358,7 @@
             btnExit.Text = "  Sair";
             btnExit.TextAlign = ContentAlignment.MiddleLeft;
             btnExit.Textcolor = Color.White;
-            btnExit.TextFont = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnExit.TextFont = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnExit.Click += btnExit_Click;
             // 
             // pnlSidebar

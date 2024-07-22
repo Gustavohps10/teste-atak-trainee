@@ -143,7 +143,7 @@
             btnCalculate.Text = "Calcular";
             btnCalculate.TextAlign = ContentAlignment.MiddleCenter;
             btnCalculate.Textcolor = Color.White;
-            btnCalculate.TextFont = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCalculate.TextFont = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnCalculate.Click += btnCalculate_Click;
             // 
             // FormCalcArea

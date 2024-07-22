@@ -145,7 +145,7 @@
             btnListNumbers.Text = "Listar";
             btnListNumbers.TextAlign = ContentAlignment.MiddleCenter;
             btnListNumbers.Textcolor = Color.White;
-            btnListNumbers.TextFont = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnListNumbers.TextFont = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnListNumbers.Click += btnListNumbers_Click;
             // 
             // FormMultOfTree
