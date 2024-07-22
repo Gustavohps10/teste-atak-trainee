@@ -30,14 +30,26 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCalcArea));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             label1 = new Label();
             lblWidth = new Label();
-            txtWidth = new TextBox();
-            txtHeight = new TextBox();
             lblHeight = new Label();
-            txtArea = new TextBox();
             lblArea = new Label();
             btnCalculate = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
+            txtWidth = new Bunifu.UI.WinForms.BunifuTextBox();
+            txtHeight = new Bunifu.UI.WinForms.BunifuTextBox();
+            txtArea = new Bunifu.UI.WinForms.BunifuTextBox();
             SuspendLayout();
             // 
             // label1
@@ -63,42 +75,15 @@
             lblWidth.TabIndex = 2;
             lblWidth.Text = "Largura (cm)";
             // 
-            // txtWidth
-            // 
-            txtWidth.Font = new Font("Segoe UI", 14.25F);
-            txtWidth.Location = new Point(263, 134);
-            txtWidth.Name = "txtWidth";
-            txtWidth.Size = new Size(161, 33);
-            txtWidth.TabIndex = 3;
-            // 
-            // txtHeight
-            // 
-            txtHeight.Font = new Font("Segoe UI", 14.25F);
-            txtHeight.Location = new Point(440, 134);
-            txtHeight.Name = "txtHeight";
-            txtHeight.Size = new Size(161, 33);
-            txtHeight.TabIndex = 5;
-            // 
             // lblHeight
             // 
             lblHeight.AutoSize = true;
             lblHeight.Font = new Font("Segoe UI", 14.25F);
-            lblHeight.Location = new Point(440, 108);
+            lblHeight.Location = new Point(446, 108);
             lblHeight.Name = "lblHeight";
             lblHeight.Size = new Size(105, 25);
             lblHeight.TabIndex = 4;
             lblHeight.Text = "Altura (cm)";
-            // 
-            // txtArea
-            // 
-            txtArea.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtArea.Location = new Point(440, 252);
-            txtArea.Name = "txtArea";
-            txtArea.ReadOnly = true;
-            txtArea.Size = new Size(161, 33);
-            txtArea.TabIndex = 7;
-            txtArea.Text = "0";
-            txtArea.TextAlign = HorizontalAlignment.Right;
             // 
             // lblArea
             // 
@@ -158,7 +143,7 @@
             btnCalculate.IdleIconLeftImage = null;
             btnCalculate.IdleIconRightImage = null;
             btnCalculate.IndicateFocus = false;
-            btnCalculate.Location = new Point(263, 182);
+            btnCalculate.Location = new Point(263, 194);
             btnCalculate.Name = "btnCalculate";
             btnCalculate.OnDisabledState.BorderColor = Color.Transparent;
             btnCalculate.OnDisabledState.BorderRadius = 8;
@@ -201,18 +186,240 @@
             btnCalculate.UseDefaultRadiusAndThickness = true;
             btnCalculate.Click += btnCalculate_Click;
             // 
+            // txtWidth
+            // 
+            txtWidth.AcceptsReturn = false;
+            txtWidth.AcceptsTab = false;
+            txtWidth.AnimationSpeed = 200;
+            txtWidth.AutoCompleteMode = AutoCompleteMode.None;
+            txtWidth.AutoCompleteSource = AutoCompleteSource.None;
+            txtWidth.AutoSizeHeight = true;
+            txtWidth.BackColor = Color.Transparent;
+            txtWidth.BackgroundImage = (Image)resources.GetObject("txtWidth.BackgroundImage");
+            txtWidth.BorderColorActive = Color.DodgerBlue;
+            txtWidth.BorderColorDisabled = Color.FromArgb(204, 204, 204);
+            txtWidth.BorderColorHover = Color.FromArgb(105, 181, 255);
+            txtWidth.BorderColorIdle = Color.Silver;
+            txtWidth.BorderRadius = 1;
+            txtWidth.BorderThickness = 1;
+            txtWidth.CharacterCase = Bunifu.UI.WinForms.BunifuTextBox.CharacterCases.Normal;
+            txtWidth.CharacterCasing = CharacterCasing.Normal;
+            txtWidth.DefaultFont = new Font("Segoe UI", 9.25F);
+            txtWidth.DefaultText = "";
+            txtWidth.FillColor = Color.White;
+            txtWidth.HideSelection = true;
+            txtWidth.IconLeft = null;
+            txtWidth.IconLeftCursor = Cursors.IBeam;
+            txtWidth.IconPadding = 10;
+            txtWidth.IconRight = null;
+            txtWidth.IconRightCursor = Cursors.IBeam;
+            txtWidth.Location = new Point(263, 137);
+            txtWidth.MaxLength = 32767;
+            txtWidth.MinimumSize = new Size(1, 1);
+            txtWidth.Modified = false;
+            txtWidth.Multiline = false;
+            txtWidth.Name = "txtWidth";
+            stateProperties1.BorderColor = Color.DodgerBlue;
+            stateProperties1.FillColor = Color.Empty;
+            stateProperties1.ForeColor = Color.Empty;
+            stateProperties1.PlaceholderForeColor = Color.Empty;
+            txtWidth.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = Color.FromArgb(204, 204, 204);
+            stateProperties2.FillColor = Color.FromArgb(240, 240, 240);
+            stateProperties2.ForeColor = Color.FromArgb(109, 109, 109);
+            stateProperties2.PlaceholderForeColor = Color.DarkGray;
+            txtWidth.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = Color.FromArgb(105, 181, 255);
+            stateProperties3.FillColor = Color.Empty;
+            stateProperties3.ForeColor = Color.Empty;
+            stateProperties3.PlaceholderForeColor = Color.Empty;
+            txtWidth.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = Color.Silver;
+            stateProperties4.FillColor = Color.White;
+            stateProperties4.ForeColor = Color.Empty;
+            stateProperties4.PlaceholderForeColor = Color.Empty;
+            txtWidth.OnIdleState = stateProperties4;
+            txtWidth.Padding = new Padding(3);
+            txtWidth.PasswordChar = '\0';
+            txtWidth.PlaceholderForeColor = Color.Silver;
+            txtWidth.PlaceholderText = "Digite a largura";
+            txtWidth.ReadOnly = false;
+            txtWidth.ScrollBars = ScrollBars.None;
+            txtWidth.SelectedText = "";
+            txtWidth.SelectionLength = 0;
+            txtWidth.SelectionStart = 0;
+            txtWidth.ShortcutsEnabled = true;
+            txtWidth.Size = new Size(150, 39);
+            txtWidth.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            txtWidth.TabIndex = 19;
+            txtWidth.TextAlign = HorizontalAlignment.Left;
+            txtWidth.TextMarginBottom = 0;
+            txtWidth.TextMarginLeft = 3;
+            txtWidth.TextMarginTop = 1;
+            txtWidth.TextPlaceholder = "Digite a largura";
+            txtWidth.UseSystemPasswordChar = false;
+            txtWidth.WordWrap = true;
+            // 
+            // txtHeight
+            // 
+            txtHeight.AcceptsReturn = false;
+            txtHeight.AcceptsTab = false;
+            txtHeight.AnimationSpeed = 200;
+            txtHeight.AutoCompleteMode = AutoCompleteMode.None;
+            txtHeight.AutoCompleteSource = AutoCompleteSource.None;
+            txtHeight.AutoSizeHeight = true;
+            txtHeight.BackColor = Color.Transparent;
+            txtHeight.BackgroundImage = (Image)resources.GetObject("txtHeight.BackgroundImage");
+            txtHeight.BorderColorActive = Color.DodgerBlue;
+            txtHeight.BorderColorDisabled = Color.FromArgb(204, 204, 204);
+            txtHeight.BorderColorHover = Color.FromArgb(105, 181, 255);
+            txtHeight.BorderColorIdle = Color.Silver;
+            txtHeight.BorderRadius = 1;
+            txtHeight.BorderThickness = 1;
+            txtHeight.CharacterCase = Bunifu.UI.WinForms.BunifuTextBox.CharacterCases.Normal;
+            txtHeight.CharacterCasing = CharacterCasing.Normal;
+            txtHeight.DefaultFont = new Font("Segoe UI", 9.25F);
+            txtHeight.DefaultText = "";
+            txtHeight.FillColor = Color.White;
+            txtHeight.HideSelection = true;
+            txtHeight.IconLeft = null;
+            txtHeight.IconLeftCursor = Cursors.IBeam;
+            txtHeight.IconPadding = 10;
+            txtHeight.IconRight = null;
+            txtHeight.IconRightCursor = Cursors.IBeam;
+            txtHeight.Location = new Point(446, 137);
+            txtHeight.MaxLength = 32767;
+            txtHeight.MinimumSize = new Size(1, 1);
+            txtHeight.Modified = false;
+            txtHeight.Multiline = false;
+            txtHeight.Name = "txtHeight";
+            stateProperties5.BorderColor = Color.DodgerBlue;
+            stateProperties5.FillColor = Color.Empty;
+            stateProperties5.ForeColor = Color.Empty;
+            stateProperties5.PlaceholderForeColor = Color.Empty;
+            txtHeight.OnActiveState = stateProperties5;
+            stateProperties6.BorderColor = Color.FromArgb(204, 204, 204);
+            stateProperties6.FillColor = Color.FromArgb(240, 240, 240);
+            stateProperties6.ForeColor = Color.FromArgb(109, 109, 109);
+            stateProperties6.PlaceholderForeColor = Color.DarkGray;
+            txtHeight.OnDisabledState = stateProperties6;
+            stateProperties7.BorderColor = Color.FromArgb(105, 181, 255);
+            stateProperties7.FillColor = Color.Empty;
+            stateProperties7.ForeColor = Color.Empty;
+            stateProperties7.PlaceholderForeColor = Color.Empty;
+            txtHeight.OnHoverState = stateProperties7;
+            stateProperties8.BorderColor = Color.Silver;
+            stateProperties8.FillColor = Color.White;
+            stateProperties8.ForeColor = Color.Empty;
+            stateProperties8.PlaceholderForeColor = Color.Empty;
+            txtHeight.OnIdleState = stateProperties8;
+            txtHeight.Padding = new Padding(3);
+            txtHeight.PasswordChar = '\0';
+            txtHeight.PlaceholderForeColor = Color.Silver;
+            txtHeight.PlaceholderText = "Digite a altura";
+            txtHeight.ReadOnly = false;
+            txtHeight.ScrollBars = ScrollBars.None;
+            txtHeight.SelectedText = "";
+            txtHeight.SelectionLength = 0;
+            txtHeight.SelectionStart = 0;
+            txtHeight.ShortcutsEnabled = true;
+            txtHeight.Size = new Size(150, 39);
+            txtHeight.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            txtHeight.TabIndex = 20;
+            txtHeight.TextAlign = HorizontalAlignment.Left;
+            txtHeight.TextMarginBottom = 0;
+            txtHeight.TextMarginLeft = 3;
+            txtHeight.TextMarginTop = 1;
+            txtHeight.TextPlaceholder = "Digite a altura";
+            txtHeight.UseSystemPasswordChar = false;
+            txtHeight.WordWrap = true;
+            // 
+            // txtArea
+            // 
+            txtArea.AcceptsReturn = false;
+            txtArea.AcceptsTab = false;
+            txtArea.AnimationSpeed = 200;
+            txtArea.AutoCompleteMode = AutoCompleteMode.None;
+            txtArea.AutoCompleteSource = AutoCompleteSource.None;
+            txtArea.AutoSizeHeight = true;
+            txtArea.BackColor = Color.Transparent;
+            txtArea.BackgroundImage = (Image)resources.GetObject("txtArea.BackgroundImage");
+            txtArea.BorderColorActive = Color.DodgerBlue;
+            txtArea.BorderColorDisabled = Color.FromArgb(204, 204, 204);
+            txtArea.BorderColorHover = Color.FromArgb(105, 181, 255);
+            txtArea.BorderColorIdle = Color.Silver;
+            txtArea.BorderRadius = 1;
+            txtArea.BorderThickness = 1;
+            txtArea.CharacterCase = Bunifu.UI.WinForms.BunifuTextBox.CharacterCases.Normal;
+            txtArea.CharacterCasing = CharacterCasing.Normal;
+            txtArea.DefaultFont = new Font("Segoe UI", 9F);
+            txtArea.DefaultText = "";
+            txtArea.FillColor = Color.White;
+            txtArea.HideSelection = true;
+            txtArea.IconLeft = null;
+            txtArea.IconLeftCursor = Cursors.IBeam;
+            txtArea.IconPadding = 10;
+            txtArea.IconRight = null;
+            txtArea.IconRightCursor = Cursors.IBeam;
+            txtArea.Location = new Point(446, 254);
+            txtArea.MaxLength = 32767;
+            txtArea.MinimumSize = new Size(1, 1);
+            txtArea.Modified = false;
+            txtArea.Multiline = false;
+            txtArea.Name = "txtArea";
+            stateProperties9.BorderColor = Color.DodgerBlue;
+            stateProperties9.FillColor = Color.Empty;
+            stateProperties9.ForeColor = Color.Empty;
+            stateProperties9.PlaceholderForeColor = Color.Empty;
+            txtArea.OnActiveState = stateProperties9;
+            stateProperties10.BorderColor = Color.FromArgb(204, 204, 204);
+            stateProperties10.FillColor = Color.FromArgb(240, 240, 240);
+            stateProperties10.ForeColor = Color.FromArgb(109, 109, 109);
+            stateProperties10.PlaceholderForeColor = Color.DarkGray;
+            txtArea.OnDisabledState = stateProperties10;
+            stateProperties11.BorderColor = Color.FromArgb(105, 181, 255);
+            stateProperties11.FillColor = Color.Empty;
+            stateProperties11.ForeColor = Color.Empty;
+            stateProperties11.PlaceholderForeColor = Color.Empty;
+            txtArea.OnHoverState = stateProperties11;
+            stateProperties12.BorderColor = Color.Silver;
+            stateProperties12.FillColor = Color.White;
+            stateProperties12.ForeColor = Color.Empty;
+            stateProperties12.PlaceholderForeColor = Color.Empty;
+            txtArea.OnIdleState = stateProperties12;
+            txtArea.Padding = new Padding(3);
+            txtArea.PasswordChar = '\0';
+            txtArea.PlaceholderForeColor = Color.Silver;
+            txtArea.PlaceholderText = "Área";
+            txtArea.ReadOnly = true;
+            txtArea.ScrollBars = ScrollBars.None;
+            txtArea.SelectedText = "";
+            txtArea.SelectionLength = 0;
+            txtArea.SelectionStart = 0;
+            txtArea.ShortcutsEnabled = true;
+            txtArea.Size = new Size(150, 38);
+            txtArea.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            txtArea.TabIndex = 21;
+            txtArea.TextAlign = HorizontalAlignment.Right;
+            txtArea.TextMarginBottom = 0;
+            txtArea.TextMarginLeft = 3;
+            txtArea.TextMarginTop = 1;
+            txtArea.TextPlaceholder = "Área";
+            txtArea.UseSystemPasswordChar = false;
+            txtArea.WordWrap = true;
+            // 
             // FormCalcArea
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(251, 251, 251);
             ClientSize = new Size(874, 484);
-            Controls.Add(btnCalculate);
             Controls.Add(txtArea);
-            Controls.Add(lblArea);
             Controls.Add(txtHeight);
-            Controls.Add(lblHeight);
             Controls.Add(txtWidth);
+            Controls.Add(btnCalculate);
+            Controls.Add(lblArea);
+            Controls.Add(lblHeight);
             Controls.Add(lblWidth);
             Controls.Add(label1);
             Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -226,11 +433,11 @@
 
         private Label label1;
         private Label lblWidth;
-        private TextBox txtWidth;
-        private TextBox txtHeight;
         private Label lblHeight;
-        private TextBox txtArea;
         private Label lblArea;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnCalculate;
+        private Bunifu.UI.WinForms.BunifuTextBox txtWidth;
+        private Bunifu.UI.WinForms.BunifuTextBox txtHeight;
+        private Bunifu.UI.WinForms.BunifuTextBox txtArea;
     }
 }
