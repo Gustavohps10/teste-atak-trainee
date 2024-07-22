@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMultOfTree));
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             label1 = new Label();
             lbxFor = new ListBox();
             lblFor = new Label();
@@ -35,7 +37,7 @@
             lbxWhile = new ListBox();
             lblDoWhile = new Label();
             lbxDoWhile = new ListBox();
-            btnListNumbers = new Bunifu.Framework.UI.BunifuFlatButton();
+            btnList = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             SuspendLayout();
             // 
             // label1
@@ -111,42 +113,95 @@
             lbxDoWhile.Size = new Size(156, 259);
             lbxDoWhile.TabIndex = 6;
             // 
-            // btnListNumbers
+            // btnList
             // 
-            btnListNumbers.Active = false;
-            btnListNumbers.Activecolor = Color.FromArgb(46, 44, 50);
-            btnListNumbers.BackColor = Color.FromArgb(24, 22, 27);
-            btnListNumbers.BackgroundImageLayout = ImageLayout.Stretch;
-            btnListNumbers.BorderRadius = 5;
-            btnListNumbers.ButtonText = "Listar";
-            btnListNumbers.DisabledColor = Color.Gray;
-            btnListNumbers.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnListNumbers.Iconcolor = Color.Transparent;
-            btnListNumbers.Iconimage = null;
-            btnListNumbers.Iconimage_right = null;
-            btnListNumbers.Iconimage_right_Selected = null;
-            btnListNumbers.Iconimage_Selected = null;
-            btnListNumbers.IconMarginLeft = 0;
-            btnListNumbers.IconMarginRight = 16;
-            btnListNumbers.IconRightVisible = false;
-            btnListNumbers.IconRightZoom = 0D;
-            btnListNumbers.IconVisible = true;
-            btnListNumbers.IconZoom = 38D;
-            btnListNumbers.IsTab = false;
-            btnListNumbers.Location = new Point(346, 72);
-            btnListNumbers.Margin = new Padding(0, 0, 0, 8);
-            btnListNumbers.Name = "btnListNumbers";
-            btnListNumbers.Normalcolor = Color.FromArgb(24, 22, 27);
-            btnListNumbers.OnHovercolor = Color.FromArgb(46, 44, 50);
-            btnListNumbers.OnHoverTextColor = Color.White;
-            btnListNumbers.selected = false;
-            btnListNumbers.Size = new Size(105, 33);
-            btnListNumbers.TabIndex = 10;
-            btnListNumbers.Text = "Listar";
-            btnListNumbers.TextAlign = ContentAlignment.MiddleCenter;
-            btnListNumbers.Textcolor = Color.White;
-            btnListNumbers.TextFont = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnListNumbers.Click += btnListNumbers_Click;
+            btnList.AllowAnimations = true;
+            btnList.AllowMouseEffects = true;
+            btnList.AllowToggling = false;
+            btnList.AnimationSpeed = 25;
+            btnList.AutoGenerateColors = false;
+            btnList.AutoRoundBorders = false;
+            btnList.AutoSizeLeftIcon = true;
+            btnList.AutoSizeRightIcon = true;
+            btnList.BackColor = Color.Transparent;
+            btnList.BackColor1 = Color.FromArgb(24, 22, 27);
+            btnList.BackgroundImage = (Image)resources.GetObject("btnList.BackgroundImage");
+            btnList.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            btnList.ButtonText = "Listar";
+            btnList.ButtonTextMarginLeft = 0;
+            btnList.ColorContrastOnClick = 45;
+            btnList.ColorContrastOnHover = 45;
+            btnList.Cursor = Cursors.Hand;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            btnList.CustomizableEdges = borderEdges1;
+            btnList.DialogResult = DialogResult.None;
+            btnList.DisabledBorderColor = Color.Transparent;
+            btnList.DisabledFillColor = Color.FromArgb(204, 204, 204);
+            btnList.DisabledForecolor = Color.FromArgb(168, 160, 168);
+            btnList.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
+            btnList.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnList.ForeColor = Color.White;
+            btnList.IconLeftAlign = ContentAlignment.MiddleLeft;
+            btnList.IconLeftCursor = Cursors.Default;
+            btnList.IconLeftPadding = new Padding(11, 3, 3, 3);
+            btnList.IconMarginLeft = 11;
+            btnList.IconPadding = 10;
+            btnList.IconRightAlign = ContentAlignment.MiddleRight;
+            btnList.IconRightCursor = Cursors.Default;
+            btnList.IconRightPadding = new Padding(3, 3, 7, 3);
+            btnList.IconSize = 25;
+            btnList.IdleBorderColor = Color.Transparent;
+            btnList.IdleBorderRadius = 8;
+            btnList.IdleBorderThickness = 1;
+            btnList.IdleFillColor = Color.FromArgb(24, 22, 27);
+            btnList.IdleIconLeftImage = null;
+            btnList.IdleIconRightImage = null;
+            btnList.IndicateFocus = false;
+            btnList.Location = new Point(342, 80);
+            btnList.Name = "btnList";
+            btnList.OnDisabledState.BorderColor = Color.Transparent;
+            btnList.OnDisabledState.BorderRadius = 8;
+            btnList.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            btnList.OnDisabledState.BorderThickness = 1;
+            btnList.OnDisabledState.FillColor = Color.FromArgb(204, 204, 204);
+            btnList.OnDisabledState.ForeColor = Color.FromArgb(168, 160, 168);
+            btnList.OnDisabledState.IconLeftImage = null;
+            btnList.OnDisabledState.IconRightImage = null;
+            btnList.onHoverState.BorderColor = Color.Transparent;
+            btnList.onHoverState.BorderRadius = 8;
+            btnList.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            btnList.onHoverState.BorderThickness = 1;
+            btnList.onHoverState.FillColor = Color.FromArgb(46, 43, 52);
+            btnList.onHoverState.ForeColor = Color.White;
+            btnList.onHoverState.IconLeftImage = null;
+            btnList.onHoverState.IconRightImage = null;
+            btnList.OnIdleState.BorderColor = Color.Transparent;
+            btnList.OnIdleState.BorderRadius = 8;
+            btnList.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            btnList.OnIdleState.BorderThickness = 1;
+            btnList.OnIdleState.FillColor = Color.FromArgb(24, 22, 27);
+            btnList.OnIdleState.ForeColor = Color.White;
+            btnList.OnIdleState.IconLeftImage = null;
+            btnList.OnIdleState.IconRightImage = null;
+            btnList.OnPressedState.BorderColor = Color.Transparent;
+            btnList.OnPressedState.BorderRadius = 8;
+            btnList.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            btnList.OnPressedState.BorderThickness = 1;
+            btnList.OnPressedState.FillColor = Color.FromArgb(46, 43, 52);
+            btnList.OnPressedState.ForeColor = Color.White;
+            btnList.OnPressedState.IconLeftImage = null;
+            btnList.OnPressedState.IconRightImage = null;
+            btnList.Size = new Size(114, 36);
+            btnList.TabIndex = 18;
+            btnList.TextAlign = ContentAlignment.MiddleCenter;
+            btnList.TextAlignment = HorizontalAlignment.Center;
+            btnList.TextMarginLeft = 0;
+            btnList.TextPadding = new Padding(0);
+            btnList.UseDefaultRadiusAndThickness = true;
+            btnList.Click += btnListNumbers_Click;
             // 
             // FormMultOfTree
             // 
@@ -154,7 +209,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(251, 251, 251);
             ClientSize = new Size(800, 450);
-            Controls.Add(btnListNumbers);
+            Controls.Add(btnList);
             Controls.Add(lblDoWhile);
             Controls.Add(lbxDoWhile);
             Controls.Add(lblWhile);
@@ -178,6 +233,6 @@
         private ListBox lbxWhile;
         private Label lblDoWhile;
         private ListBox lbxDoWhile;
-        private Bunifu.Framework.UI.BunifuFlatButton btnListNumbers;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnList;
     }
 }
