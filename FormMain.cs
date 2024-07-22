@@ -72,5 +72,10 @@ namespace teste_atak
             FormAbout formAbout = new FormAbout();
             formAbout.ShowDialog();
         }
+
+        private void FormMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

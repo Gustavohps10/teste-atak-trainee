@@ -386,13 +386,14 @@
             // 
             // lblTextGuide
             // 
-            lblTextGuide.Font = new Font("Inter", 14F);
+            lblTextGuide.Font = new Font("Inter", 11F);
             lblTextGuide.ForeColor = Color.FromArgb(33, 33, 33);
-            lblTextGuide.Location = new Point(77, 150);
+            lblTextGuide.Location = new Point(77, 160);
             lblTextGuide.Name = "lblTextGuide";
-            lblTextGuide.Size = new Size(257, 98);
+            lblTextGuide.Size = new Size(257, 75);
             lblTextGuide.TabIndex = 7;
             lblTextGuide.Text = "Você pode navegar pelos desafios através do menu lateral.";
+            lblTextGuide.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblLogical
             // 
@@ -441,6 +442,7 @@
             Name = "FormMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Teste - Atak Sistemas";
+            FormClosed += FormMain_FormClosed;
             pnlHeader.ResumeLayout(false);
             pnlHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pcbUserIcon).EndInit();

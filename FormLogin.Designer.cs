@@ -145,6 +145,7 @@
             linkLabel1.TabStop = true;
             linkLabel1.Text = "https://github.com/Gustavohps10";
             linkLabel1.TextAlign = ContentAlignment.MiddleCenter;
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // lblMadeBy
             // 

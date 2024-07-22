@@ -168,6 +168,7 @@
             lnkGithub.TabIndex = 10;
             lnkGithub.TabStop = true;
             lnkGithub.Text = "https://github.com/Gustavohps10/teste-atak";
+            lnkGithub.LinkClicked += lnkGithub_LinkClicked;
             // 
             // FormAbout
             // 
