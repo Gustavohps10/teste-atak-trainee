@@ -20,9 +20,9 @@ Este repositório tem como finalidade gerenciar minha resolução do teste de l�
 - [x] Laços de repetição
 - [x] Lidar com classes
 
-## :tada: Baixar executável
-> [Teste Atak v1.2](https://github.com/Gustavohps10/teste-atak/releases/tag/1.2) 
-Baixe e extraia o arquivo ```teste-atak-win10-x64.rar```
+## :arrow_down: Baixar executável
+- Baixe e extraia o arquivo ```teste-atak-win10-x64.rar```
+> [Download Teste Atak v1.2](https://github.com/Gustavohps10/teste-atak/releases/download/1.2/teste-atak-win10-x64.rar) 
 
 ## :pushpin: Requisitos
 - Windows 10
