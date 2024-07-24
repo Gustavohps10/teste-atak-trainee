@@ -50,6 +50,8 @@
             txtWidth = new Bunifu.UI.WinForms.BunifuTextBox();
             txtHeight = new Bunifu.UI.WinForms.BunifuTextBox();
             txtArea = new Bunifu.UI.WinForms.BunifuTextBox();
+            bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            bunifuShadowPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -60,7 +62,7 @@
             label1.Location = new Point(0, 0);
             label1.Name = "label1";
             label1.Padding = new Padding(8);
-            label1.Size = new Size(874, 58);
+            label1.Size = new Size(800, 58);
             label1.TabIndex = 1;
             label1.Text = "Calcular Área";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -68,30 +70,30 @@
             // lblWidth
             // 
             lblWidth.AutoSize = true;
-            lblWidth.Font = new Font("Segoe UI", 14.25F);
-            lblWidth.Location = new Point(263, 108);
+            lblWidth.Font = new Font("Segoe UI", 9F);
+            lblWidth.Location = new Point(57, 48);
             lblWidth.Name = "lblWidth";
-            lblWidth.Size = new Size(119, 25);
+            lblWidth.Size = new Size(75, 15);
             lblWidth.TabIndex = 2;
             lblWidth.Text = "Largura (cm)";
             // 
             // lblHeight
             // 
             lblHeight.AutoSize = true;
-            lblHeight.Font = new Font("Segoe UI", 14.25F);
-            lblHeight.Location = new Point(446, 108);
+            lblHeight.Font = new Font("Segoe UI", 9F);
+            lblHeight.Location = new Point(225, 48);
             lblHeight.Name = "lblHeight";
-            lblHeight.Size = new Size(105, 25);
+            lblHeight.Size = new Size(67, 15);
             lblHeight.TabIndex = 4;
             lblHeight.Text = "Altura (cm)";
             // 
             // lblArea
             // 
             lblArea.AutoSize = true;
-            lblArea.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblArea.Location = new Point(494, 226);
+            lblArea.Font = new Font("Segoe UI", 9F);
+            lblArea.Location = new Point(324, 209);
             lblArea.Name = "lblArea";
-            lblArea.Size = new Size(106, 25);
+            lblArea.Size = new Size(63, 15);
             lblArea.TabIndex = 6;
             lblArea.Text = "Área (cm²)";
             lblArea.TextAlign = ContentAlignment.TopRight;
@@ -143,7 +145,7 @@
             btnCalculate.IdleIconLeftImage = null;
             btnCalculate.IdleIconRightImage = null;
             btnCalculate.IndicateFocus = false;
-            btnCalculate.Location = new Point(263, 194);
+            btnCalculate.Location = new Point(57, 111);
             btnCalculate.Name = "btnCalculate";
             btnCalculate.OnDisabledState.BorderColor = Color.Transparent;
             btnCalculate.OnDisabledState.BorderRadius = 8;
@@ -200,7 +202,7 @@
             txtWidth.BorderColorDisabled = Color.FromArgb(204, 204, 204);
             txtWidth.BorderColorHover = Color.FromArgb(105, 181, 255);
             txtWidth.BorderColorIdle = Color.Silver;
-            txtWidth.BorderRadius = 1;
+            txtWidth.BorderRadius = 5;
             txtWidth.BorderThickness = 1;
             txtWidth.CharacterCase = Bunifu.UI.WinForms.BunifuTextBox.CharacterCases.Normal;
             txtWidth.CharacterCasing = CharacterCasing.Normal;
@@ -213,7 +215,7 @@
             txtWidth.IconPadding = 10;
             txtWidth.IconRight = null;
             txtWidth.IconRightCursor = Cursors.IBeam;
-            txtWidth.Location = new Point(263, 137);
+            txtWidth.Location = new Point(57, 66);
             txtWidth.MaxLength = 32767;
             txtWidth.MinimumSize = new Size(1, 1);
             txtWidth.Modified = false;
@@ -249,7 +251,7 @@
             txtWidth.SelectionLength = 0;
             txtWidth.SelectionStart = 0;
             txtWidth.ShortcutsEnabled = true;
-            txtWidth.Size = new Size(150, 39);
+            txtWidth.Size = new Size(162, 39);
             txtWidth.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             txtWidth.TabIndex = 19;
             txtWidth.TextAlign = HorizontalAlignment.Left;
@@ -274,7 +276,7 @@
             txtHeight.BorderColorDisabled = Color.FromArgb(204, 204, 204);
             txtHeight.BorderColorHover = Color.FromArgb(105, 181, 255);
             txtHeight.BorderColorIdle = Color.Silver;
-            txtHeight.BorderRadius = 1;
+            txtHeight.BorderRadius = 5;
             txtHeight.BorderThickness = 1;
             txtHeight.CharacterCase = Bunifu.UI.WinForms.BunifuTextBox.CharacterCases.Normal;
             txtHeight.CharacterCasing = CharacterCasing.Normal;
@@ -287,7 +289,7 @@
             txtHeight.IconPadding = 10;
             txtHeight.IconRight = null;
             txtHeight.IconRightCursor = Cursors.IBeam;
-            txtHeight.Location = new Point(446, 137);
+            txtHeight.Location = new Point(225, 66);
             txtHeight.MaxLength = 32767;
             txtHeight.MinimumSize = new Size(1, 1);
             txtHeight.Modified = false;
@@ -323,7 +325,7 @@
             txtHeight.SelectionLength = 0;
             txtHeight.SelectionStart = 0;
             txtHeight.ShortcutsEnabled = true;
-            txtHeight.Size = new Size(150, 39);
+            txtHeight.Size = new Size(162, 39);
             txtHeight.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             txtHeight.TabIndex = 20;
             txtHeight.TextAlign = HorizontalAlignment.Left;
@@ -348,7 +350,7 @@
             txtArea.BorderColorDisabled = Color.FromArgb(204, 204, 204);
             txtArea.BorderColorHover = Color.FromArgb(105, 181, 255);
             txtArea.BorderColorIdle = Color.Silver;
-            txtArea.BorderRadius = 1;
+            txtArea.BorderRadius = 5;
             txtArea.BorderThickness = 1;
             txtArea.CharacterCase = Bunifu.UI.WinForms.BunifuTextBox.CharacterCases.Normal;
             txtArea.CharacterCasing = CharacterCasing.Normal;
@@ -361,7 +363,7 @@
             txtArea.IconPadding = 10;
             txtArea.IconRight = null;
             txtArea.IconRightCursor = Cursors.IBeam;
-            txtArea.Location = new Point(446, 254);
+            txtArea.Location = new Point(240, 227);
             txtArea.MaxLength = 32767;
             txtArea.MinimumSize = new Size(1, 1);
             txtArea.Modified = false;
@@ -408,25 +410,48 @@
             txtArea.UseSystemPasswordChar = false;
             txtArea.WordWrap = true;
             // 
+            // bunifuShadowPanel1
+            // 
+            bunifuShadowPanel1.BackColor = Color.Transparent;
+            bunifuShadowPanel1.BorderColor = Color.WhiteSmoke;
+            bunifuShadowPanel1.BorderRadius = 5;
+            bunifuShadowPanel1.BorderThickness = 1;
+            bunifuShadowPanel1.Controls.Add(txtArea);
+            bunifuShadowPanel1.Controls.Add(txtHeight);
+            bunifuShadowPanel1.Controls.Add(txtWidth);
+            bunifuShadowPanel1.Controls.Add(btnCalculate);
+            bunifuShadowPanel1.Controls.Add(lblArea);
+            bunifuShadowPanel1.Controls.Add(lblHeight);
+            bunifuShadowPanel1.Controls.Add(lblWidth);
+            bunifuShadowPanel1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            bunifuShadowPanel1.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            bunifuShadowPanel1.Location = new Point(181, 85);
+            bunifuShadowPanel1.Name = "bunifuShadowPanel1";
+            bunifuShadowPanel1.PanelColor = Color.FromArgb(251, 251, 251);
+            bunifuShadowPanel1.PanelColor2 = Color.FromArgb(251, 251, 251);
+            bunifuShadowPanel1.ShadowColor = Color.DarkGray;
+            bunifuShadowPanel1.ShadowDept = 2;
+            bunifuShadowPanel1.ShadowDepth = 2;
+            bunifuShadowPanel1.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
+            bunifuShadowPanel1.ShadowTopLeftVisible = false;
+            bunifuShadowPanel1.Size = new Size(439, 304);
+            bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
+            bunifuShadowPanel1.TabIndex = 22;
+            // 
             // FormCalcArea
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(251, 251, 251);
-            ClientSize = new Size(874, 484);
-            Controls.Add(txtArea);
-            Controls.Add(txtHeight);
-            Controls.Add(txtWidth);
-            Controls.Add(btnCalculate);
-            Controls.Add(lblArea);
-            Controls.Add(lblHeight);
-            Controls.Add(lblWidth);
+            ClientSize = new Size(800, 450);
+            Controls.Add(bunifuShadowPanel1);
             Controls.Add(label1);
             Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Name = "FormCalcArea";
             Text = "Calcular Área";
+            bunifuShadowPanel1.ResumeLayout(false);
+            bunifuShadowPanel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -439,5 +464,6 @@
         private Bunifu.UI.WinForms.BunifuTextBox txtWidth;
         private Bunifu.UI.WinForms.BunifuTextBox txtHeight;
         private Bunifu.UI.WinForms.BunifuTextBox txtArea;
+        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel1;
     }
 }

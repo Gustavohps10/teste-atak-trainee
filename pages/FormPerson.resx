@@ -117,4 +117,38 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="txtAge.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAQsAAAAnCAYAAAAYTG2rAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEjSURBVHhe7dYxSgNRGIXRV7o0N+ASXIR7sHI1dpPJzKQK
+        WKRLYZXOQiRiwCGMGfMsBMVrfw7c6n/1xysA/9I0zeUwDA+LxWIyM5t7sFwur2sizrquu1qv188nE8Bs
+        7sFms3k59eGmpqKUvu8f9/t9fQJwNo7j1LbtW01FKfOXA+Ancx9qKsQC+J1YABGxACJiAUTEAoiIBRAR
+        CyAiFkBELICIWAARsQAiYgFExAKIiAUQEQsgIhZARCyAiFgAEbEAImIBRMQCiIgFEBELICIWQEQsgIhY
+        ABGxACJiAUTEAoiIBRD5Fouu654Oh0M9AZwdj8epbduxpqKUvu9vt9vta70DfNrtdu+r1eq+puJsGIa7
+        +bthZva1ORRN01zUTAD8pZQPODLXK6jBbgoAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="txtName.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAQsAAAAnCAYAAAAYTG2rAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEjSURBVHhe7dYxSgNRGIXRV7o0N+ASXIR7sHI1dpPJzKQK
+        WKRLYZXOQiRiwCGMGfMsBMVrfw7c6n/1xysA/9I0zeUwDA+LxWIyM5t7sFwur2sizrquu1qv188nE8Bs
+        7sFms3k59eGmpqKUvu8f9/t9fQJwNo7j1LbtW01FKfOXA+Ancx9qKsQC+J1YABGxACJiAUTEAoiIBRAR
+        CyAiFkBELICIWAARsQAiYgFExAKIiAUQEQsgIhZARCyAiFgAEbEAImIBRMQCiIgFEBELICIWQEQsgIhY
+        ABGxACJiAUTEAoiIBRD5Fouu654Oh0M9AZwdj8epbduxpqKUvu9vt9vta70DfNrtdu+r1eq+puJsGIa7
+        +bthZva1ORRN01zUTAD8pZQPODLXK6jBbgoAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="txtPersonId.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAQsAAAAnCAYAAAAYTG2rAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEjSURBVHhe7dYxSgNRGIXRV7o0N+ASXIR7sHI1dpPJzKQK
+        WKRLYZXOQiRiwCGMGfMsBMVrfw7c6n/1xysA/9I0zeUwDA+LxWIyM5t7sFwur2sizrquu1qv188nE8Bs
+        7sFms3k59eGmpqKUvu8f9/t9fQJwNo7j1LbtW01FKfOXA+Ancx9qKsQC+J1YABGxACJiAUTEAoiIBRAR
+        CyAiFkBELICIWAARsQAiYgFExAKIiAUQEQsgIhZARCyAiFgAEbEAImIBRMQCiIgFEBELICIWQEQsgIhY
+        ABGxACJiAUTEAoiIBRD5Fouu654Oh0M9AZwdj8epbduxpqKUvu9vt9vta70DfNrtdu+r1eq+puJsGIa7
+        +bthZva1ORRN01zUTAD8pZQPODLXK6jBbgoAAAAASUVORK5CYII=
+</value>
+  </data>
 </root>

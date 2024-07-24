@@ -153,6 +153,7 @@
             btnMenuEvenOdd.DisabledBorderColor = Color.Transparent;
             btnMenuEvenOdd.DisabledFillColor = Color.FromArgb(204, 204, 204);
             btnMenuEvenOdd.DisabledForecolor = Color.FromArgb(168, 160, 168);
+            btnMenuEvenOdd.Dock = DockStyle.Left;
             btnMenuEvenOdd.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
             btnMenuEvenOdd.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnMenuEvenOdd.ForeColor = Color.White;
@@ -172,7 +173,8 @@
             btnMenuEvenOdd.IdleIconLeftImage = Properties.Resources.file_digit;
             btnMenuEvenOdd.IdleIconRightImage = null;
             btnMenuEvenOdd.IndicateFocus = false;
-            btnMenuEvenOdd.Location = new Point(19, 19);
+            btnMenuEvenOdd.Location = new Point(16, 20);
+            btnMenuEvenOdd.Margin = new Padding(0, 4, 0, 4);
             btnMenuEvenOdd.Name = "btnMenuEvenOdd";
             btnMenuEvenOdd.OnDisabledState.BorderColor = Color.Transparent;
             btnMenuEvenOdd.OnDisabledState.BorderRadius = 8;
@@ -206,7 +208,7 @@
             btnMenuEvenOdd.OnPressedState.ForeColor = Color.White;
             btnMenuEvenOdd.OnPressedState.IconLeftImage = null;
             btnMenuEvenOdd.OnPressedState.IconRightImage = null;
-            btnMenuEvenOdd.Size = new Size(168, 36);
+            btnMenuEvenOdd.Size = new Size(171, 36);
             btnMenuEvenOdd.TabIndex = 11;
             btnMenuEvenOdd.TextAlign = ContentAlignment.MiddleLeft;
             btnMenuEvenOdd.TextAlignment = HorizontalAlignment.Center;
@@ -243,6 +245,7 @@
             btnMenuSortList.DisabledBorderColor = Color.Transparent;
             btnMenuSortList.DisabledFillColor = Color.FromArgb(204, 204, 204);
             btnMenuSortList.DisabledForecolor = Color.FromArgb(168, 160, 168);
+            btnMenuSortList.Dock = DockStyle.Left;
             btnMenuSortList.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
             btnMenuSortList.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnMenuSortList.ForeColor = Color.White;
@@ -262,7 +265,8 @@
             btnMenuSortList.IdleIconLeftImage = Properties.Resources.list;
             btnMenuSortList.IdleIconRightImage = null;
             btnMenuSortList.IndicateFocus = false;
-            btnMenuSortList.Location = new Point(19, 61);
+            btnMenuSortList.Location = new Point(16, 64);
+            btnMenuSortList.Margin = new Padding(0, 4, 0, 4);
             btnMenuSortList.Name = "btnMenuSortList";
             btnMenuSortList.OnDisabledState.BorderColor = Color.Transparent;
             btnMenuSortList.OnDisabledState.BorderRadius = 8;
@@ -296,7 +300,7 @@
             btnMenuSortList.OnPressedState.ForeColor = Color.White;
             btnMenuSortList.OnPressedState.IconLeftImage = null;
             btnMenuSortList.OnPressedState.IconRightImage = null;
-            btnMenuSortList.Size = new Size(168, 36);
+            btnMenuSortList.Size = new Size(171, 36);
             btnMenuSortList.TabIndex = 12;
             btnMenuSortList.TextAlign = ContentAlignment.MiddleLeft;
             btnMenuSortList.TextAlignment = HorizontalAlignment.Center;
@@ -333,6 +337,7 @@
             btnMenuCalcArea.DisabledBorderColor = Color.Transparent;
             btnMenuCalcArea.DisabledFillColor = Color.FromArgb(204, 204, 204);
             btnMenuCalcArea.DisabledForecolor = Color.FromArgb(168, 160, 168);
+            btnMenuCalcArea.Dock = DockStyle.Left;
             btnMenuCalcArea.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
             btnMenuCalcArea.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnMenuCalcArea.ForeColor = Color.White;
@@ -352,7 +357,8 @@
             btnMenuCalcArea.IdleIconLeftImage = Properties.Resources.square_dashed_bottom;
             btnMenuCalcArea.IdleIconRightImage = null;
             btnMenuCalcArea.IndicateFocus = false;
-            btnMenuCalcArea.Location = new Point(19, 103);
+            btnMenuCalcArea.Location = new Point(16, 108);
+            btnMenuCalcArea.Margin = new Padding(0, 4, 0, 4);
             btnMenuCalcArea.Name = "btnMenuCalcArea";
             btnMenuCalcArea.OnDisabledState.BorderColor = Color.Transparent;
             btnMenuCalcArea.OnDisabledState.BorderRadius = 8;
@@ -386,7 +392,7 @@
             btnMenuCalcArea.OnPressedState.ForeColor = Color.White;
             btnMenuCalcArea.OnPressedState.IconLeftImage = null;
             btnMenuCalcArea.OnPressedState.IconRightImage = null;
-            btnMenuCalcArea.Size = new Size(168, 36);
+            btnMenuCalcArea.Size = new Size(171, 36);
             btnMenuCalcArea.TabIndex = 13;
             btnMenuCalcArea.TextAlign = ContentAlignment.MiddleLeft;
             btnMenuCalcArea.TextAlignment = HorizontalAlignment.Center;
@@ -423,6 +429,7 @@
             btnMenuMultOfTree.DisabledBorderColor = Color.Transparent;
             btnMenuMultOfTree.DisabledFillColor = Color.FromArgb(204, 204, 204);
             btnMenuMultOfTree.DisabledForecolor = Color.FromArgb(168, 160, 168);
+            btnMenuMultOfTree.Dock = DockStyle.Left;
             btnMenuMultOfTree.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
             btnMenuMultOfTree.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnMenuMultOfTree.ForeColor = Color.White;
@@ -442,7 +449,8 @@
             btnMenuMultOfTree.IdleIconLeftImage = Properties.Resources.repeat;
             btnMenuMultOfTree.IdleIconRightImage = null;
             btnMenuMultOfTree.IndicateFocus = false;
-            btnMenuMultOfTree.Location = new Point(19, 145);
+            btnMenuMultOfTree.Location = new Point(16, 152);
+            btnMenuMultOfTree.Margin = new Padding(0, 4, 0, 4);
             btnMenuMultOfTree.Name = "btnMenuMultOfTree";
             btnMenuMultOfTree.OnDisabledState.BorderColor = Color.Transparent;
             btnMenuMultOfTree.OnDisabledState.BorderRadius = 8;
@@ -476,7 +484,7 @@
             btnMenuMultOfTree.OnPressedState.ForeColor = Color.White;
             btnMenuMultOfTree.OnPressedState.IconLeftImage = null;
             btnMenuMultOfTree.OnPressedState.IconRightImage = null;
-            btnMenuMultOfTree.Size = new Size(168, 36);
+            btnMenuMultOfTree.Size = new Size(171, 36);
             btnMenuMultOfTree.TabIndex = 14;
             btnMenuMultOfTree.TextAlign = ContentAlignment.MiddleLeft;
             btnMenuMultOfTree.TextAlignment = HorizontalAlignment.Center;
@@ -513,6 +521,7 @@
             btnMenuPersonClass.DisabledBorderColor = Color.Transparent;
             btnMenuPersonClass.DisabledFillColor = Color.FromArgb(204, 204, 204);
             btnMenuPersonClass.DisabledForecolor = Color.FromArgb(168, 160, 168);
+            btnMenuPersonClass.Dock = DockStyle.Left;
             btnMenuPersonClass.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
             btnMenuPersonClass.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnMenuPersonClass.ForeColor = Color.White;
@@ -532,7 +541,8 @@
             btnMenuPersonClass.IdleIconLeftImage = Properties.Resources.user;
             btnMenuPersonClass.IdleIconRightImage = null;
             btnMenuPersonClass.IndicateFocus = false;
-            btnMenuPersonClass.Location = new Point(19, 187);
+            btnMenuPersonClass.Location = new Point(16, 196);
+            btnMenuPersonClass.Margin = new Padding(0, 4, 0, 4);
             btnMenuPersonClass.Name = "btnMenuPersonClass";
             btnMenuPersonClass.OnDisabledState.BorderColor = Color.Transparent;
             btnMenuPersonClass.OnDisabledState.BorderRadius = 8;
@@ -566,7 +576,7 @@
             btnMenuPersonClass.OnPressedState.ForeColor = Color.White;
             btnMenuPersonClass.OnPressedState.IconLeftImage = null;
             btnMenuPersonClass.OnPressedState.IconRightImage = null;
-            btnMenuPersonClass.Size = new Size(168, 36);
+            btnMenuPersonClass.Size = new Size(171, 36);
             btnMenuPersonClass.TabIndex = 15;
             btnMenuPersonClass.TextAlign = ContentAlignment.MiddleLeft;
             btnMenuPersonClass.TextAlignment = HorizontalAlignment.Center;
@@ -761,6 +771,7 @@
             Controls.Add(pnlHeader);
             Controls.Add(menuStrip1);
             Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
             MaximizeBox = false;
             Name = "FormMain";
             StartPosition = FormStartPosition.CenterScreen;

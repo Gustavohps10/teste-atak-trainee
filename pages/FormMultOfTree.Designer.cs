@@ -38,6 +38,8 @@
             lblDoWhile = new Label();
             lbxDoWhile = new ListBox();
             btnList = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
+            bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            bunifuShadowPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -58,7 +60,7 @@
             lbxFor.Font = new Font("Segoe UI", 9F);
             lbxFor.FormattingEnabled = true;
             lbxFor.ItemHeight = 15;
-            lbxFor.Location = new Point(135, 163);
+            lbxFor.Location = new Point(81, 109);
             lbxFor.Name = "lbxFor";
             lbxFor.Size = new Size(156, 259);
             lbxFor.TabIndex = 2;
@@ -67,7 +69,7 @@
             // 
             lblFor.AutoSize = true;
             lblFor.Font = new Font("Segoe UI", 9F);
-            lblFor.Location = new Point(135, 145);
+            lblFor.Location = new Point(81, 91);
             lblFor.Name = "lblFor";
             lblFor.Size = new Size(24, 15);
             lblFor.TabIndex = 3;
@@ -77,7 +79,7 @@
             // 
             lblWhile.AutoSize = true;
             lblWhile.Font = new Font("Segoe UI", 9F);
-            lblWhile.Location = new Point(319, 145);
+            lblWhile.Location = new Point(265, 91);
             lblWhile.Name = "lblWhile";
             lblWhile.Size = new Size(37, 15);
             lblWhile.TabIndex = 5;
@@ -88,7 +90,7 @@
             lbxWhile.Font = new Font("Segoe UI", 9F);
             lbxWhile.FormattingEnabled = true;
             lbxWhile.ItemHeight = 15;
-            lbxWhile.Location = new Point(319, 163);
+            lbxWhile.Location = new Point(265, 107);
             lbxWhile.Name = "lbxWhile";
             lbxWhile.Size = new Size(156, 259);
             lbxWhile.TabIndex = 4;
@@ -97,7 +99,7 @@
             // 
             lblDoWhile.AutoSize = true;
             lblDoWhile.Font = new Font("Segoe UI", 9F);
-            lblDoWhile.Location = new Point(500, 145);
+            lblDoWhile.Location = new Point(446, 91);
             lblDoWhile.Name = "lblDoWhile";
             lblDoWhile.Size = new Size(55, 15);
             lblDoWhile.TabIndex = 7;
@@ -108,7 +110,7 @@
             lbxDoWhile.Font = new Font("Segoe UI", 9F);
             lbxDoWhile.FormattingEnabled = true;
             lbxDoWhile.ItemHeight = 15;
-            lbxDoWhile.Location = new Point(500, 163);
+            lbxDoWhile.Location = new Point(446, 109);
             lbxDoWhile.Name = "lbxDoWhile";
             lbxDoWhile.Size = new Size(156, 259);
             lbxDoWhile.TabIndex = 6;
@@ -160,7 +162,7 @@
             btnList.IdleIconLeftImage = null;
             btnList.IdleIconRightImage = null;
             btnList.IndicateFocus = false;
-            btnList.Location = new Point(342, 80);
+            btnList.Location = new Point(282, 31);
             btnList.Name = "btnList";
             btnList.OnDisabledState.BorderColor = Color.Transparent;
             btnList.OnDisabledState.BorderRadius = 8;
@@ -203,25 +205,48 @@
             btnList.UseDefaultRadiusAndThickness = true;
             btnList.Click += btnListNumbers_Click;
             // 
+            // bunifuShadowPanel1
+            // 
+            bunifuShadowPanel1.BackColor = Color.Transparent;
+            bunifuShadowPanel1.BorderColor = Color.FromArgb(251, 251, 251);
+            bunifuShadowPanel1.BorderRadius = 5;
+            bunifuShadowPanel1.BorderThickness = 1;
+            bunifuShadowPanel1.Controls.Add(lblDoWhile);
+            bunifuShadowPanel1.Controls.Add(btnList);
+            bunifuShadowPanel1.Controls.Add(lbxDoWhile);
+            bunifuShadowPanel1.Controls.Add(lblWhile);
+            bunifuShadowPanel1.Controls.Add(lbxWhile);
+            bunifuShadowPanel1.Controls.Add(lblFor);
+            bunifuShadowPanel1.Controls.Add(lbxFor);
+            bunifuShadowPanel1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            bunifuShadowPanel1.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            bunifuShadowPanel1.Location = new Point(62, 61);
+            bunifuShadowPanel1.Name = "bunifuShadowPanel1";
+            bunifuShadowPanel1.PanelColor = Color.FromArgb(251, 251, 251);
+            bunifuShadowPanel1.PanelColor2 = Color.FromArgb(251, 251, 251);
+            bunifuShadowPanel1.ShadowColor = Color.DarkGray;
+            bunifuShadowPanel1.ShadowDept = 2;
+            bunifuShadowPanel1.ShadowDepth = 2;
+            bunifuShadowPanel1.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
+            bunifuShadowPanel1.ShadowTopLeftVisible = false;
+            bunifuShadowPanel1.Size = new Size(692, 424);
+            bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
+            bunifuShadowPanel1.TabIndex = 19;
+            // 
             // FormMultOfTree
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(251, 251, 251);
-            ClientSize = new Size(800, 450);
-            Controls.Add(btnList);
-            Controls.Add(lblDoWhile);
-            Controls.Add(lbxDoWhile);
-            Controls.Add(lblWhile);
-            Controls.Add(lbxWhile);
-            Controls.Add(lblFor);
-            Controls.Add(lbxFor);
+            ClientSize = new Size(800, 509);
+            Controls.Add(bunifuShadowPanel1);
             Controls.Add(label1);
             Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Name = "FormMultOfTree";
             Text = "FormMultOfTree";
+            bunifuShadowPanel1.ResumeLayout(false);
+            bunifuShadowPanel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -234,5 +259,6 @@
         private Label lblDoWhile;
         private ListBox lbxDoWhile;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnList;
+        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel1;
     }
 }

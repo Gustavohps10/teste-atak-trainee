@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEvenOdd));
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -37,10 +37,10 @@
             label1 = new Label();
             lblNumber = new Label();
             lblResult = new Label();
-            panel1 = new Panel();
             btnCheck = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             txtNumber = new Bunifu.UI.WinForms.BunifuTextBox();
-            panel1.SuspendLayout();
+            bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            bunifuShadowPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -60,7 +60,7 @@
             // 
             lblNumber.AutoSize = true;
             lblNumber.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblNumber.Location = new Point(81, 30);
+            lblNumber.Location = new Point(54, 24);
             lblNumber.Name = "lblNumber";
             lblNumber.Size = new Size(104, 15);
             lblNumber.TabIndex = 1;
@@ -68,26 +68,14 @@
             // 
             // lblResult
             // 
-            lblResult.AutoSize = true;
             lblResult.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             lblResult.ForeColor = Color.FromArgb(33, 33, 33);
-            lblResult.Location = new Point(113, 155);
+            lblResult.Location = new Point(54, 148);
             lblResult.Name = "lblResult";
-            lblResult.Size = new Size(190, 25);
+            lblResult.Size = new Size(260, 25);
             lblResult.TabIndex = 4;
             lblResult.Text = "O número 1 é ímpar";
             lblResult.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // panel1
-            // 
-            panel1.Controls.Add(txtNumber);
-            panel1.Controls.Add(btnCheck);
-            panel1.Controls.Add(lblResult);
-            panel1.Controls.Add(lblNumber);
-            panel1.Location = new Point(191, 82);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(426, 207);
-            panel1.TabIndex = 5;
             // 
             // btnCheck
             // 
@@ -136,7 +124,7 @@
             btnCheck.IdleIconLeftImage = null;
             btnCheck.IdleIconRightImage = null;
             btnCheck.IndicateFocus = false;
-            btnCheck.Location = new Point(81, 93);
+            btnCheck.Location = new Point(54, 87);
             btnCheck.Name = "btnCheck";
             btnCheck.OnDisabledState.BorderColor = Color.Transparent;
             btnCheck.OnDisabledState.BorderRadius = 8;
@@ -193,7 +181,7 @@
             txtNumber.BorderColorDisabled = Color.FromArgb(204, 204, 204);
             txtNumber.BorderColorHover = Color.FromArgb(105, 181, 255);
             txtNumber.BorderColorIdle = Color.Silver;
-            txtNumber.BorderRadius = 1;
+            txtNumber.BorderRadius = 5;
             txtNumber.BorderThickness = 1;
             txtNumber.CharacterCase = Bunifu.UI.WinForms.BunifuTextBox.CharacterCases.Normal;
             txtNumber.CharacterCasing = CharacterCasing.Normal;
@@ -210,7 +198,7 @@
     {
     "1"
     };
-            txtNumber.Location = new Point(81, 48);
+            txtNumber.Location = new Point(54, 42);
             txtNumber.MaxLength = 32767;
             txtNumber.MinimumSize = new Size(1, 1);
             txtNumber.Modified = false;
@@ -257,20 +245,45 @@
             txtNumber.UseSystemPasswordChar = false;
             txtNumber.WordWrap = true;
             // 
+            // bunifuShadowPanel1
+            // 
+            bunifuShadowPanel1.BackColor = Color.Transparent;
+            bunifuShadowPanel1.BorderColor = Color.WhiteSmoke;
+            bunifuShadowPanel1.BorderRadius = 5;
+            bunifuShadowPanel1.BorderThickness = 1;
+            bunifuShadowPanel1.Controls.Add(txtNumber);
+            bunifuShadowPanel1.Controls.Add(btnCheck);
+            bunifuShadowPanel1.Controls.Add(lblResult);
+            bunifuShadowPanel1.Controls.Add(lblNumber);
+            bunifuShadowPanel1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            bunifuShadowPanel1.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            bunifuShadowPanel1.Location = new Point(217, 79);
+            bunifuShadowPanel1.Name = "bunifuShadowPanel1";
+            bunifuShadowPanel1.PanelColor = Color.FromArgb(251, 251, 251);
+            bunifuShadowPanel1.PanelColor2 = Color.FromArgb(251, 251, 251);
+            bunifuShadowPanel1.ShadowColor = Color.DarkGray;
+            bunifuShadowPanel1.ShadowDept = 2;
+            bunifuShadowPanel1.ShadowDepth = 2;
+            bunifuShadowPanel1.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
+            bunifuShadowPanel1.ShadowTopLeftVisible = false;
+            bunifuShadowPanel1.Size = new Size(364, 219);
+            bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
+            bunifuShadowPanel1.TabIndex = 19;
+            // 
             // FormEvenOdd
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(251, 251, 251);
             ClientSize = new Size(800, 450);
-            Controls.Add(panel1);
+            Controls.Add(bunifuShadowPanel1);
             Controls.Add(label1);
             Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormEvenOdd";
             Text = "Par ou Ímpar";
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            bunifuShadowPanel1.ResumeLayout(false);
+            bunifuShadowPanel1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -279,8 +292,8 @@
         private Label label1;
         private Label lblNumber;
         private Label lblResult;
-        private Panel panel1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnCheck;
         private Bunifu.UI.WinForms.BunifuTextBox txtNumber;
+        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel1;
     }
 }

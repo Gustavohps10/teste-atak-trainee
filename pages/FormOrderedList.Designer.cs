@@ -40,6 +40,8 @@
             lblResult = new Label();
             btnSort = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             txtWords = new Bunifu.UI.WinForms.BunifuTextBox();
+            bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            bunifuShadowPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -58,18 +60,19 @@
             // lbxSortedWords
             // 
             lbxSortedWords.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbxSortedWords.ForeColor = Color.FromArgb(33, 33, 33);
             lbxSortedWords.FormattingEnabled = true;
             lbxSortedWords.ItemHeight = 15;
-            lbxSortedWords.Location = new Point(237, 212);
+            lbxSortedWords.Location = new Point(31, 170);
             lbxSortedWords.Name = "lbxSortedWords";
-            lbxSortedWords.Size = new Size(350, 169);
+            lbxSortedWords.Size = new Size(359, 169);
             lbxSortedWords.TabIndex = 2;
             // 
             // lblWords
             // 
             lblWords.AutoSize = true;
             lblWords.Font = new Font("Segoe UI", 9F);
-            lblWords.Location = new Point(237, 75);
+            lblWords.Location = new Point(31, 33);
             lblWords.Name = "lblWords";
             lblWords.Size = new Size(267, 15);
             lblWords.TabIndex = 4;
@@ -79,7 +82,7 @@
             // 
             lblResult.AutoSize = true;
             lblResult.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblResult.Location = new Point(237, 194);
+            lblResult.Location = new Point(31, 152);
             lblResult.Name = "lblResult";
             lblResult.Size = new Size(65, 15);
             lblResult.TabIndex = 6;
@@ -132,7 +135,7 @@
             btnSort.IdleIconLeftImage = null;
             btnSort.IdleIconRightImage = null;
             btnSort.IndicateFocus = false;
-            btnSort.Location = new Point(237, 138);
+            btnSort.Location = new Point(31, 96);
             btnSort.Name = "btnSort";
             btnSort.OnDisabledState.BorderColor = Color.Transparent;
             btnSort.OnDisabledState.BorderRadius = 8;
@@ -189,7 +192,7 @@
             txtWords.BorderColorDisabled = Color.FromArgb(204, 204, 204);
             txtWords.BorderColorHover = Color.FromArgb(105, 181, 255);
             txtWords.BorderColorIdle = Color.Silver;
-            txtWords.BorderRadius = 1;
+            txtWords.BorderRadius = 5;
             txtWords.BorderThickness = 1;
             txtWords.CharacterCase = Bunifu.UI.WinForms.BunifuTextBox.CharacterCases.Normal;
             txtWords.CharacterCasing = CharacterCasing.Normal;
@@ -206,7 +209,7 @@
     {
     "Exemplo, Melância, Zebra, Abacaxi, Batata"
     };
-            txtWords.Location = new Point(237, 93);
+            txtWords.Location = new Point(31, 51);
             txtWords.MaxLength = 32767;
             txtWords.MinimumSize = new Size(1, 1);
             txtWords.Modified = false;
@@ -242,7 +245,7 @@
             txtWords.SelectionLength = 0;
             txtWords.SelectionStart = 41;
             txtWords.ShortcutsEnabled = true;
-            txtWords.Size = new Size(350, 39);
+            txtWords.Size = new Size(359, 39);
             txtWords.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             txtWords.TabIndex = 19;
             txtWords.TextAlign = HorizontalAlignment.Left;
@@ -253,22 +256,45 @@
             txtWords.UseSystemPasswordChar = false;
             txtWords.WordWrap = true;
             // 
+            // bunifuShadowPanel1
+            // 
+            bunifuShadowPanel1.BackColor = Color.Transparent;
+            bunifuShadowPanel1.BorderColor = Color.WhiteSmoke;
+            bunifuShadowPanel1.BorderRadius = 5;
+            bunifuShadowPanel1.BorderThickness = 1;
+            bunifuShadowPanel1.Controls.Add(txtWords);
+            bunifuShadowPanel1.Controls.Add(btnSort);
+            bunifuShadowPanel1.Controls.Add(lblResult);
+            bunifuShadowPanel1.Controls.Add(lblWords);
+            bunifuShadowPanel1.Controls.Add(lbxSortedWords);
+            bunifuShadowPanel1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            bunifuShadowPanel1.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            bunifuShadowPanel1.Location = new Point(206, 68);
+            bunifuShadowPanel1.Name = "bunifuShadowPanel1";
+            bunifuShadowPanel1.PanelColor = Color.FromArgb(251, 251, 251);
+            bunifuShadowPanel1.PanelColor2 = Color.FromArgb(251, 251, 251);
+            bunifuShadowPanel1.ShadowColor = Color.DarkGray;
+            bunifuShadowPanel1.ShadowDept = 2;
+            bunifuShadowPanel1.ShadowDepth = 2;
+            bunifuShadowPanel1.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
+            bunifuShadowPanel1.ShadowTopLeftVisible = false;
+            bunifuShadowPanel1.Size = new Size(421, 370);
+            bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
+            bunifuShadowPanel1.TabIndex = 20;
+            // 
             // FormOrderedList
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(251, 251, 251);
             ClientSize = new Size(800, 450);
-            Controls.Add(txtWords);
-            Controls.Add(btnSort);
-            Controls.Add(lblResult);
-            Controls.Add(lblWords);
-            Controls.Add(lbxSortedWords);
+            Controls.Add(bunifuShadowPanel1);
             Controls.Add(label1);
             Name = "FormOrderedList";
             Text = "Lista Ordenada";
+            bunifuShadowPanel1.ResumeLayout(false);
+            bunifuShadowPanel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -279,5 +305,6 @@
         private Label lblResult;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnSort;
         private Bunifu.UI.WinForms.BunifuTextBox txtWords;
+        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel1;
     }
 }
