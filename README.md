@@ -22,9 +22,17 @@ Este repositório tem como finalidade gerenciar minha resolução do teste de l�
 
 ## :gear: Rodando a aplicação
 
-### :arrow_down: Baixar .exe
+### :arrow_down: Em produção / Download .exe
 - Baixe e extraia o arquivo ```teste-atak-win10-x64.rar```
-> [Download teste-atak-win10-x64.rar v1.2](https://github.com/Gustavohps10/teste-atak/releases/download/1.2/teste-atak-win10-x64.rar) 
+> [Download teste-atak-win10-x64.rar v1.2](https://github.com/Gustavohps10/teste-atak/releases/download/1.2/teste-atak-win10-x64.rar)
+
+### :computer: Em desenvolvimento
+1. Faça o Fork deste repositório
+2. Clone em sua máquina
+```
+git clone https://github.com/<your_profile>/teste-atak
+```
+3. Abra a solução ```teste-atak.sln``` com Visual Studio Code
 
 ## :pushpin: Requisitos
 - Windows 10
