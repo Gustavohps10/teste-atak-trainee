@@ -10,11 +10,13 @@
     <PackageIcon>icon-atak.png</PackageIcon>
     <Configurations>Debug;Release;win10-x64</Configurations>
     <Platforms>AnyCPU;x64</Platforms>
+    <ApplicationIcon>icon-atak-128.ico</ApplicationIcon>
+    <StartupObject></StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
     <Content Include=".github\screenshot.png" />
-    <Content Include="icon-atak.ico" />
+    <Content Include="icon-atak-128.ico" />
   </ItemGroup>
 
   <ItemGroup>
