@@ -20,6 +20,11 @@ Este repositório tem como finalidade gerenciar minha resolução do teste de l�
 - [x] Laços de repetição
 - [x] Lidar com classes
 
+## :pushpin: Requisitos
+- Windows 10 ou superior
+- [Visual Studio Code](https://visualstudio.microsoft.com/pt-br/downloads/)
+- [Bunifu UI](https://www.nuget.org/packages/Bunifu.UI.WinForms/7.0.0)
+
 ## :gear: Rodando a aplicação
 
 ### :arrow_down: Em produção / Download .exe
@@ -33,10 +38,6 @@ Este repositório tem como finalidade gerenciar minha resolução do teste de l�
 git clone https://github.com/<your_profile>/teste-atak
 ```
 3. Abra a solução ```teste-atak.sln``` com Visual Studio Code
-
-## :pushpin: Requisitos
-- Windows 10
-- [Bunifu UI](https://www.nuget.org/packages/Bunifu.UI.WinForms/7.0.0)
 
 ## :hammer_and_wrench: Ferramentas
 <a href="https://github.com/Gustavohps10/teste-atak#gh-dark-mode-only">
